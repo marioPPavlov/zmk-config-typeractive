@@ -33,8 +33,7 @@
 };
 
 / {
-    chosen {
-        zmk,physical-layout = &foostan_corne_5col_layout;
+    chosen { zmk,physical-layout = &foostan_corne_5col_layout; }
 };
 
 / {

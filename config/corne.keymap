@@ -920,10 +920,10 @@
 
         mac_base {
             bindings = <
-  &trans               &trans              &trans              &ht_maclanguage_r 0 R  &trans                &trans  &trans  &trans           &trans  &trans
-  &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &trans                 &trans                &trans  &trans  &trans           &trans  &trans
-  &trans               &trans              &trans              &trans                 &trans                &trans  &trans  &trans           &trans  &trans
-                                           &trans              &trans                 &mm_space_htlgui      &trans  &trans  &mt LCTRL ENTER
+  &trans               &trans              &trans              &ht_maclanguage_r 0 R  &trans      &trans  &trans           &trans  &trans  &trans
+  &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &trans                 &trans      &trans  &trans           &trans  &trans  &trans
+  &trans               &trans              &trans              &trans                 &trans      &trans  &trans           &trans  &trans  &trans
+                                           &trans              &mm_space_htlgui       &trans      &trans  &mt LCTRL ENTER  &trans
             >;
         };
 

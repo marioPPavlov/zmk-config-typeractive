@@ -413,89 +413,79 @@
 
         combo_toggle_base_mac {
             bindings = <&tog 1>;
-            key-positions = <9 10 11>;
+            key-positions = <6 7 8>;
             layers = <0 3 4 6 1 4 7>;
-        };
-
-        color {
-            bindings = <&rgb_ug RGB_COLOR_HSB(0,94,48)>;
-            key-positions = <39 27>;
         };
 
         mac_screenshot_clipboard {
             bindings = <&kp LS(LC(LG(NUMBER_4)))>;
-            key-positions = <29 16>;
+            key-positions = <10 0>;
         };
 
         combo_left_bracket {
             bindings = <&single_tap LEFT_BRACKET>;
-            key-positions = <18 17>;
+            key-positions = <12 13>;
         };
 
         combo_right_bracket {
             bindings = <&single_tap RIGHT_BRACKET>;
-            key-positions = <23 24>;
+            key-positions = <16 17>;
         };
 
         combo_paren_left {
             bindings = <&single_tap LEFT_PARENTHESIS>;
-            key-positions = <19 18>;
+            key-positions = <13 14>;
         };
 
         combo_parent_right {
             bindings = <&single_tap RIGHT_PARENTHESIS>;
-            key-positions = <22 23>;
+            key-positions = <15 16>;
         };
 
         combo_tog_mouse {
             bindings = <&mouse_mode_color_on>;
-            key-positions = <10 23>;
+            key-positions = <16 7>;
             layers = <0 3 1 4 2 8>;
         };
 
         combo_minus {
             bindings = <&kp MINUS>;
-            key-positions = <32 31>;
+            key-positions = <23 22>;
         };
 
         mac_screenshot_image {
             bindings = <&kp LS(LG(NUMBER_4))>;
-            key-positions = <1 15>;
-        };
-
-        color_2 {
-            bindings = <&rgb_ug RGB_COLOR_HSB(149,82,50)>;
-            key-positions = <39 27>;
+            key-positions = <0 11>;
         };
 
         combo_underscore {
             bindings = <&kp UNDER>;
-            key-positions = <35 36>;
+            key-positions = <36 26 27>;
         };
 
         combo_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <11 25>;
+            key-positions = <18 8>;
         };
 
         combo_plus {
             bindings = <&kp PLUS>;
-            key-positions = <10 24>;
+            key-positions = <17 7>;
         };
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <23 9>;
+            key-positions = <3 13>;
         };
 
         combo_tab_shift {
             bindings = <&kp LS(TAB)>;
-            key-positions = <18 4>;
+            key-positions = <16 6>;
         };
 
         combo_excl {
             bindings = <&kp EXCL>;
-            key-positions = <24 35>;
+            key-positions = <26 17>;
         };
 
         combo_sl_bluetooh {
@@ -505,92 +495,92 @@
 
         combo_at {
             bindings = <&kp AT>;
-            key-positions = <32 17>;
+            key-positions = <23 12>;
         };
 
         combo_dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <18 33>;
+            key-positions = <24 13>;
         };
 
         combo_hash {
             bindings = <&kp HASH>;
-            key-positions = <23 34>;
+            key-positions = <25 16>;
         };
 
         combo_caret {
             bindings = <&kp CARET>;
-            key-positions = <3 16 18>;
+            key-positions = <11 2 13>;
         };
 
         combo_ampersand {
             bindings = <&kp AMPERSAND>;
-            key-positions = <22 9>;
+            key-positions = <15 6>;
         };
 
         combo_percent {
             bindings = <&kp PERCENT>;
-            key-positions = <19 4>;
+            key-positions = <14 3>;
         };
 
         combo_left_brace {
             bindings = <&single_tap LEFT_BRACE>;
-            key-positions = <5 19>;
+            key-positions = <14 4>;
         };
 
         combo_right_brace {
             bindings = <&single_tap RIGHT_BRACE>;
-            key-positions = <22 8>;
+            key-positions = <15 5>;
         };
 
         combo_zero {
             bindings = <&kp KP_NUMBER_0>;
-            key-positions = <33 19>;
+            key-positions = <24 14>;
         };
 
         combo_one {
             bindings = <&kp KP_NUMBER_1>;
-            key-positions = <18 32>;
+            key-positions = <23 13>;
         };
 
         combo_two {
             bindings = <&kp KP_NUMBER_2>;
-            key-positions = <17 31>;
+            key-positions = <22 12>;
         };
 
         combo_three {
             bindings = <&kp KP_NUMBER_3>;
-            key-positions = <30 16>;
+            key-positions = <21 11>;
         };
 
         combo_four {
             bindings = <&kp KP_NUMBER_4>;
-            key-positions = <29 15>;
+            key-positions = <20 10>;
         };
 
         combo_five {
             bindings = <&kp KP_NUMBER_5>;
-            key-positions = <34 22>;
+            key-positions = <25 15>;
         };
 
         combo_six {
             bindings = <&kp KP_NUMBER_6>;
-            key-positions = <23 35>;
+            key-positions = <26 16>;
         };
 
         combo_seven {
             bindings = <&kp KP_N7>;
-            key-positions = <36 24>;
+            key-positions = <36 27 17>;
         };
 
         combo_8 {
             bindings = <&kp KP_NUMBER_8>;
-            key-positions = <37 25>;
+            key-positions = <37 28 18>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
-            key-positions = <26 38>;
+            key-positions = <38 29 19>;
         };
     };
 
@@ -921,120 +911,120 @@
         BASE {
             display-name = "Base";
             bindings = <
-&kp Q                         &kp W                         &kp E                    &ht_kp_kp LS(LEFT_ALT) R  &long_mo_tp 10 T            &ht_single_tap BACKSLASH Y  &kp U                    &kp I                        &kp O                           &kp P                            
-&long_th_kp LALT A            &long_th_kp LGUI S            &long_th_kp LCTRL D      &long_th_kp LSHFT F       &long_mo_tp 8 G            &kp H                       &kp J                    &kp K                        &kp L                           &ht_single_tap COLON SEMI        
- &ht_num_single_tap_weak N4 Z  &ht_num_single_tap_weak N3 X  &ht_num_single_tap N2 C  &ht_num_single_tap N1 V   &ht_num_single_tap N0 B                           &ht_num_single_tap N5 N     &ht_num_single_tap N6 M  &ht_num_single_tap N7 COMMA  &ht_num_single_tap_weak N8 DOT  &ht_num_single_tap_weak N9 FSLH  
-                                                                    &ht_mo_navword 5 0       &mm_space_htctrl          &mm_esc_hyperlayer                                &mm_shift_capsword          &mt LALT ENTER           &mm_backspace_delete
+  &kp Q                         &kp W                         &kp E                    &ht_kp_kp LS(LEFT_ALT) R  &long_mo_tp 10 T             &ht_single_tap BACKSLASH Y  &kp U                    &kp I                        &kp O                           &kp P
+  &long_th_kp LALT A            &long_th_kp LGUI S            &long_th_kp LCTRL D      &long_th_kp LSHFT F       &long_mo_tp 8 G              &kp H                       &kp J                    &kp K                        &kp L                           &ht_single_tap COLON SEMI
+  &ht_num_single_tap_weak N4 Z  &ht_num_single_tap_weak N3 X  &ht_num_single_tap N2 C  &ht_num_single_tap N1 V   &ht_num_single_tap N0 B      &ht_num_single_tap N5 N     &ht_num_single_tap N6 M  &ht_num_single_tap N7 COMMA  &ht_num_single_tap_weak N8 DOT  &ht_num_single_tap_weak N9 FSLH
+                                                              &ht_mo_navword 5 0       &mm_space_htctrl          &mm_esc_hyperlayer           &mm_shift_capsword          &mt LALT ENTER           &mm_backspace_delete
             >;
         };
 
         mac_base {
             bindings = <
-  &trans               &trans              &trans              &ht_maclanguage_r 0 R  &trans     &trans  &trans           &trans  &trans  &trans  
-  &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &trans                 &trans     &trans  &trans           &trans  &trans  &trans  
-  &trans               &trans              &trans              &trans                 &trans                  &trans  &trans           &trans  &trans  &trans  &trans
-                                                 &trans              &mm_space_htlgui       &trans                  &trans  &mt LCTRL ENTER  &trans
+  &trans               &trans              &trans              &ht_maclanguage_r 0 R  &trans                &trans  &trans  &trans           &trans  &trans
+  &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &trans                 &trans                &trans  &trans  &trans           &trans  &trans
+  &trans               &trans              &trans              &trans                 &trans                &trans  &trans  &trans           &trans  &trans
+                                           &trans              &trans                 &mm_space_htlgui      &trans  &trans  &mt LCTRL ENTER
             >;
         };
 
         NUM {
             display-name = "Numbers";
             bindings = <
- &trans                   &trans                   &trans                   &trans                   &trans                   &trans                   &trans             &trans             &trans                   &trans                 
-  &trans                   &trans                   &trans                   &trans                   &trans                     &trans                   &trans             &trans             &trans                   &trans                  
- &single_tap KP_NUMBER_4  &single_tap KP_NUMBER_3  &single_tap KP_NUMBER_2  &single_tap KP_NUMBER_1  &single_tap KP_NUMBER_0                  &single_tap KP_NUMBER_5  &single_tap KP_N6  &single_tap KP_N7  &single_tap KP_NUMBER_8  &single_tap KP_NUMBER_9  &trans
-                                                          &trans                   &trans                   &trans                                   &trans                   &trans             &trans
+  &trans                   &trans                   &trans                   &trans                   &trans                       &trans                   &trans             &trans             &trans                   &trans
+  &trans                   &trans                   &trans                   &trans                   &trans                       &trans                   &trans             &trans             &trans                   &trans
+  &single_tap KP_NUMBER_4  &single_tap KP_NUMBER_3  &single_tap KP_NUMBER_2  &single_tap KP_NUMBER_1  &single_tap KP_NUMBER_0      &single_tap KP_NUMBER_5  &single_tap KP_N6  &single_tap KP_N7  &single_tap KP_NUMBER_8  &single_tap KP_NUMBER_9
+                                                    &trans                   &trans                   &trans                       &trans                   &trans             &trans
             >;
         };
 
         NAV {
             display-name = "Navigation";
             bindings = <
- &trans  &trans  &trans                                 &trans  &trans    &trans          &kp LC(J)       &kp LC(K)     &trans           &trans                
- &trans  &trans  &trans                                 &trans  &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &macro_open_clipboard  
- &trans  &trans  &trans                                 &trans  &trans                  &trans          &trans          &trans        &trans           &trans                 &trans
-                        &ht_navheavy_and_tap_on_release F20 0  &trans  &trans                  &trans          &trans          &trans
+  &trans  &trans  &trans  &trans                                 &trans      &trans          &kp LC(J)       &kp LC(K)     &trans           &trans
+  &trans  &trans  &trans  &trans                                 &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &macro_open_clipboard
+  &trans  &trans  &trans  &trans                                 &trans      &trans          &trans          &trans        &trans           &trans
+                  &trans  &ht_navheavy_and_tap_on_release F20 0  &trans      &trans          &trans          &trans
             >;
         };
 
         NAV_MAC {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  
- &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  
- &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans
             >;
         };
 
         nav_heavy {
             bindings = <
- &trans  &trans  &trans  &trans          &trans   &trans              &trans  &trans  &trans         &trans  
-  &trans  &trans  &trans  &kp LEFT_SHIFT  &trans    &kp LA(LEFT_ARROW)  &trans  &trans  &kp LA(RIGHT)  &trans  
-  &trans  &trans  &trans  &trans          &trans                  &trans              &trans  &trans  &trans         &trans  
-                        &trans  &trans          &trans                  &trans              &trans  &trans
+  &trans  &trans  &trans  &trans          &trans      &trans              &trans  &trans  &trans         &trans
+  &trans  &trans  &trans  &kp LEFT_SHIFT  &trans      &kp LA(LEFT_ARROW)  &trans  &trans  &kp LA(RIGHT)  &trans
+  &trans  &trans  &trans  &trans          &trans      &trans              &trans  &trans  &trans         &trans
+                  &trans  &trans          &trans      &trans              &trans  &trans
             >;
         };
 
         mouse {
             bindings = <
- &trans  &msc SCRL_LEFT      &mmv MOVE_Y(-1000)  &msc SCRL_RIGHT               &trans                     &trans                  &msc SCRL_UP       &mmv MOVE_Y(-333)  &msc SCRL_DOWN    &trans  
- &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)             &trans                      &mkp MB2                &mmv MOVE_X(-333)  &mmv MOVE_Y(333)   &mmv MOVE_X(333)  &trans  
- &trans  &trans              &trans              &trans                        &trans                                    &trans                  &trans             &trans             &mkp MB3          &trans  
-                                    &navword_mouse_off  &ht_kp_mb1_and_off LCTRL MB1  &ht_hyper_and_mouse 11 6                  &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
+  &trans  &msc SCRL_LEFT      &mmv MOVE_Y(-1000)  &msc SCRL_RIGHT               &trans                        &trans                  &msc SCRL_UP       &mmv MOVE_Y(-333)  &msc SCRL_DOWN    &trans
+  &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)             &trans                        &mkp MB2                &mmv MOVE_X(-333)  &mmv MOVE_Y(333)   &mmv MOVE_X(333)  &trans
+  &trans  &trans              &trans              &trans                        &trans                        &trans                  &trans             &trans             &mkp MB3          &trans
+                              &navword_mouse_off  &ht_kp_mb1_and_off LCTRL MB1  &ht_hyper_and_mouse 11 6      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
             >;
         };
 
         mouse_mac {
             bindings = <
- &trans  &trans              &mmv MOVE_Y(-1000)  &trans                       &trans    &trans  &trans             &mmv MOVE_Y(-300)  &trans            &trans  
- &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)            &trans   &trans  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans  
- &trans  &trans              &trans              &trans                       &trans                  &trans  &trans             &trans             &trans            &trans  
-                                    &trans              &ht_kp_mb1_and_off LGUI MB1  &trans                  &trans  &mm_mouse_click    &trans
+  &trans  &trans              &mmv MOVE_Y(-1000)  &trans                       &trans      &trans  &trans             &mmv MOVE_Y(-300)  &trans            &trans
+  &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)            &trans      &trans  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans
+  &trans  &trans              &trans              &trans                       &trans      &trans  &trans             &trans             &trans            &trans
+                              &trans              &ht_kp_mb1_and_off LGUI MB1  &trans      &trans  &mm_mouse_click    &trans
             >;
         };
 
         Function {
             bindings = <
- &trans  &trans  &trans  &trans  &trans   &kp F10  &kp F7  &kp F8  &kp F9  &trans 
- &trans  &trans  &trans  &trans  &trans   &kp F11  &kp F4  &kp F5  &kp F6  &trans  
- &trans  &trans  &trans  &trans  &trans                  &kp F12  &kp F1  &kp F2  &kp F3  &trans  
-                        &trans  &trans  &trans                  &trans   &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &kp F10  &kp F7  &kp F8  &kp F9  &trans
+  &trans  &trans  &trans  &trans  &trans      &kp F11  &kp F4  &kp F5  &kp F6  &trans
+  &trans  &trans  &trans  &trans  &trans      &kp F12  &kp F1  &kp F2  &kp F3  &trans
+                  &trans  &trans  &trans      &trans   &trans  &trans
             >;
         };
 
         blue {
             bindings = <
- &bt BT_CLR     &trans         &trans         &bootloader    &sys_reset      &trans  &trans  &trans  &trans  &trans  
- &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &out OUT_USB    &trans  &trans  &trans  &trans  &trans  
- &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &out OUT_BLE                  &trans  &trans  &trans  &trans  &trans 
-                                      &trans         &trans         &trans                        &trans  &trans  &trans
+  &bt BT_CLR     &trans         &trans         &bootloader    &sys_reset        &trans  &trans  &trans  &trans  &trans
+  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &out OUT_USB      &trans  &trans  &trans  &trans  &trans
+  &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &out OUT_BLE      &trans  &trans  &trans  &trans  &trans
+                                &trans         &trans         &trans            &trans  &trans  &trans
             >;
         };
 
         media {
             bindings = <
- &trans  &trans  &trans  &trans  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans  
- &trans  &trans  &trans  &trans  &trans   &trans  &kp C_PP           &trans           &trans  &trans  
- &trans  &trans  &trans  &trans  &trans                  &trans  &trans             &trans           &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans             &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &kp C_PP           &trans           &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans           &trans  &trans
+                  &trans  &trans  &trans      &trans  &trans             &trans
             >;
         };
 
         hyper_one_hand {
             bindings = <
- &ht_single_tap TILDE GRAVE  &trans     &linux_grave_swap_shift  &linux_grave_swap      &linux_tab_swap                   &ht_macro_hyperkey PIPE Y      &macro_hyperkey U                   &macro_hyperkey I               &macro_hyperkey O                           &macro_hyperkey P                         
-  &trans                      &kp LC(X)  &kp LC(C)                &ht_clipboard 0 LC(V)  &ht_single_tap LC(ENTER) ENTER  &ht_single_tap LS(HOME) GRAVE  &ht_macro_hyperkey LS(PAGE_DOWN) J  &ht_macro_hyperkey LS(PG_UP) K  &ht_macro_hyperkey LS(END) L                &ht_single_tap DOUBLE_QUOTES SINGLE_QUOTE  
-  &trans                      &trans     &kp LC(Z)                &kp LS(LC(Z))          &kp BACKSPACE                                   &kp STAR                       &mkp MB4                            &mkp MB5                        &ht_single_tap_weak LESS_THAN GREATER_THAN  &single_tap QUESTION                   
-                                               &trans                   &flush_stuck           &trans                                          &linux_lgui_tab                &ht_single_tap COMMA DOT            &kp DELETE
+  &ht_single_tap TILDE GRAVE  &trans     &linux_grave_swap_shift  &linux_grave_swap      &linux_tab_swap                     &ht_macro_hyperkey PIPE Y      &macro_hyperkey U                   &macro_hyperkey I               &macro_hyperkey O                           &macro_hyperkey P
+  &trans                      &kp LC(X)  &kp LC(C)                &ht_clipboard 0 LC(V)  &ht_single_tap LC(ENTER) ENTER      &ht_single_tap LS(HOME) GRAVE  &ht_macro_hyperkey LS(PAGE_DOWN) J  &ht_macro_hyperkey LS(PG_UP) K  &ht_macro_hyperkey LS(END) L                &ht_single_tap DOUBLE_QUOTES SINGLE_QUOTE
+  &trans                      &trans     &kp LC(Z)                &kp LS(LC(Z))          &kp BACKSPACE                       &kp STAR                       &mkp MB4                            &mkp MB5                        &ht_single_tap_weak LESS_THAN GREATER_THAN  &single_tap QUESTION
+                                         &trans                   &flush_stuck           &trans                              &linux_lgui_tab                &ht_single_tap COMMA DOT            &kp DELETE
             >;
         };
 
         hyper_one_hand_mac {
             bindings = <
-&trans  &trans     &grave_swap_shift            &grave_swap            &tab_swap                        &trans                             &trans                             &trans                                 &trans                              &trans 
- &trans  &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER   &ht_single_tap LG(LS(LEFT)) GRAVE  &ht_macro_hyperkey LS(LG(DOWN)) J  &ht_macro_hyperkey LS(LG(UP_ARROW)) K  &ht_macro_hyperkey LS(LG(RIGHT)) L  &trans 
- &trans  &trans     &kp LG(Z)                    &kp LS(LG(Z))          &trans                                          &trans                             &trans                             &trans                                 &trans                              &trans  
-                           &trans                       &trans                 &trans                                          &mac_lgui_tab                      &trans                             &trans
+  &trans  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &trans                             &trans                             &trans                                 &trans                              &trans
+  &trans  &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &ht_single_tap LG(LS(LEFT)) GRAVE  &ht_macro_hyperkey LS(LG(DOWN)) J  &ht_macro_hyperkey LS(LG(UP_ARROW)) K  &ht_macro_hyperkey LS(LG(RIGHT)) L  &trans
+  &trans  &trans     &kp LG(Z)                    &kp LS(LG(Z))          &trans                              &trans                             &trans                             &trans                                 &trans                              &trans
+                     &trans                       &trans                 &trans                              &mac_lgui_tab                      &trans                             &trans
             >;
         };
     };

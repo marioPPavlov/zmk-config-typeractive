@@ -460,7 +460,7 @@
 
         combo_underscore {
             bindings = <&kp UNDER>;
-            key-positions = <36 26 27>;
+            key-positions = <26 27>;
         };
 
         combo_equal {
@@ -570,17 +570,17 @@
 
         combo_seven {
             bindings = <&kp KP_N7>;
-            key-positions = <36 27 17>;
+            key-positions = <27 17>;
         };
 
         combo_8 {
             bindings = <&kp KP_NUMBER_8>;
-            key-positions = <37 28 18>;
+            key-positions = <28 18>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
-            key-positions = <38 29 19>;
+            key-positions = <29 19>;
         };
     };
 

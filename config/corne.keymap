@@ -419,7 +419,7 @@
 
         mac_screenshot_clipboard {
             bindings = <&kp LS(LC(LG(NUMBER_4)))>;
-            key-positions = <10 0>;
+            key-positions = <10 20>;
         };
 
         combo_left_bracket {
@@ -455,7 +455,7 @@
 
         mac_screenshot_image {
             bindings = <&kp LS(LG(NUMBER_4))>;
-            key-positions = <0 11>;
+            key-positions = <10 21>;
         };
 
         combo_underscore {

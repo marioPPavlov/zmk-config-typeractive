@@ -536,26 +536,31 @@
         combo_five {
             bindings = <&kp KP_NUMBER_5>;
             key-positions = <15 5>;
+            layers = <0 1 2 3 4>;
         };
 
         combo_six {
             bindings = <&kp KP_NUMBER_6>;
             key-positions = <16 6>;
+            layers = <0 1 2 3 4>;
         };
 
         combo_seven {
             bindings = <&kp KP_N7>;
             key-positions = <17 7>;
+            layers = <0 1 2 3 4>;
         };
 
         combo_8 {
             bindings = <&kp KP_NUMBER_8>;
             key-positions = <18 8>;
+            layers = <0 2 3 4 1>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
             key-positions = <19 9>;
+            layers = <0 1 2 4 3>;
         };
 
         combo_star {

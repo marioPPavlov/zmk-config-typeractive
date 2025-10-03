@@ -582,6 +582,30 @@
             bindings = <&kp KP_NUMBER_9>;
             key-positions = <19 9>;
         };
+
+        combo_star {
+            bindings = <&kp STAR>;
+            key-positions = <18 8>;
+            layers = <10 11>;
+        };
+
+        combo_ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <17 7>;
+            layers = <10 11>;
+        };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <16 6>;
+            layers = <10 11>;
+        };
+
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <15 5>;
+            layers = <10 11>;
+        };
     };
 
     behaviors {

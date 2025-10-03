@@ -465,22 +465,22 @@
 
         combo_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <18 8>;
+            key-positions = <18 28>;
         };
 
         combo_plus {
             bindings = <&kp PLUS>;
-            key-positions = <17 7>;
+            key-positions = <17 27>;
         };
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <3 13>;
+            key-positions = <13 23>;
         };
 
         combo_tab_shift {
             bindings = <&kp LS(TAB)>;
-            key-positions = <16 6>;
+            key-positions = <16 26>;
         };
 
         combo_excl {
@@ -525,62 +525,62 @@
 
         combo_left_brace {
             bindings = <&single_tap LEFT_BRACE>;
-            key-positions = <14 4>;
+            key-positions = <14 24>;
         };
 
         combo_right_brace {
             bindings = <&single_tap RIGHT_BRACE>;
-            key-positions = <15 5>;
+            key-positions = <15 25>;
         };
 
         combo_zero {
             bindings = <&kp KP_NUMBER_0>;
-            key-positions = <24 14>;
+            key-positions = <14 4>;
         };
 
         combo_one {
             bindings = <&kp KP_NUMBER_1>;
-            key-positions = <23 13>;
+            key-positions = <13 3>;
         };
 
         combo_two {
             bindings = <&kp KP_NUMBER_2>;
-            key-positions = <22 12>;
+            key-positions = <12 2>;
         };
 
         combo_three {
             bindings = <&kp KP_NUMBER_3>;
-            key-positions = <21 11>;
+            key-positions = <11 1>;
         };
 
         combo_four {
             bindings = <&kp KP_NUMBER_4>;
-            key-positions = <20 10>;
+            key-positions = <10 0>;
         };
 
         combo_five {
             bindings = <&kp KP_NUMBER_5>;
-            key-positions = <25 15>;
+            key-positions = <15 5>;
         };
 
         combo_six {
             bindings = <&kp KP_NUMBER_6>;
-            key-positions = <26 16>;
+            key-positions = <16 6>;
         };
 
         combo_seven {
             bindings = <&kp KP_N7>;
-            key-positions = <27 17>;
+            key-positions = <17 7>;
         };
 
         combo_8 {
             bindings = <&kp KP_NUMBER_8>;
-            key-positions = <28 18>;
+            key-positions = <18 8>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
-            key-positions = <29 19>;
+            key-positions = <19 9>;
         };
     };
 

@@ -539,22 +539,22 @@
         };
 
         combo_one {
-            bindings = <&kp KP_NUMBER_1>;
+            bindings = <&kp NUMBER_1>;
             key-positions = <13 3>;
         };
 
         combo_two {
-            bindings = <&kp KP_NUMBER_2>;
+            bindings = <&kp NUMBER_2>;
             key-positions = <12 2>;
         };
 
         combo_three {
-            bindings = <&kp KP_NUMBER_3>;
+            bindings = <&kp NUMBER_3>;
             key-positions = <11 1>;
         };
 
         combo_four {
-            bindings = <&kp KP_NUMBER_4>;
+            bindings = <&kp NUMBER_4>;
             key-positions = <10 0>;
         };
 

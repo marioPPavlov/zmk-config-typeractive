@@ -498,31 +498,6 @@
             key-positions = <23 12>;
         };
 
-        combo_dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <24 13>;
-        };
-
-        combo_hash {
-            bindings = <&kp HASH>;
-            key-positions = <25 16>;
-        };
-
-        combo_caret {
-            bindings = <&kp CARET>;
-            key-positions = <11 2 13>;
-        };
-
-        combo_ampersand {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <15 6>;
-        };
-
-        combo_percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <14 3>;
-        };
-
         combo_left_brace {
             bindings = <&single_tap LEFT_BRACE>;
             key-positions = <14 24>;

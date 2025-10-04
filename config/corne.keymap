@@ -1032,10 +1032,10 @@
 
         HYPER {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &trans     &linux_grave_swap_shift  &linux_grave_swap      &linux_tab_swap                     &ht_macro_hyperkey PIPE Y      &macro_hyperkey U                   &macro_hyperkey I               &macro_hyperkey O                           &macro_hyperkey P
-  &trans                      &kp LC(X)  &kp LC(C)                &ht_clipboard 0 LC(V)  &ht_single_tap LC(ENTER) ENTER      &ht_single_tap LS(HOME) GRAVE  &ht_macro_hyperkey LS(PAGE_DOWN) J  &ht_macro_hyperkey LS(PG_UP) K  &ht_macro_hyperkey LS(END) L                &ht_single_tap DOUBLE_QUOTES SINGLE_QUOTE
-  &trans                      &trans     &kp LC(Z)                &kp LS(LC(Z))          &kp BACKSPACE                       &kp STAR                       &mkp MB4                            &mkp MB5                        &ht_single_tap_weak LESS_THAN GREATER_THAN  &single_tap QUESTION
-                                         &trans                   &flush_stuck           &trans                              &linux_lgui_tab                &kp LS(ENTER)                       &kp DELETE
+  &ht_single_tap TILDE GRAVE  &trans         &linux_grave_swap_shift  &linux_grave_swap      &linux_tab_swap                     &ht_macro_hyperkey PIPE Y      &macro_hyperkey U                   &macro_hyperkey I               &macro_hyperkey O             &macro_hyperkey P
+  &kp DOUBLE_QUOTES           &kp LC(X)      &kp LC(C)                &ht_clipboard 0 LC(V)  &ht_single_tap LC(ENTER) ENTER      &ht_single_tap LS(HOME) GRAVE  &ht_macro_hyperkey LS(PAGE_DOWN) J  &ht_macro_hyperkey LS(PG_UP) K  &ht_macro_hyperkey LS(END) L  &single_tap SINGLE_QUOTE
+  &trans                      &kp LESS_THAN  &kp LC(Z)                &kp LS(LC(Z))          &kp BACKSPACE                       &kp STAR                       &mkp MB4                            &mkp MB5                        &single_tap GREATER_THAN      &single_tap QUESTION
+                                             &trans                   &flush_stuck           &trans                              &linux_lgui_tab                &kp LS(ENTER)                       &kp DELETE
             >;
 
             label = "HYPER";

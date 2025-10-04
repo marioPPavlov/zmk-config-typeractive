@@ -586,6 +586,12 @@
             key-positions = <15 5>;
             layers = <11 12>;
         };
+
+        combo_nav_word {
+            bindings = <&nav_word>;
+            key-positions = <13 2>;
+            layers = <0 3 1 2 8 4 5 11>;
+        };
     };
 
     behaviors {

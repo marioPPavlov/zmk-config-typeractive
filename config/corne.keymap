@@ -656,7 +656,7 @@
             compatible = "zmk,behavior-num-word";
             #binding-cells = <0>;
             layers = <NUM>;
-            continue-list = <KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0 LSHIFT LGUI LALT COLON MINUS PLUS KP_EQUAL DOT BACKSPACE>;
+            continue-list = <KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0 LSHIFT LGUI LALT COLON MINUS PLUS KP_EQUAL DOT BACKSPACE LEFT_ARROW UP_ARROW DOWN_ARROW RIGHT_ARROW>;
             ignore-numbers;
         };
 

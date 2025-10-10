@@ -945,9 +945,9 @@
             mods = <(MOD_LCTL)>;
         };
 
-        mm_left_page: mm_left_page {
+        mm_right_page: mm_right_page {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM_LEFT_PAGE";
+            label = "MM_RIGHT_PAGE";
             bindings = <&kp RIGHT>, <&kp END>;
 
             #binding-cells = <0>;

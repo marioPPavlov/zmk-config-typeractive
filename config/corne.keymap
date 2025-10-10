@@ -41,7 +41,7 @@
         mouse_mode_color_on: mouse_mode_color {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 5>;
+            bindings = <&macro_tap>, <&tog 6>;
 
             label = "MOUSE_MODE_COLOR";
         };
@@ -62,7 +62,7 @@
         mouse_mode_off: mouse_mode_color_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 5>;
+            bindings = <&macro_tap>, <&tog 6>;
 
             label = "MOUSE_MODE_COLOR";
         };
@@ -191,7 +191,7 @@
                 <&macro_tap>,
                 <&macro_color_off>,
                 <&macro_tap>,
-                <&mkp MB1 &tog 5>;
+                <&mkp MB1 &tog 6>;
 
             label = "MOUSE_CLICK_AND_OFF";
         };
@@ -251,7 +251,7 @@
         navword_mouse_off: test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 5>, <&macro_tap>, <&nav_word>;
+            bindings = <&macro_tap>, <&tog 6>, <&macro_tap>, <&nav_word>;
 
             label = "NAVWORD_NOUSE_OFF";
         };
@@ -259,7 +259,7 @@
         delete_mouse_off: delete_mouse_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 5>, <&macro_tap>, <&kp BACKSPACE>;
+            bindings = <&macro_tap>, <&tog 6>, <&macro_tap>, <&kp BACKSPACE>;
 
             label = "DELETE_MOUSE_OFF";
         };
@@ -281,14 +281,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&tog 5>,
+                <&tog 6>,
                 <&macro_press>,
                 <&kp LS(LA(LC(LG(LGUI))))>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LS(LA(LC(LG(LEFT_GUI))))>,
                 <&macro_tap>,
-                <&tog 5>;
+                <&tog 6>;
 
             label = "HYPER_AND_MOUSE_OFF";
         };
@@ -298,7 +298,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_tap>,
-                <&tog 5>,
+                <&tog 6>,
                 <&macro_press>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
@@ -323,7 +323,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&tog 5>,
+                <&tog 6>,
                 <&macro_tap>,
                 <&mm_shift_capsword>;
 
@@ -414,7 +414,7 @@
         combo_toggle_base_mac {
             bindings = <&tog 1>;
             key-positions = <6 7 8>;
-            layers = <0 5 1 6>;
+            layers = <0 6 1 7>;
         };
 
         mac_screenshot_clipboard {
@@ -449,7 +449,7 @@
         combo_tog_mouse {
             bindings = <&mouse_mode_color_on>;
             key-positions = <16 7>;
-            layers = <0 1 2 7>;
+            layers = <0 1 2 8>;
         };
 
         combo_minus {
@@ -493,7 +493,7 @@
         };
 
         combo_sl_bluetooh {
-            bindings = <&sl 8>;
+            bindings = <&sl 9>;
             key-positions = <1 2 3>;
         };
 
@@ -570,31 +570,31 @@
         combo_star {
             bindings = <&kp STAR>;
             key-positions = <18 8>;
-            layers = <10 11>;
+            layers = <11 12>;
         };
 
         combo_ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <17 7>;
-            layers = <10 11>;
+            layers = <11 12>;
         };
 
         combo_caret {
             bindings = <&kp CARET>;
             key-positions = <16 6>;
-            layers = <10 11>;
+            layers = <11 12>;
         };
 
         combo_percent {
             bindings = <&kp PERCENT>;
             key-positions = <15 5>;
-            layers = <10 11>;
+            layers = <11 12>;
         };
 
         combo_nav_word {
             bindings = <&num_word>;
             key-positions = <13 2>;
-            layers = <0 1 2 7 4 5 10>;
+            layers = <0 1 2 8 4 6 11>;
         };
     };
 
@@ -819,7 +819,7 @@
         mm_esc_hyperlayer: mm_esc_hyperlayer {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_ESC_HYPERLAYER";
-            bindings = <&ht_mo_eagor_trigger 10 ESCAPE>, <&kp F20>;
+            bindings = <&ht_mo_eagor_trigger 11 ESCAPE>, <&kp F20>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -961,8 +961,8 @@
         BASE {
             display-name = "Base";
             bindings = <
-  &kp Q               &kp W               &kp E                &ht_kp_kp LS(LEFT_ALT) R  &long_mo_tp 9 T         &ht_single_tap BACKSLASH Y  &kp U           &kp I                           &kp O                                 &kp P
-  &long_th_kp LALT A  &long_th_kp LGUI S  &long_th_kp LCTRL D  &long_th_kp LSHFT F       &long_mo_tp 7 G         &kp H                       &kp J           &kp K                           &kp L                                 &ht_single_tap COLON SEMI
+  &kp Q               &kp W               &kp E                &ht_kp_kp LS(LEFT_ALT) R  &long_mo_tp 10 T        &ht_single_tap BACKSLASH Y  &kp U           &kp I                           &kp O                                 &kp P
+  &long_th_kp LALT A  &long_th_kp LGUI S  &long_th_kp LCTRL D  &long_th_kp LSHFT F       &long_mo_tp 8 G         &kp H                       &kp J           &kp K                           &kp L                                 &ht_single_tap COLON SEMI
   &kp Z               &kp X               &kp C                &kp V                     &kp B                   &kp N                       &kp M           &ht_single_tap LESS_THAN COMMA  &ht_single_tap_weak GREATER_THAN DOT  &ht_num_single_tap_weak QUESTION FSLH
                                           &ht_mo_navword 4 0   &mm_space_htctrl          &mm_esc_hyperlayer      &mm_shift_capsword          &mt LALT ENTER  &mm_backspace_delete
             >;
@@ -1010,12 +1010,22 @@
             label = "NAV_MAC";
         };
 
+        NAV_ALT {
+            label = "NAV_Alt";
+            bindings = <
+  &trans     &trans        &trans    &trans  &trans      &trans    &trans    &trans        &trans     &trans
+  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+  &trans     &trans        &trans    &trans  &trans      &trans    &trans    &trans        &trans     &trans
+                           &trans    &trans  &trans      &trans    &trans    &trans
+            >;
+        };
+
         mouse {
             bindings = <
   &trans  &msc SCRL_LEFT      &mmv MOVE_Y(-1000)  &msc SCRL_RIGHT               &trans                        &trans                  &msc SCRL_UP       &mmv MOVE_Y(-333)  &msc SCRL_DOWN    &trans
   &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)             &trans                        &mkp MB2                &mmv MOVE_X(-333)  &mmv MOVE_Y(333)   &mmv MOVE_X(333)  &trans
   &trans  &trans              &trans              &trans                        &trans                        &trans                  &trans             &trans             &mkp MB3          &trans
-                              &navword_mouse_off  &ht_kp_mb1_and_off LCTRL MB1  &ht_hyper_and_mouse 10 5      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
+                              &navword_mouse_off  &ht_kp_mb1_and_off LCTRL MB1  &ht_hyper_and_mouse 11 6      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
             >;
 
             label = "MOUSe";
@@ -1092,13 +1102,13 @@
         compatible = "zmk,conditional-layers";
 
         mouse_mac_activate_mouse {
-            if-layers = <1 5>;
-            then-layer = <6>;
+            if-layers = <1 6>;
+            then-layer = <7>;
         };
 
         macro_layer_hyper_one_hand {
-            if-layers = <1 10>;
-            then-layer = <11>;
+            if-layers = <1 11>;
+            then-layer = <12>;
         };
     };
 };

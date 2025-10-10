@@ -414,7 +414,7 @@
         combo_toggle_base_mac {
             bindings = <&tog 1>;
             key-positions = <6 7 8>;
-            layers = <0 3 6 1 7>;
+            layers = <0 5 6 1 7>;
         };
 
         mac_screenshot_clipboard {
@@ -449,7 +449,7 @@
         combo_tog_mouse {
             bindings = <&mouse_mode_color_on>;
             key-positions = <16 7>;
-            layers = <0 3 1 2 8>;
+            layers = <0 5 1 2 8>;
         };
 
         combo_minus {
@@ -540,31 +540,31 @@
         combo_five {
             bindings = <&kp KP_NUMBER_5>;
             key-positions = <15 5>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 5 4>;
         };
 
         combo_six {
             bindings = <&kp KP_NUMBER_6>;
             key-positions = <16 6>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 5 4>;
         };
 
         combo_seven {
             bindings = <&kp KP_N7>;
             key-positions = <17 7>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 5 4>;
         };
 
         combo_8 {
             bindings = <&kp KP_NUMBER_8>;
             key-positions = <18 8>;
-            layers = <0 2 3 4 1>;
+            layers = <0 2 5 4 1>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
             key-positions = <19 9>;
-            layers = <0 1 2 4 3>;
+            layers = <0 1 2 4 5>;
         };
 
         combo_star {
@@ -594,7 +594,7 @@
         combo_nav_word {
             bindings = <&num_word>;
             key-positions = <13 2>;
-            layers = <0 3 1 2 8 4 5 11>;
+            layers = <0 5 1 2 8 4 6 11>;
         };
     };
 
@@ -953,22 +953,22 @@
             >;
         };
 
-        NAV {
-            display-name = "NAV";
+        NAV-MAC {
+            display-name = "NAV-MAC";
             bindings = <
-  &trans  &trans  &trans                                  &trans          &trans      &trans          &kp LC(J)       &kp LC(K)     &trans           &trans
-  &trans  &trans  &kp LGUI                                &kp LEFT_SHIFT  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &macro_open_clipboard
-  &trans  &trans  &trans                                  &trans          &trans      &trans          &trans          &trans        &trans           &trans
-                  &ht_navheavy_and_tap_on_release C_FF 0  &trans          &trans      &trans          &trans          &trans
+  &trans     &trans        &trans                                  &trans          &trans      &trans          &kp LC(J)       &kp LC(K)     &trans           &trans
+  &kp LCTRL  &kp LEFT_ALT  &kp LGUI                                &kp LEFT_SHIFT  &trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+  &trans     &trans        &trans                                  &trans          &trans      &trans          &trans          &trans        &trans           &trans
+                           &ht_navheavy_and_tap_on_release C_FF 0  &trans          &trans      &trans          &trans          &trans
             >;
         };
 
         NAV_MAC {
             bindings = <
-  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &kp LGUI  &trans  &trans      &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans
-                  &trans    &trans  &trans      &trans  &trans  &trans
+  &trans     &trans        &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans     &trans        &trans    &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                           &trans    &trans  &trans      &trans  &trans  &trans
             >;
 
             label = "NAV_MAC";

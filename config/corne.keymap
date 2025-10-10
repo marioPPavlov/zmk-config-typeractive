@@ -963,7 +963,7 @@
             >;
         };
 
-        NAV2 {
+        NAV_MAC {
             bindings = <
   &trans  &trans  &trans  &trans  &trans      &trans              &trans  &trans  &trans         &trans
   &trans  &trans  &trans  &trans  &trans      &kp LC(LEFT_ARROW)  &trans  &trans  &kp LC(RIGHT)  &trans
@@ -971,7 +971,7 @@
                   &trans  &trans  &trans      &trans              &trans  &trans
             >;
 
-            label = "NAV2";
+            label = "NAV_MAC";
         };
 
         NAV2M {
@@ -1074,11 +1074,6 @@
         macro_layer_hyper_one_hand {
             if-layers = <1 11>;
             then-layer = <12>;
-        };
-
-        nav2 {
-            if-layers = <1 4>;
-            then-layer = <5>;
         };
     };
 };

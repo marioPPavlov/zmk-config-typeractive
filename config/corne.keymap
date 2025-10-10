@@ -917,6 +917,42 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        mm_left_page: mm_left_page {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LEFT_PAGE";
+            bindings = <&kp LEFT>, <&kp HOME>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_down_page: mm_down_page {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_DOWN_PAGE";
+            bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_up_page: mm_up_page {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_UP_PAGE";
+            bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        mm_left_page: mm_left_page {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_LEFT_PAGE";
+            bindings = <&kp RIGHT>, <&kp END>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {

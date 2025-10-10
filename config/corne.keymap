@@ -992,7 +992,7 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &trans    &trans        &trans                                  &trans          &trans      &trans         &kp LC(J)      &kp LC(K)    &trans          &trans
+  &trans    &trans        &trans                                  &trans          &trans      &trans         &trans         &trans       &trans          &trans
   &kp LGUI  &kp LEFT_ALT  &kp LCTRL                               &kp LEFT_SHIFT  &trans      &mm_left_page  &mm_down_page  &mm_up_page  &mm_right_page  &trans
   &trans    &trans        &trans                                  &trans          &trans      &trans         &trans         &trans       &trans          &trans
                           &ht_navheavy_and_tap_on_release C_FF 0  &trans          &trans      &trans         &trans         &trans

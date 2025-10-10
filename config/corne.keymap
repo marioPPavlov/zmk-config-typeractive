@@ -953,6 +953,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        mm_mo_hold: mm_mo_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MM_MO_HOLD";
+            bindings = <&mo>, <&none>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <7 8>;
+            tapping-term-ms = <175>;
+        };
     };
 
     keymap {
@@ -992,10 +1003,10 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &trans    &trans        &trans     &trans          &trans      &trans         &trans         &trans       &trans          &trans
-  &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans      &mm_left_page  &mm_down_page  &mm_up_page  &mm_right_page  &trans
-  &trans    &trans        &trans     &trans          &trans      &trans         &trans         &trans       &trans          &trans
-                          &trans     &trans          &trans      &trans         &trans         &trans
+  &trans    &trans        &trans           &trans          &trans      &trans         &trans         &trans       &trans          &trans
+  &kp LGUI  &kp LEFT_ALT  &kp LCTRL        &kp LEFT_SHIFT  &trans      &mm_left_page  &mm_down_page  &mm_up_page  &mm_right_page  &trans
+  &trans    &trans        &trans           &trans          &trans      &trans         &trans         &trans       &trans          &trans
+                          &mm_mo_hold 5 0  &trans          &trans      &trans         &trans         &trans
             >;
         };
 

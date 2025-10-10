@@ -1013,10 +1013,10 @@
         NAV_ALT {
             label = "NAV_Alt";
             bindings = <
-  &trans     &trans        &trans    &trans  &trans      &trans    &trans    &trans        &trans     &trans
-  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-  &trans     &trans        &trans    &trans  &trans      &trans    &trans    &trans        &trans     &trans
-                           &trans    &trans  &trans      &trans    &trans    &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(J)  &kp LC(K)  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &trans  &trans
+                  &trans  &trans  &trans      &trans  &trans     &trans
             >;
         };
 

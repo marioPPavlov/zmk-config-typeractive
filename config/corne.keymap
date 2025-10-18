@@ -870,16 +870,6 @@
             hold-trigger-key-positions = <1 2 3 4 5 15 16 17 18 19 29 30 31 32 33>;
         };
 
-        ht_navheavy_and_tap_on_release: ht_navheavy_and_tap_on_release {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_NAVHEAVY_AND_TAP_ON_RELEASE";
-            bindings = <&macro_mo_nav_heavy_and_tap>, <&none>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
         ht_num_single_tap_weak: ht_num_single_tap_weak {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_NUM_SINGLE_TAP_WEAK";

@@ -974,6 +974,17 @@
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
         };
+
+        really_long_mo_ht: really_long_mo_ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "REALLY_LONG_MO_HT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            require-prior-idle-ms = <300>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -982,10 +993,10 @@
         BASE {
             display-name = "Base";
             bindings = <
-  &kp Q               &kp W               &kp E                &ht_kp_kp LS(LEFT_ALT) R  &long_mo_tp 10 T        &ht_single_tap BACKSLASH Y  &kp U           &kp I                           &kp O                                 &kp P
-  &long_th_kp LALT A  &long_th_kp LGUI S  &long_th_kp LCTRL D  &long_th_kp LSHFT F       &long_mo_tp 8 G         &kp H                       &kp J           &kp K                           &kp L                                 &ht_single_tap COLON SEMI
-  &kp Z               &kp X               &kp C                &kp V                     &kp B                   &kp N                       &kp M           &ht_single_tap LESS_THAN COMMA  &ht_single_tap_weak GREATER_THAN DOT  &ht_num_single_tap_weak QUESTION FSLH
-                                          &ht_mo_navword 5 0   &mm_space_htctrl          &mm_esc_hyperlayer      &mm_shift_capsword          &mt LALT ENTER  &mm_backspace_delete
+  &kp Q               &kp W               &kp E                &ht_kp_kp LS(LEFT_ALT) R  &long_mo_tp 10 T        &ht_single_tap BACKSLASH Y  &kp U            &kp I                           &kp O                                 &kp P
+  &long_th_kp LALT A  &long_th_kp LGUI S  &long_th_kp LCTRL D  &long_th_kp LSHFT F       &long_mo_tp 8 G         &kp H                       &kp J            &kp K                           &kp L                                 &ht_single_tap COLON SEMI
+  &kp Z               &kp X               &kp C                &kp V                     &kp B                   &kp N                       &long_mo_tp 9 M  &ht_single_tap LESS_THAN COMMA  &ht_single_tap_weak GREATER_THAN DOT  &ht_num_single_tap_weak QUESTION FSLH
+                                          &ht_mo_navword 5 0   &mm_space_htctrl          &mm_esc_hyperlayer      &mm_shift_capsword          &mt LALT ENTER   &mm_backspace_delete
             >;
         };
 

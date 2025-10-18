@@ -634,10 +634,10 @@
     };
 
     behaviors {
-        ht_sk_kp: ht_sk_kp {
+        ht_kp: ht_kp {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_SK_KP";
-            bindings = <&sk>, <&kp>;
+            label = "HT_KP";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             require-prior-idle-ms = <200>;
@@ -684,17 +684,6 @@
             layers = <NAV>;
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
             ignore-numbers;
-        };
-
-        ht_shift_navword: ht_shift_navword {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_SHIFT_NAVWORD";
-            bindings = <&kp>, <&nav_word>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 26 27 34 35 36 37 38 39 25 24 23 22 45>;
         };
 
         num_word: num_word {
@@ -762,7 +751,7 @@
         mm_space_htctrl: mm_space_htctrl {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SPACE_HTCTRL";
-            bindings = <&ht_sk_kp LCTRL SPACE>, <&kp LS(LCTRL)>;
+            bindings = <&ht_kp LCTRL SPACE>, <&kp LS(LCTRL)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -772,7 +761,7 @@
         mm_space_htlgui: mm_space_htlgui {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SPACE_HTLGUI";
-            bindings = <&ht_sk_kp LGUI SPACE>, <&kp LS(LGUI)>;
+            bindings = <&ht_kp LGUI SPACE>, <&kp LS(LGUI)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;

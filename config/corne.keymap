@@ -248,12 +248,12 @@
             label = "FLUSH_STUCK";
         };
 
-        navword_mouse_off: test {
+        navword_mouse_off: navword_mouse_off {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&tog 6>, <&macro_tap>, <&nav_word>;
 
-            label = "NAVWORD_NOUSE_OFF";
+            label = "NAVWORD_MOUSE_OFF";
         };
 
         delete_mouse_off: delete_mouse_off {
@@ -991,7 +991,7 @@
         compatible = "zmk,keymap";
 
         BASE {
-            display-name = "Base";
+            display-name = "BASE";
             bindings = <
   &kp Q               &kp W               &kp E                &ht_kp_kp LS(LEFT_ALT) R  &long_mo_tp 10 T        &ht_single_tap BACKSLASH Y  &kp U            &kp I                           &kp O                                 &kp P
   &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &long_th_kp LSHFT F       &long_mo_tp 8 G         &kp H                       &kp J            &kp K                           &kp L                                 &ht_single_tap COLON SEMI
@@ -1000,7 +1000,7 @@
             >;
         };
 
-        MAC {
+        PC {
             bindings = <
   &trans               &trans              &trans              &ht_maclanguage_r 0 R  &trans      &trans  &trans           &trans  &trans  &trans
   &long_th_kp LALT A  &long_th_kp LGUI S  &long_th_kp LCTRL D  &trans                 &trans      &trans  &trans           &trans  &trans  &trans
@@ -1008,7 +1008,7 @@
                                            &trans              &mm_space_htctrl       &trans      &trans  &mt LCTRL ENTER  &trans
             >;
 
-            label = "MAC";
+            label = "PC";
         };
 
         NUM {
@@ -1031,7 +1031,7 @@
             >;
         };
 
-        NAV_MAC {
+        NAV_PC {
             bindings = <
   &trans     &trans        &trans    &trans  &trans      &trans    &trans    &trans        &trans     &trans
   &kp LGUI  &kp LEFT_ALT  &kp LCTRL  &trans  &trans      &mm_left_page  &mm_down_page  &mm_up_page  &mm_right_page  &trans
@@ -1039,7 +1039,7 @@
                            &trans    &trans  &trans      &trans    &trans    &trans
             >;
 
-            label = "NAV_MAC";
+            label = "NAV_PC";
         };
 
         NAV_ALT {
@@ -1052,7 +1052,7 @@
             >;
         };
 
-        mouse {
+        MOUSE {
             bindings = <
   &trans  &msc SCRL_LEFT      &mmv MOVE_Y(-1000)  &msc SCRL_RIGHT               &trans                        &trans                  &msc SCRL_UP       &mmv MOVE_Y(-333)  &msc SCRL_DOWN    &trans
   &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)             &trans                        &mkp MB2                &mmv MOVE_X(-333)  &mmv MOVE_Y(333)   &mmv MOVE_X(333)  &trans
@@ -1060,10 +1060,10 @@
                               &navword_mouse_off  &ht_kp_mb1_and_off LGUI MB1  &ht_hyper_and_mouse 11 6      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
             >;
 
-            label = "MOUSe";
+            label = "MOUSE";
         };
 
-        mouse_mac {
+        MOUSE_PC {
             bindings = <
   &trans  &trans              &mmv MOVE_Y(-1000)  &trans                       &trans      &trans  &trans             &mmv MOVE_Y(-300)  &trans            &trans
   &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)            &trans      &trans  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans
@@ -1071,10 +1071,10 @@
                               &trans              &ht_kp_mb1_and_off LCTRL MB1  &trans      &trans  &mm_mouse_click    &trans
             >;
 
-            label = "Mouse_Mac";
+            label = "MOUSE_PC";
         };
 
-        Function {
+        FUNCTION {
             bindings = <
   &trans  &trans  &trans  &trans  &trans      &kp F10  &kp F7  &kp F8  &kp F9  &trans
   &trans  &trans  &trans  &trans  &trans      &kp F11  &kp F4  &kp F5  &kp F6  &trans
@@ -1082,7 +1082,7 @@
                   &trans  &trans  &trans      &trans   &trans  &trans
             >;
 
-            label = "Function";
+            label = "FUNCTION";
         };
 
         BLUE {
@@ -1118,7 +1118,7 @@
             label = "HYPER";
         };
 
-        HYPER_MAC {
+        HYPER_PC {
             bindings = <
   &trans  &trans     &linux_grave_swap_shift  &linux_grave_swap      &linux_tab_swap                         &trans                             &trans                             &trans                                 &trans                              &trans
   &trans  &kp LC(X)      &kp LC(C)                &ht_clipboard 0 LC(V)  &ht_single_tap LC(ENTER) ENTER      &ht_single_tap LS(HOME) GRAVE  &ht_macro_hyperkey LS(PAGE_DOWN) J  &ht_macro_hyperkey LS(PG_UP) K  &ht_macro_hyperkey LS(END) L  &trans
@@ -1126,14 +1126,14 @@
                      &trans                       &trans                 &trans                              &mac_lgui_tab                      &trans                             &trans
             >;
 
-            label = "HYPER_MAC";
+            label = "HYPER_PC";
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        mouse_mac_activate_mouse {
+        mouse_pc_activate_mouse {
             if-layers = <1 6>;
             then-layer = <7>;
         };

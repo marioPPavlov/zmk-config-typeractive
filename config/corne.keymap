@@ -1057,7 +1057,7 @@
   &trans  &msc SCRL_LEFT      &mmv MOVE_Y(-1000)  &msc SCRL_RIGHT               &trans                        &trans                  &msc SCRL_UP       &mmv MOVE_Y(-333)  &msc SCRL_DOWN    &trans
   &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)             &trans                        &mkp MB2                &mmv MOVE_X(-333)  &mmv MOVE_Y(333)   &mmv MOVE_X(333)  &trans
   &trans  &trans              &trans              &trans                        &trans                        &trans                  &trans             &trans             &mkp MB3          &trans
-                              &navword_mouse_off  &ht_kp_mb1_and_off LCTRL MB1  &ht_hyper_and_mouse 11 6      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
+                              &navword_mouse_off  &ht_kp_mb1_and_off LGUI MB1  &ht_hyper_and_mouse 11 6      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
             >;
 
             label = "MOUSe";
@@ -1068,7 +1068,7 @@
   &trans  &trans              &mmv MOVE_Y(-1000)  &trans                       &trans      &trans  &trans             &mmv MOVE_Y(-300)  &trans            &trans
   &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)            &trans      &trans  &mmv MOVE_X(-300)  &mmv MOVE_Y(300)   &mmv MOVE_X(300)  &trans
   &trans  &trans              &trans              &trans                       &trans      &trans  &trans             &trans             &trans            &trans
-                              &trans              &ht_kp_mb1_and_off LGUI MB1  &trans      &trans  &mm_mouse_click    &trans
+                              &trans              &ht_kp_mb1_and_off LCTRL MB1  &trans      &trans  &mm_mouse_click    &trans
             >;
 
             label = "Mouse_Mac";
@@ -1109,8 +1109,8 @@
 
         HYPER {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &trans         &linux_grave_swap_shift  &linux_grave_swap      &linux_tab_swap                     &ht_macro_hyperkey PIPE Y      &macro_hyperkey U                   &macro_hyperkey I               &macro_hyperkey O             &macro_hyperkey P
-  &kp DOUBLE_QUOTES           &kp LC(X)      &kp LC(C)                &ht_clipboard 0 LC(V)  &ht_single_tap LC(ENTER) ENTER      &ht_single_tap LS(HOME) GRAVE  &ht_macro_hyperkey LS(PAGE_DOWN) J  &ht_macro_hyperkey LS(PG_UP) K  &ht_macro_hyperkey LS(END) L  &single_tap SINGLE_QUOTE
+  &ht_single_tap TILDE GRAVE  &trans         &grave_swap_shift        &grave_swap        &tab_swap                               &ht_macro_hyperkey PIPE Y      &macro_hyperkey U                   &macro_hyperkey I               &macro_hyperkey O             &macro_hyperkey P
+  &kp DOUBLE_QUOTES           &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &ht_single_tap LG(LS(LEFT)) GRAVE  &ht_macro_hyperkey LS(LG(DOWN)) J  &ht_macro_hyperkey LS(LG(UP_ARROW)) K  &ht_macro_hyperkey LS(LG(RIGHT)) L  &single_tap SINGLE_QUOTE
   &trans                      &kp LESS_THAN  &kp LC(Z)                &kp LS(LC(Z))          &kp BACKSPACE                       &kp STAR                       &mkp MB4                            &mkp MB5                        &single_tap EQUAL             &single_tap DOUBLE_QUOTES
                                              &trans                   &flush_stuck           &trans                              &linux_lgui_tab                &kp LS(ENTER)                       &kp DELETE
             >;
@@ -1120,8 +1120,8 @@
 
         HYPER_MAC {
             bindings = <
-  &trans  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &trans                             &trans                             &trans                                 &trans                              &trans
-  &trans  &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &ht_single_tap LG(LS(LEFT)) GRAVE  &ht_macro_hyperkey LS(LG(DOWN)) J  &ht_macro_hyperkey LS(LG(UP_ARROW)) K  &ht_macro_hyperkey LS(LG(RIGHT)) L  &trans
+  &trans  &trans     &linux_grave_swap_shift  &linux_grave_swap      &linux_tab_swap                         &trans                             &trans                             &trans                                 &trans                              &trans
+  &trans  &kp LC(X)      &kp LC(C)                &ht_clipboard 0 LC(V)  &ht_single_tap LC(ENTER) ENTER      &ht_single_tap LS(HOME) GRAVE  &ht_macro_hyperkey LS(PAGE_DOWN) J  &ht_macro_hyperkey LS(PG_UP) K  &ht_macro_hyperkey LS(END) L  &trans
   &trans  &trans     &kp LG(Z)                    &kp LS(LG(Z))          &trans                              &trans                             &trans                             &trans                                 &trans                              &trans
                      &trans                       &trans                 &trans                              &mac_lgui_tab                      &trans                             &trans
             >;

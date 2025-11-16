@@ -1045,10 +1045,10 @@
         NAV_ALT {
             label = "NAV_Alt";
             bindings = <
-  &trans  &trans    &kp UP_ARROW  &trans     &trans      &trans  &kp LC(J)  &kp LC(K)  &trans  &trans
-  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &trans  &trans     &trans     &trans  &trans
-  &trans  &trans    &trans        &trans     &trans      &trans  &trans     &trans     &trans  &trans
-                    &trans        &trans     &trans      &trans  &trans     &trans
+  &trans  &trans    &kp UP_ARROW  &trans     &trans      &trans  &macro_hyperkey U  &trans  &trans  &trans
+  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &trans  &trans             &trans  &trans  &trans
+  &trans  &trans    &trans        &trans     &trans      &trans  &trans             &trans  &trans  &trans
+                    &trans        &trans     &trans      &trans  &trans             &trans
             >;
         };
 

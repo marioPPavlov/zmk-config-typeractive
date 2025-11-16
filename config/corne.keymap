@@ -996,7 +996,7 @@
   &kp Q                &kp W               &kp E               &ht_maclanguage_r 0 R  &long_mo_tp 10 T        &ht_single_tap BACKSLASH Y  &kp U            &kp I                           &kp O                                 &kp P
   &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &long_th_kp LSHFT F    &long_mo_tp 8 G         &kp H                       &kp J            &kp K                           &kp L                                 &ht_single_tap COLON SEMI
   &kp Z                &kp X               &kp C               &kp V                  &kp B                   &kp N                       &long_mo_tp 9 M  &ht_single_tap LESS_THAN COMMA  &ht_single_tap_weak GREATER_THAN DOT  &ht_num_single_tap_weak QUESTION FSLH
-                                           &ht_mo_navword 5 0  &mm_space_htlgui       &mm_esc_hyperlayer      &mm_shift_capsword          &mt LGUI ENTER   &mm_backspace_delete
+                                           &ht_mo_navword 5 0  &mm_space_htlgui       &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER   &mm_backspace_delete
             >;
         };
 
@@ -1005,7 +1005,7 @@
   &trans              &trans              &trans               &ht_kp_kp LS(LEFT_ALT) R  &trans      &trans  &trans           &trans  &trans  &trans
   &long_th_kp LALT A  &long_th_kp LGUI S  &long_th_kp LCTRL D  &trans                    &trans      &trans  &trans           &trans  &trans  &trans
   &trans              &trans              &trans               &trans                    &trans      &trans  &trans           &trans  &trans  &trans
-                                          &trans               &mm_space_htctrl          &trans      &trans  &mt LCTRL ENTER  &trans
+                                          &trans               &mm_space_htctrl          &trans      &trans  &mt LGUI ENTER  &trans
             >;
 
             label = "PC";
@@ -1045,9 +1045,9 @@
         NAV_ALT {
             label = "NAV_Alt";
             bindings = <
-  &trans  &trans    &kp UP_ARROW  &trans     &trans      &trans  &macro_hyperkey U  &trans  &trans  &trans
-  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &trans  &trans             &trans  &trans  &trans
-  &trans  &trans    &trans        &trans     &trans      &trans  &trans             &trans  &trans  &trans
+  &trans  &trans    &kp UP_ARROW  &trans     &trans      &macro_hyperkey Y  &macro_hyperkey U  &macro_hyperkey I  &macro_hyperkey O  &macro_hyperkey P
+  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &macro_hyperkey H  &macro_hyperkey J  &macro_hyperkey K  &macro_hyperkey L  &trans
+  &trans  &trans    &trans        &trans     &trans      &macro_hyperkey N  &macro_hyperkey M  &trans  &trans  &trans
                     &trans        &trans     &trans      &trans  &trans             &trans
             >;
         };

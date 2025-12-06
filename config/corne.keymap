@@ -1045,9 +1045,9 @@
         NAV_ALT {
             label = "NAV_Alt";
             bindings = <
-  &trans  &trans    &kp UP_ARROW  &trans     &trans      &macro_hyperkey Y  &macro_hyperkey U  &macro_hyperkey I  &macro_hyperkey O  &macro_hyperkey P
-  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &macro_hyperkey H  &macro_hyperkey J  &macro_hyperkey K  &macro_hyperkey L  &trans
-  &trans  &trans    &trans        &trans     &trans      &macro_hyperkey N  &macro_hyperkey M  &trans             &trans             &trans
+  &trans  &trans    &kp UP_ARROW  &trans     &trans      &trans             &trans             &trans  &trans  &trans
+  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans      &trans             &trans             &trans  &trans  &trans
+  &trans  &trans    &trans        &trans     &trans      &macro_hyperkey N  &macro_hyperkey M  &trans  &trans  &trans
                     &trans        &trans     &trans      &trans             &trans             &trans
             >;
         };

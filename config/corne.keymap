@@ -413,7 +413,7 @@
 
         combo_toggle_base_mac {
             bindings = <&tog 1>;
-            key-positions = <6 7 8>;
+            key-positions = <7 8 9>;
             layers = <0 6 1 7>;
         };
 

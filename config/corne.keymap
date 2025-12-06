@@ -581,12 +581,6 @@
             layers = <11 12>;
         };
 
-        combo_num_word {
-            bindings = <&num_word>;
-            key-positions = <13 2>;
-            layers = <0 1 2 8 4 6 11>;
-        };
-
         combo_five_hand {
             bindings = <&kp KP_NUMBER_5>;
             key-positions = <14 4>;

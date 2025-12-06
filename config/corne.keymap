@@ -995,7 +995,7 @@
             bindings = <
   &kp Q                &kp W               &kp E               &ht_maclanguage_r 0 R  &long_mo_tp 10 T        &ht_single_tap BACKSLASH Y  &kp U            &kp I                           &kp O                                 &kp P
   &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &long_th_kp LSHFT F    &long_mo_tp 8 G         &kp H                       &kp J            &kp K                           &kp L                                 &ht_single_tap COLON SEMI
-  &kp Z                &kp X               &kp C               &kp V                  &kp B                   &kp N                       &long_mo_tp 9 M  &ht_single_tap LESS_THAN COMMA  &ht_single_tap_weak GREATER_THAN DOT  &ht_num_single_tap_weak QUESTION FSLH
+  &kp Z                &kp X               &kp C               &kp V                  &kp B                   &long_mo_tp 9 N             &long_mo_tp 2 M  &ht_single_tap LESS_THAN COMMA  &ht_single_tap_weak GREATER_THAN DOT  &ht_num_single_tap_weak QUESTION FSLH
                                            &ht_mo_navword 5 0  &mm_space_htlgui       &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER  &mm_backspace_delete
             >;
         };

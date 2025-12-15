@@ -1008,10 +1008,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &trans  &trans  &kp UP_ARROW  &trans  &trans      &single_tap N5  &single_tap NUMBER_6  &single_tap N7        &single_tap N8        &single_tap N9
-  &trans  &trans  &trans        &trans  &trans      &single_tap N0  &single_tap NUMBER_1  &single_tap NUMBER_2  &single_tap NUMBER_3  &single_tap NUMBER_4
-  &trans  &trans  &trans        &trans  &trans      &trans          &trans                &trans                &trans                &trans
-                  &trans        &trans  &trans      &trans          &trans                &trans
+  &trans  &trans          &kp UP_ARROW  &trans     &trans      &single_tap N5  &single_tap NUMBER_6  &single_tap N7        &single_tap N8        &single_tap N9
+  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans      &single_tap N0  &single_tap NUMBER_1  &single_tap NUMBER_2  &single_tap NUMBER_3  &single_tap NUMBER_4
+  &trans  &trans          &trans        &trans     &trans      &trans          &trans                &trans                &trans                &trans
+                          &trans        &trans     &trans      &trans          &trans                &trans
             >;
         };
 

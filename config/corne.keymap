@@ -1018,10 +1018,10 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &trans     &trans        &trans           &trans          &trans      &trans    &trans    &trans        &trans     &trans
-  &kp LCTRL  &kp LEFT_ALT  &kp LGUI         &kp LEFT_SHIFT  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-  &trans     &trans        &trans           &trans          &trans      &trans    &trans    &trans        &trans     &trans
-                           &mm_mo_hold 5 0  &trans          &trans      &trans    &trans    &trans
+  &trans  &trans  &trans           &trans  &trans      &trans    &trans    &trans        &trans     &trans
+  &trans  &trans  &trans           &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+  &trans  &trans  &trans           &trans  &trans      &trans    &trans    &trans        &trans     &trans
+                  &mm_mo_hold 5 0  &trans  &trans      &trans    &trans    &trans
             >;
         };
 

@@ -1029,10 +1029,10 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &trans               &trans              &trans              &trans               &trans               &trans    &trans    &trans        &trans     &trans
-  &long_th_kp LCTRL A  &long_th_kp LALT S  &long_th_kp LGUI D  &long_th_kp LSHFT F  &long_mo_tp 8 G      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-  &trans               &trans              &trans              &trans               &trans               &trans    &trans    &trans        &trans     &trans
-                                           &mm_mo_hold 2 0     &trans               &trans               &trans    &trans    &trans
+  &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
+  &short_th_kp LCTRL A  &short_th_kp LALT S  &short_th_kp LGUI D  &short_th_kp LSHFT F  &long_mo_tp 8 G      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+  &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
+                                             &mm_mo_hold 2 0      &trans                &trans               &trans    &trans    &trans
             >;
         };
 

@@ -979,6 +979,17 @@
             tapping-term-ms = <350>;
             flavor = "tap-preferred";
         };
+
+        short_th_kp: short_th_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHORT_TH_KP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            require-prior-idle-ms = <0>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {

@@ -1114,7 +1114,7 @@
 
         HYPER {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &ht_macro_hyperkey PIPE Y          &macro_hyperkey U                  &macro_hyperkey I                      &macro_hyperkey O                   &macro_hyperkey P
+  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH                      &macro_hyperkey U                  &macro_hyperkey I                      &macro_hyperkey O                   &macro_hyperkey P
   &kp DOUBLE_QUOTES           &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &ht_single_tap LG(LS(LEFT)) GRAVE  &ht_macro_hyperkey LS(LG(DOWN)) J  &ht_macro_hyperkey LS(LG(UP_ARROW)) K  &ht_macro_hyperkey LS(LG(RIGHT)) L  &single_tap SINGLE_QUOTE
   &trans                      &kp PLUS   &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR                           &mkp MB4                           &mkp MB5                               &single_tap EQUAL                   &single_tap DOUBLE_QUOTES
                                          &trans                       &flush_stuck           &trans                              &mac_lgui_tab                      &kp LS(ENTER)                      &kp DELETE

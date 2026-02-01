@@ -406,6 +406,14 @@
 
             label = "MACRO_MT_AND_TAP_ON_RELEASE";
         };
+
+        macro_f20_layer2: macro_f20_layer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F20>, <&macro_tap>, <&mo 2>;
+
+            label = "MACRO_F20_LAYER2";
+        };
     };
 
     combos {

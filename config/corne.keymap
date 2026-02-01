@@ -410,7 +410,12 @@
         macro_f20_layer2: macro_f20_layer2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F20>, <&macro_tap>, <&mo 2>;
+            bindings =
+                <&macro_tap>,
+                <&kp F20>,
+                <&macro_press>,
+                <&mo 2>,
+                <&macro_pause_for_release>;
 
             label = "MACRO_F20_LAYER2";
         };

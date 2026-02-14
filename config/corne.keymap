@@ -930,7 +930,7 @@
   &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
   &short_th_kp LCTRL A  &short_th_kp LALT S  &short_th_kp LGUI D  &short_th_kp LSHFT F  &long_mo_tp 4 G      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
   &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
-                                             &trans               &trans                &trans               &trans    &trans    &trans
+                                             &macro_f16_layer2    &trans                &trans               &trans    &trans    &trans
             >;
         };
 

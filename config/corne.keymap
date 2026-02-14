@@ -329,7 +329,7 @@
 
             label = "MACRO_STICKY_AND_MOUSE_OFF";
         };
-
+/*
         num_single_tap: num_single_tap {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -342,7 +342,7 @@
 
             label = "NUM_SINGLE_TAP";
         };
-
+*/
         macro_hyperkey: macro_hyperkey {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;

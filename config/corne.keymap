@@ -329,7 +329,8 @@
 
             label = "MACRO_STICKY_AND_MOUSE_OFF";
         };
-/*
+
+        /*
         num_single_tap: num_single_tap {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -343,6 +344,7 @@
             label = "NUM_SINGLE_TAP";
         };
 */
+
         macro_hyperkey: macro_hyperkey {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -678,7 +680,8 @@
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
             ignore-numbers;
         };
-/*
+
+        /*
         num_word: num_word {
             compatible = "zmk,behavior-num-word";
             #binding-cells = <0>;
@@ -687,6 +690,7 @@
             ignore-numbers;
         };
 */
+
         tab_swap: tab_swap {
             compatible = "zmk,behavior-tri-state";
             label = "TAB_SWAPPER";
@@ -911,7 +915,7 @@
   &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
   &short_th_kp LCTRL A  &short_th_kp LALT S  &short_th_kp LGUI D  &short_th_kp LSHFT F  &long_mo_tp 4 G      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
   &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
-                                             &macro_f20_layer2    &trans                &trans               &trans    &trans    &trans
+                                             &trans               &trans                &trans               &trans    &trans    &trans
             >;
         };
 

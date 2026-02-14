@@ -895,6 +895,14 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <15 16 17 18>;
         };
+
+        num_layer_from_nav: num_layer_from_nav {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NUM_LAYER_FROM_NAV";
+            bindings = <&macro_f20_layer2>;
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {

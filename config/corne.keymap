@@ -899,7 +899,7 @@
         num_layer_from_nav: num_layer_from_nav {
             compatible = "zmk,behavior-hold-tap";
             label = "NUM_LAYER_FROM_NAV";
-            bindings = <&macro_f20_layer2>, <&trans>;
+            bindings = <&macro_f20_layer2>, <&none>;
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;

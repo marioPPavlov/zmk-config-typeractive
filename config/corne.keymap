@@ -51,10 +51,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 2 &kp LSHIFT>,
+                <&mo 3 &kp LSHIFT>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 2 &kp LEFT_SHIFT>;
+                <&mo 3 &kp LEFT_SHIFT>;
 
             label = "SMART_TAB_SHIFT";
         };
@@ -414,7 +414,7 @@
                 <&macro_tap>,
                 <&kp F20>,
                 <&macro_press>,
-                <&mo 2>,
+                <&mo 3>,
                 <&macro_pause_for_release>;
 
             label = "MACRO_F20_LAYER2";
@@ -444,7 +444,7 @@
         combo_right_bracket {
             bindings = <&single_tap RIGHT_BRACKET>;
             key-positions = <16 17>;
-            layers = <0 1 3 4>;
+            layers = <0 1 2 4>;
         };
 
         combo_paren_left {
@@ -462,7 +462,7 @@
         combo_tog_mouse {
             bindings = <&mouse_mode_color_on>;
             key-positions = <16 7>;
-            layers = <0 1 2 8>;
+            layers = <0 1 3 8>;
         };
 
         combo_minus {
@@ -513,61 +513,61 @@
         combo_zero {
             bindings = <&kp KP_NUMBER_0>;
             key-positions = <14 4>;
-            layers = <0 1 3 4>;
+            layers = <0 1 2 4>;
         };
 
         combo_one {
             bindings = <&long_combo_th EXCL NUMBER_1>;
             key-positions = <13 3>;
-            layers = <0 1 3 4>;
+            layers = <0 1 2 4>;
         };
 
         combo_two {
             bindings = <&long_combo_th AT_SIGN NUMBER_2>;
             key-positions = <12 2>;
-            layers = <0 1 3 4>;
+            layers = <0 1 2 4>;
         };
 
         combo_three {
             bindings = <&kp NUMBER_3>;
             key-positions = <11 1>;
-            layers = <0 1 3 4>;
+            layers = <0 1 2 4>;
         };
 
         combo_four {
             bindings = <&kp NUMBER_4>;
             key-positions = <10 0>;
-            layers = <0 1 3 4>;
+            layers = <0 1 2 4>;
         };
 
         combo_five {
             bindings = <&kp KP_NUMBER_5>;
             key-positions = <15 5>;
-            layers = <0 1 2 4>;
+            layers = <0 1 3 4>;
         };
 
         combo_six {
             bindings = <&kp KP_NUMBER_6>;
             key-positions = <16 6>;
-            layers = <0 1 2 4>;
+            layers = <0 1 3 4>;
         };
 
         combo_seven {
             bindings = <&kp KP_N7>;
             key-positions = <17 7>;
-            layers = <0 1 2 4>;
+            layers = <0 1 3 4>;
         };
 
         combo_8 {
             bindings = <&kp KP_NUMBER_8>;
             key-positions = <18 8>;
-            layers = <0 2 4 1>;
+            layers = <0 3 4 1>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
             key-positions = <19 9>;
-            layers = <0 1 2 4>;
+            layers = <0 1 3 4>;
         };
 
         combo_star {
@@ -1014,7 +1014,7 @@
   &kp Q                           &kp W                            &kp E                          &ht_maclanguage_r 0 R       &long_mo_tp 10 T        &ht_single_tap BACKSLASH Y  &kp U                      &kp I                        &kp O                      &kp P
   &long_th_kp LCTRL A             &long_th_kp LALT S               &long_th_kp LGUI D             &long_th_kp LSHFT F         &long_mo_tp 8 G         &kp H                       &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 9 N             &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &ht_mo_navword 2 0             &mm_space_htlgui            &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER            &mm_backspace_delete
+                                                                   &ht_mo_navword 3 0             &mm_space_htlgui            &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER            &mm_backspace_delete
             >;
         };
 
@@ -1029,6 +1029,16 @@
             label = "PC";
         };
 
+        NAV {
+            display-name = "NAV";
+            bindings = <
+  &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
+  &short_th_kp LCTRL A  &short_th_kp LALT S  &short_th_kp LGUI D  &short_th_kp LSHFT F  &long_mo_tp 8 G      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+  &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
+                                             &trans               &trans                &trans               &trans    &trans    &trans
+            >;
+        };
+
         NUM {
             display-name = "NUM";
             bindings = <
@@ -1036,16 +1046,6 @@
   &trans  &trans  &trans  &trans  &trans      &single_tap N0  &single_tap NUMBER_1  &single_tap NUMBER_2  &single_tap NUMBER_3  &ht_single_tap COLON NUMBER_4
   &trans  &trans  &trans  &trans  &trans      &kp STAR        &kp MINUS             &kp PLUS              &kp EQUAL             &trans
                   &trans  &trans  &trans      &kp COMMA       &kp DOT               &trans
-            >;
-        };
-
-        NAV {
-            display-name = "NAV";
-            bindings = <
-  &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
-  &short_th_kp LCTRL A  &short_th_kp LALT S  &short_th_kp LGUI D  &short_th_kp LSHFT F  &long_mo_tp 8 G      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-  &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
-                                             &macro_f20_layer2    &trans                &trans               &trans    &trans    &trans
             >;
         };
 
@@ -1162,7 +1162,7 @@
         };
 
         nav {
-            if-layers = <1 3>;
+            if-layers = <1 2>;
             then-layer = <4>;
         };
     };

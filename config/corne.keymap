@@ -877,6 +877,18 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        short_mo_tp: short_mo_tp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHORT_MO_TP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            require-prior-idle-ms = <50>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <15 16 17 18>;
+        };
     };
 
     keymap {
@@ -888,7 +900,7 @@
   &kp Q                           &kp W                            &kp E                          &ht_maclanguage_r 0 R       &long_mo_tp 6 T         &ht_single_tap BACKSLASH Y  &kp U                      &kp I                        &kp O                      &kp P
   &long_th_kp LCTRL A             &long_th_kp LALT S               &long_th_kp LGUI D             &long_th_kp LSHFT F         &long_mo_tp 4 G         &kp H                       &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 5 N             &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &ht_mo_navword 2 0             &mm_space_htlgui            &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER            &mm_backspace_delete
+                                                                   &ht_mo_navword 2 0             &short_mo_tp 8 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER            &mm_backspace_delete
             >;
         };
 
@@ -973,7 +985,7 @@
   &kp LG(Q)                           &kp LG(W)                            &kp LG(E)                          &ht_maclanguage_r 0 LG(R)       &long_mo_tp 6 LG(T)      &ht_single_tap BACKSLASH Y           &kp U                          &kp I                                  &kp O                            &kp P
   &long_th_kp LG(LCTRL) LG(A)         &long_th_kp LG(LALT) LG(S)           &long_th_kp LGUI LG(D)             &long_th_kp LG(LSHFT) LG(F)     &long_mo_tp 4 LG(G)      &long_th_kp LG(LEFT_ARROW) LA(LEFT)  &long_th_kp LG(DOWN) LA(DOWN)  &long_th_kp LG(UP_ARROW) LA(UP_ARROW)  &long_th_kp LG(RIGHT) LA(RIGHT)  &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION LG(Z)  &ht_single_tap_weak LESS_THAN LG(X)  &ht_single_tap GREATER_THAN LG(C)  &long_th_kp LS(LC(LALT)) LG(V)  &kp LG(B)                &long_mo_tp 5 N                      &long_th_kp RIGHT_SHIFT M      &long_th_kp RIGHT_GUI COMMA            &long_th_kp RIGHT_ALT DOT        &long_th_kp RIGHT_CONTROL FSLH
-                                                                           &ht_mo_navword 1 0                 &mm_space_htlgui                &mm_esc_hyperlayer       &mm_shift_capsword                   &mt LCTRL ENTER                &mm_backspace_delete
+                                                                           &ht_mo_navword 1 0                 &short_mo_tp 8 SPACE            &mm_esc_hyperlayer       &mm_shift_capsword                   &mt LCTRL ENTER                &mm_backspace_delete
             >;
         };
     };

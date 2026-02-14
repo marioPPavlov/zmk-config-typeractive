@@ -713,43 +713,6 @@
             ignored-key-positions = <43>;
         };
 
-        linux_grave_swap: linux_grave_swap {
-            compatible = "zmk,behavior-tri-state";
-            label = "LINUX_GRAVE_SWAPPER";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp GRAVE>, <&kt LALT>;
-
-            ignored-key-positions = <43>;
-        };
-
-        linux_grave_swap_shift: linux_grave_swap_shift {
-            compatible = "zmk,behavior-tri-state";
-            label = "LINUX_GRAVE_SWAP_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp LS(GRAVE)>, <&kt LALT>;
-
-            ignored-key-positions = <43>;
-        };
-
-        linux_tab_swap: linux_tab_swap {
-            compatible = "zmk,behavior-tri-state";
-            label = "LINUX_TAB_SWAP";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-
-            ignored-key-positions = <43>;
-        };
-
-        mm_space_htctrl: mm_space_htctrl {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_SPACE_HTCTRL";
-            bindings = <&ht_kp LCTRL SPACE>, <&kp LS(LCTRL)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
         mm_space_htlgui: mm_space_htlgui {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SPACE_HTLGUI";
@@ -778,17 +741,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
-        };
-
-        ht_kp_kp: ht_kp_kp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_KP_KP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            require-prior-idle-ms = <200>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <175>;
         };
 
         mm_backspace_delete: mm_backspace_delete {
@@ -841,16 +793,6 @@
             mods = <(MOD_LSFT)>;
         };
 
-        ht_num_single_tap: ht_num_single_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_NUM_SINGLE_TAP";
-            bindings = <&num_single_tap>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
         ht_sk_shift_capsword: ht_sk_shift_capsword {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_SK_SHIFT_CAPSWORD";
@@ -860,16 +802,6 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <1 2 3 4 5 15 16 17 18 19 29 30 31 32 33>;
-        };
-
-        ht_num_single_tap_weak: ht_num_single_tap_weak {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_NUM_SINGLE_TAP_WEAK";
-            bindings = <&num_single_tap>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <275>;
-            flavor = "tap-preferred";
         };
 
         ht_single_tap_weak: ht_single_tap_weak {
@@ -924,53 +856,6 @@
             flavor = "tap-preferred";
         };
 
-        mm_left_page: mm_left_page {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_LEFT_PAGE";
-            bindings = <&kp LEFT>, <&kp HOME>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        mm_down_page: mm_down_page {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_DOWN_PAGE";
-            bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        mm_up_page: mm_up_page {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_UP_PAGE";
-            bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        mm_right_page: mm_right_page {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_RIGHT_PAGE";
-            bindings = <&kp RIGHT>, <&kp END>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        mm_mo_hold: mm_mo_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MM_MO_HOLD";
-            bindings = <&mo>, <&none>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <7 8>;
-            tapping-term-ms = <175>;
-        };
-
         long_combo_th: long_combo_th {
             compatible = "zmk,behavior-hold-tap";
             label = "LONG_COMBO_TH";
@@ -979,17 +864,6 @@
             #binding-cells = <2>;
             require-prior-idle-ms = <0>;
             tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-        };
-
-        really_long_mo_ht: really_long_mo_ht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "REALLY_LONG_MO_HT";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            require-prior-idle-ms = <300>;
-            tapping-term-ms = <350>;
             flavor = "tap-preferred";
         };
 

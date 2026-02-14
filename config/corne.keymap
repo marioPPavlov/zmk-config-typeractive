@@ -413,20 +413,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo 2>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_tap>,
-                <&kp F16>;
-
-            label = "MACRO_F20_LAYER2";
-        };
-
-        macro_f16_layer2: macro_f16_layer2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
                 <&macro_tap>,
                 <&kp F16>,
                 <&macro_press>,
@@ -435,7 +421,7 @@
                 <&macro_release>,
                 <&mo 2>;
 
-            label = "MACRO_F16_LAYER2";
+            label = "MACRO_F20_LAYER2";
         };
     };
 
@@ -930,7 +916,7 @@
   &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
   &short_th_kp LCTRL A  &short_th_kp LALT S  &short_th_kp LGUI D  &short_th_kp LSHFT F  &long_mo_tp 4 G      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
   &trans                &trans               &trans               &trans                &trans               &trans    &trans    &trans        &trans     &trans
-                                             &macro_f16_layer2    &trans                &trans               &trans    &trans    &trans
+                                             &macro_f20_layer2    &trans                &trans               &trans    &trans    &trans
             >;
         };
 

@@ -428,12 +428,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_toggle_base_mac {
-            bindings = <&tog 0>;
-            key-positions = <7 8 9>;
-            layers = <0 3>;
-        };
-
         mac_screenshot_clipboard {
             bindings = <&kp LS(LC(LG(NUMBER_4)))>;
             key-positions = <10 20>;
@@ -495,11 +489,6 @@
         combo_tab_shift {
             bindings = <&kp LS(TAB)>;
             key-positions = <16 26>;
-        };
-
-        combo_sl_bluetooh {
-            bindings = <&sl 5>;
-            key-positions = <1 2 3>;
         };
 
         combo_left_brace {
@@ -572,12 +561,6 @@
             layers = <0 2>;
         };
 
-        combo_star {
-            bindings = <&kp STAR>;
-            key-positions = <18 8>;
-            layers = <7>;
-        };
-
         combo_ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <17 7>;
@@ -624,6 +607,21 @@
             bindings = <&kp N9>;
             key-positions = <10 0>;
             layers = <7>;
+        };
+
+        lgui_lshift_combo {
+            bindings = <&kp LS(LGUI)>;
+            key-positions = <13 12>;
+        };
+
+        lalt_lshift_combo {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <13 11>;
+        };
+
+        lctrl_lshift_combo {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <13 10>;
         };
     };
 

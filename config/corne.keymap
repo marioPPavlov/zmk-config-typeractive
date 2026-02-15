@@ -623,6 +623,21 @@
             bindings = <&kp LS(LCTRL)>;
             key-positions = <13 10>;
         };
+
+        lgui_lcombo_r_combo {
+            bindings = <&kp LS(LGUI)>;
+            key-positions = <26 27>;
+        };
+
+        lalt_lshift_r_combo {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <26 28>;
+        };
+
+        lctrl_lshift_r_combo {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <26 29>;
+        };
     };
 
     behaviors {

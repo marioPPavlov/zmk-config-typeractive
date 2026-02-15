@@ -995,10 +995,10 @@
         cmd_layer {
             display-name = "BASE";
             bindings = <
-  &kp LG(Q)                           &kp LG(W)                            &kp LG(E)                          &ht_maclanguage_r 0 LG(R)       &long_mo_tp 6 LG(T)      &ht_select_line_mac 0 LG(C)  &trans                &trans                 &trans         &kp LG(P)
+  &kp LG(Q)                           &kp LG(W)                            &kp LG(E)                          &ht_maclanguage_r 0 LG(R)       &long_mo_tp 6 LG(T)      &ht_select_line_mac 0 LG(C)  &trans                &trans                 &trans         &kp LG(V)
   &long_th_kp LG(LCTRL) LG(A)         &long_th_kp LG(LALT) LG(S)           &long_th_kp LGUI LG(D)             &long_th_kp LSHFT LG(F)         &long_mo_tp 4 LG(G)      &kp LA(LEFT_ARROW)           &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &trans
   &ht_single_tap_weak QUESTION LG(Z)  &ht_single_tap_weak LESS_THAN LG(X)  &ht_single_tap GREATER_THAN LG(C)  &long_th_kp LS(LC(LALT)) LG(V)  &kp LG(B)                &trans                       &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
-                                                                           &ht_mo_navword 1 0                 &short_mo_tp 8 SPACE            &mm_esc_hyperlayer       &mm_shift_capsword           &mt LCTRL ENTER       &mm_backspace_delete
+                                                                           &ht_mo_navword 1 0                 &short_mo_tp 8 SPACE            &mm_esc_hyperlayer       &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete
             >;
         };
     };

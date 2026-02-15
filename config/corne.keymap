@@ -463,7 +463,7 @@
 
         combo_minus {
             bindings = <&kp MINUS>;
-            key-positions = <23 22>;
+            key-positions = <22 27>;
         };
 
         mac_screenshot_image {
@@ -473,7 +473,7 @@
 
         combo_underscore {
             bindings = <&kp UNDER>;
-            key-positions = <26 27>;
+            key-positions = <26 23>;
         };
 
         combo_plus {

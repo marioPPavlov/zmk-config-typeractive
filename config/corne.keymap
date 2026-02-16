@@ -728,16 +728,6 @@
             ignored-key-positions = <43>;
         };
 
-        mm_space_htlgui: mm_space_htlgui {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_SPACE_HTLGUI";
-            bindings = <&ht_kp LGUI SPACE>, <&kp LS(LGUI)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-
         ht_kp_mb1_and_off: ht_kp_mb1_and_off {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_KP_MB1_AND_OFF";

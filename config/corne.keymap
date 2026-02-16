@@ -773,7 +773,7 @@
             bindings = <&single_tap>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
+            tapping-term-ms = <145>;
             flavor = "tap-preferred";
         };
 

@@ -433,16 +433,6 @@
             key-positions = <10 20>;
         };
 
-        combo_left_bracket {
-            bindings = <&single_tap LEFT_BRACKET>;
-            key-positions = <2 3 13 12 1 11 10 0>;
-        };
-
-        combo_right_bracket {
-            bindings = <&single_tap RIGHT_BRACKET>;
-            key-positions = <6 7 8 9 17 16 18 19>;
-        };
-
         combo_paren_left {
             bindings = <&single_tap LEFT_PARENTHESIS>;
             key-positions = <13 14>;
@@ -532,13 +522,13 @@
         };
 
         combo_five {
-            bindings = <&kp KP_NUMBER_5>;
+            bindings = <&long_combo_th PERCENT KP_NUMBER_5>;
             key-positions = <15 5>;
             layers = <0 2>;
         };
 
         combo_six {
-            bindings = <&kp KP_NUMBER_6>;
+            bindings = <&long_combo_th LCTRL KP_NUMBER_6>;
             key-positions = <16 6>;
             layers = <0 2>;
         };

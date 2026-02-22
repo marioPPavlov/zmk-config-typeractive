@@ -520,13 +520,13 @@
         };
 
         combo_three {
-            bindings = <&kp NUMBER_3>;
+            bindings = <&long_combo_th HASH NUMBER_3>;
             key-positions = <11 1>;
             layers = <0 1>;
         };
 
         combo_four {
-            bindings = <&kp NUMBER_4>;
+            bindings = <&long_combo_th DOLLAR NUMBER_4>;
             key-positions = <10 0>;
             layers = <0 1>;
         };

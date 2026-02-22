@@ -919,6 +919,16 @@
             tapping-term-ms = <175>;
             flavor = "tap-preferred";
         };
+
+        ht_single_tap_semi_weak: ht_single_tap_semi_weak {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_SINGLE_TAP_SEMI_WEAK";
+            bindings = <&single_tap>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -927,10 +937,10 @@
         BASE {
             display-name = "BASE";
             bindings = <
-  &kp Q                           &ht_single_tap_weak MINUS W      &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 6 T         &ht_single_tap BACKSLASH Y  &ht_single_tap LEFT_BRACKET U  &ht_single_tap_weak RIGHT_BRACKET I  &ht_single_tap_weak UNDERSCORE O  &kp P
-  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &short_mo_tp 4 G        &kp H                       &kp J                          &kp K                                &kp L                             &ht_single_tap COLON SEMI
-  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 5 N             &long_th_kp RIGHT_SHIFT M      &long_th_kp RIGHT_GUI COMMA          &long_th_kp RIGHT_ALT DOT         &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &ht_mo_navword 2 0                  &short_mo_tp 8 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER                &mm_backspace_delete
+  &kp Q                           &ht_single_tap_weak MINUS W      &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 6 T         &ht_single_tap BACKSLASH Y  &ht_single_tap_semi_weak LEFT_BRACKET U  &ht_single_tap_semi_weak RIGHT_BRACKET I  &ht_single_tap_weak UNDERSCORE O  &kp P
+  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &short_mo_tp 4 G        &kp H                       &kp J                                    &kp K                                     &kp L                             &ht_single_tap COLON SEMI
+  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 5 N             &long_th_kp RIGHT_SHIFT M                &long_th_kp RIGHT_GUI COMMA               &long_th_kp RIGHT_ALT DOT         &long_th_kp RIGHT_CONTROL FSLH
+                                                                   &ht_mo_navword 2 0                  &short_mo_tp 8 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword          &mt LCTRL ENTER                          &mm_backspace_delete
             >;
         };
 

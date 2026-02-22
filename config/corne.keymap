@@ -534,7 +534,7 @@
         };
 
         combo_seven {
-            bindings = <&kp KP_N7>;
+            bindings = <&long_combo_th AMPERSAND KP_N7>;
             key-positions = <17 7>;
             layers = <0 2>;
         };

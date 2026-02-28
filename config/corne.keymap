@@ -1021,10 +1021,10 @@
         ctrl_layer {
             display-name = "BASE";
             bindings = <
-  &kp LC(Q)                           &kp LC(W)                            &kp LC(E)                          &ht_maclanguage_r 0 LC(R)       &long_mo_tp 6 LC(T)      &ht_select_line_mac 0 LG(C)  &kp LC(U)             &kp RIGHT_BRACKET      &kp UNDER      &kp LG(V)
-  &kp LC(A)                           &kp LC(S)                            &kp LC(D)                          &long_th_kp LSHFT LG(F)         &long_mo_tp 4 LG(G)      &kp LA(LEFT_ARROW)           &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &trans
-  &ht_single_tap_weak QUESTION LG(Z)  &ht_single_tap_weak LESS_THAN LG(X)  &ht_single_tap GREATER_THAN LG(C)  &long_th_kp LS(LC(LALT)) LG(V)  &kp LG(B)                &key_repeat                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
-                                                                           &ht_mo_navword 1 0                 &kp LC(LGUI)                    &mm_esc_hyperlayer       &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete
+  &kp LC(Q)                           &kp LC(W)                            &kp LC(E)           &ht_maclanguage_r 0 LC(R)  &long_mo_tp 6 LC(T)      &ht_select_line_mac 0 LG(C)  &kp LC(U)             &kp RIGHT_BRACKET      &kp UNDER      &kp LG(V)
+  &kp LC(A)                           &kp LC(S)                            &kp LC(D)           &kp LC(F)                  &kp LC(G)                &kp LA(LEFT_ARROW)           &kp LA(LS(LEFT))      &kp LG(K)              &kp LA(RIGHT)  &trans
+  &ht_single_tap_weak QUESTION LG(Z)  &ht_single_tap_weak LESS_THAN LG(X)  &kp LC(C)           &kp LC(V)                  &kp LC(B)                &key_repeat                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
+                                                                           &ht_mo_navword 1 0  &kp LC(LGUI)               &mm_esc_hyperlayer       &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete
             >;
         };
     };

@@ -1021,10 +1021,10 @@
         ctrl_layer {
             display-name = "BASE";
             bindings = <
-  &kp LC(F9)  &kp F8     &kp F7              &kp F6        &kp F5                  &ht_select_line_mac 0 LG(C)  &kp LC(LEFT_BRACKET)  &kp RIGHT_BRACKET      &kp UNDER      &kp LG(V)
-  &kp F4      &kp F3     &kp LC(U)           &kp LC(D)     &kp LC(G)               &kp LG(LEFT_ARROW)           &kp LC(D)             &kp LC(U)              &kp LG(RIGHT)  &trans
-  &kp LC(Z)   &kp LC(X)  &kp LC(C)           &kp LC(V)     &kp LC(B)               &key_repeat                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
-                         &ht_mo_navword 1 0  &kp LC(LGUI)  &mm_esc_hyperlayer      &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete
+  &kp F9     &kp F8     &kp F7              &kp F6        &kp F5                  &ht_select_line_mac 0 LG(C)  &kp LC(LEFT_BRACKET)  &kp RIGHT_BRACKET      &kp UNDER      &kp LG(V)
+  &kp F4     &kp F3     &kp LC(U)           &kp LC(D)     &kp F10                 &kp LG(LEFT_ARROW)           &kp LC(D)             &kp LC(U)              &kp LG(RIGHT)  &trans
+  &kp LC(Z)  &kp LC(X)  &kp LC(C)           &kp LC(V)     &kp LC(B)               &key_repeat                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
+                        &ht_mo_navword 1 0  &kp LC(LGUI)  &mm_esc_hyperlayer      &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete
             >;
         };
     };

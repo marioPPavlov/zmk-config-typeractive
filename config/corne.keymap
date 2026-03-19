@@ -462,7 +462,7 @@
         combo_tog_mouse {
             bindings = <&mouse_mode_color_on>;
             key-positions = <16 7>;
-            layers = <0 3 5>;
+            layers = <0 3>;
         };
 
         combo_minus {
@@ -568,49 +568,49 @@
         combo_ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <17 7>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_caret {
             bindings = <&kp CARET>;
             key-positions = <16 6>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_percent {
             bindings = <&kp PERCENT>;
             key-positions = <15 5>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_five_hand {
             bindings = <&kp KP_NUMBER_5>;
             key-positions = <14 4>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_six_hand {
             bindings = <&kp KP_N6>;
             key-positions = <13 3>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_seven_hand {
             bindings = <&kp KP_NUMBER_7>;
             key-positions = <2 12>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_eight_hand {
             bindings = <&kp KP_N8>;
             key-positions = <11 1>;
-            layers = <8>;
+            layers = <7>;
         };
 
         combo_nine_hand {
             bindings = <&kp N9>;
             key-positions = <10 0>;
-            layers = <8>;
+            layers = <7>;
         };
 
         lgui_lshift_combo {
@@ -785,7 +785,7 @@
         mm_esc_hyperlayer: mm_esc_hyperlayer {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_ESC_HYPERLAYER";
-            bindings = <&ht_mo_eagor_trigger 8 ESCAPE>, <&kp F20>;
+            bindings = <&ht_mo_eagor_trigger 7 ESCAPE>, <&kp F20>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -926,10 +926,10 @@
         BASE {
             display-name = "BASE";
             bindings = <
-  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 7 T         &kp Y               &kp U                      &kp I                        &kp O                      &kp P
-  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &short_mo_tp 5 G        &kp H               &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
-  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 6 N     &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &ht_mo_navword 2 0                  &short_mo_tp 9 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword  &short_mo_tp 10 ENTER      &mm_backspace_delete
+  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 6 T         &kp Y               &kp U                      &kp I                        &kp O                      &kp P
+  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &kp G                   &kp H               &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
+  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 5 N     &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
+                                                                   &ht_mo_navword 2 0                  &short_mo_tp 8 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword  &short_mo_tp 9 ENTER       &mm_backspace_delete
             >;
         };
 
@@ -968,21 +968,10 @@
   &trans  &msc SCRL_LEFT      &mmv MOVE_Y(-1000)  &msc SCRL_RIGHT              &trans                       &trans                  &msc SCRL_UP       &mmv MOVE_Y(-333)  &msc SCRL_DOWN    &trans
   &trans  &mmv MOVE_X(-1000)  &mmv MOVE_Y(1000)   &mmv MOVE_X(1000)            &trans                       &mkp MB2                &mmv MOVE_X(-333)  &mmv MOVE_Y(333)   &mmv MOVE_X(333)  &trans
   &trans  &trans              &trans              &trans                       &trans                       &trans                  &trans             &trans             &mkp MB3          &trans
-                              &navword_mouse_off  &ht_kp_mb1_and_off LGUI MB1  &ht_hyper_and_mouse 8 4      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
+                              &navword_mouse_off  &ht_kp_mb1_and_off LGUI MB1  &ht_hyper_and_mouse 7 4      &macro_shift_mouse_off  &mm_mouse_click    &delete_mouse_off
             >;
 
             label = "MOUSE";
-        };
-
-        FUNCTION {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans      &kp F10       &kp F7        &kp F8            &kp F9         &trans
-  &trans  &trans  &trans  &trans  &trans      &kp RS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans
-  &trans  &trans  &trans  &trans  &trans      &kp F12       &kp F1        &kp F2            &kp F3         &trans
-                  &trans  &trans  &trans      &trans        &trans        &trans
-            >;
-
-            label = "FUNCTION";
         };
 
         BLUE {

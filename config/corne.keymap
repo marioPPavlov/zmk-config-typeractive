@@ -1021,7 +1021,7 @@
         cmd_layer {
             display-name = "BASE";
             bindings = <
-  &kp LG(Q)                           &kp LG(W)                            &kp LG(E)                          &ht_maclanguage_r 0 LG(R)       &long_mo_tp 7 LG(T)      &ht_select_line_mac 0 LG(C)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER      &kp LG(V)
+  &macro_hyperkey Q                   &macro_hyperkey W                    &macro_hyperkey E                  &macro_hyperkey R               &long_mo_tp 7 LG(T)      &ht_select_line_mac 0 LG(C)  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDER      &kp LG(V)
   &macro_hyperkey A                   &macro_hyperkey S                    &macro_hyperkey D                  &macro_hyperkey F               &long_mo_tp 5 LG(G)      &kp LA(LEFT_ARROW)           &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &trans
   &ht_single_tap_weak QUESTION LG(Z)  &ht_single_tap_weak LESS_THAN LG(X)  &ht_single_tap GREATER_THAN LG(C)  &long_th_kp LS(LC(LALT)) LG(V)  &kp LG(B)                &key_repeat                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
                                                                            &ht_mo_navword 1 0                 &trans                          &mm_esc_hyperlayer       &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete

@@ -956,10 +956,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5      &kp F5         &kp F6                  &kp F7                &kp F8                &kp F9
-  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0      &kp F10        &short_th_kp LSHIFT F1  &short_th_kp LGUI F2  &short_th_kp LALT F3  &short_th_kp LCTRL F4
-  &kp LCTRL                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp STAR            &macro_123456  &kp F11                 &kp F12               &trans                &trans
-                                                       &kp COMMA             &kp DOT               &trans              &trans         &trans                  &trans
+  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5      &trans  &trans     &trans     &trans  &trans
+  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0      &trans  &kp LC(D)  &kp LC(U)  &trans  &trans
+  &kp LCTRL                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp STAR            &trans  &trans     &trans     &trans  &trans
+                                                       &kp COMMA             &kp DOT               &trans              &trans  &trans     &trans
             >;
         };
 

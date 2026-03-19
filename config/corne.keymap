@@ -936,10 +936,10 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &trans  &trans  &trans                 &trans  &trans      &trans    &trans    &trans        &trans     &trans
-  &trans  &trans  &trans                 &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-  &trans  &trans  &trans                 &trans  &trans      &trans    &trans    &trans        &trans     &trans
-                  &num_layer_from_nav 0  &trans  &trans      &trans    &trans    &trans
+  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans        &trans     &trans
+  &trans  &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans        &trans     &trans
+                  &mo 2   &trans  &trans      &trans    &trans    &trans
             >;
         };
 
@@ -956,10 +956,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &single_tap N9         &single_tap N8        &single_tap N7        &single_tap NUMBER_6    &single_tap N5      &kp F5  &kp F6                  &kp F7               &kp F8               &kp F9
-  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0      &kp F10 &short_th_kp LSHIFT F1 &short_th_kp LGUI F2  &short_th_kp LALT F3  &short_th_kp LCTRL F4
-  &kp LCTRL              &semi_long_th_kp LALT EQUAL  &semi_long_th_kp LGUI PLUS  &semi_long_th_kp LEFT_SHIFT MINUS  &kp STAR  &macro_123456  &kp F11  &kp F12  &trans  &trans
-                                               &kp COMMA            &kp DOT                &trans              &trans           &trans  &trans
+  &single_tap N9                 &single_tap N8               &single_tap N7              &single_tap NUMBER_6               &single_tap N5      &kp F5         &kp F6                  &kp F7                &kp F8                &kp F9
+  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3         &single_tap NUMBER_2        &single_tap NUMBER_1               &single_tap N0      &kp F10        &short_th_kp LSHIFT F1  &short_th_kp LGUI F2  &short_th_kp LALT F3  &short_th_kp LCTRL F4
+  &kp LCTRL                      &semi_long_th_kp LALT EQUAL  &semi_long_th_kp LGUI PLUS  &semi_long_th_kp LEFT_SHIFT MINUS  &kp STAR            &macro_123456  &kp F11                 &kp F12               &trans                &trans
+                                                              &kp COMMA                   &kp DOT                            &trans              &trans         &trans                  &trans
             >;
         };
 

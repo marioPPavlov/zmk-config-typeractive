@@ -926,7 +926,7 @@
         BASE {
             display-name = "BASE";
             bindings = <
-  &kp Q                           &ht_single_tap_weak MINUS W      &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 7 T         &ht_single_tap BACKSLASH Y  &kp U                      &kp I                        &ht_single_tap_weak UNDERSCORE O  &kp P
+  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 7 T         &ht_single_tap BACKSLASH Y  &kp U                      &kp I                        &ht_single_tap_weak UNDERSCORE O  &kp P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &short_mo_tp 5 G        &kp H                       &kp J                      &kp K                        &kp L                             &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 6 N             &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT         &long_th_kp RIGHT_CONTROL FSLH
                                                                    &ht_mo_navword 2 0                  &short_mo_tp 9 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword          &short_mo_tp 10 ENTER      &mm_backspace_delete
@@ -946,10 +946,10 @@
         nav_shift {
             display-name = "NAV";
             bindings = <
-  &trans  &trans  &trans                 &trans  &trans      &trans        &trans        &trans            &trans         &trans
-  &trans  &trans  &trans                 &trans  &trans      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans
-  &trans  &trans  &trans                 &trans  &trans      &trans        &trans        &trans            &trans         &trans
-                  &num_layer_from_nav 0  &trans  &trans      &trans        &trans        &trans
+  &kp F9  &kp F8  &kp F7                 &kp F6   &kp F5       &trans        &trans        &trans            &trans         &trans
+  &kp F4  &kp F3  &kp F2                 &kp F1   &kp F10      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans
+  &trans  &trans  &kp F12                &kp F11  &trans       &trans        &trans        &trans            &trans         &trans
+                  &num_layer_from_nav 0  &trans   &trans       &trans        &trans        &trans
             >;
         };
 

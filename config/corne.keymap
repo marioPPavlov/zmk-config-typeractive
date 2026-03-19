@@ -936,10 +936,10 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans        &trans     &trans
-  &trans  &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans        &trans     &trans
-                  &mo 2   &trans  &trans      &trans    &trans    &trans
+  &trans  &trans  &trans  &trans  &trans      &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans
+  &trans  &trans  &trans  &trans  &trans      &kp LEFT              &kp DOWN          &kp UP_ARROW       &kp RIGHT  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans     &trans
+                  &mo 2   &trans  &trans      &trans                &trans            &trans
             >;
         };
 

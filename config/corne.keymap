@@ -414,7 +414,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp F20>,
+                <&kp K_COPY>,
                 <&macro_press>,
                 <&mo 3>,
                 <&macro_pause_for_release>,

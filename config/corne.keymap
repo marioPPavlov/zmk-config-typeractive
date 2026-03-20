@@ -693,6 +693,14 @@
             ignore-numbers;
         };
 
+        nav_word_simple: nav_word_simple {
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-num-word";
+            layers = <NAVsimple>;
+            continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
+            ignore-numbers;
+        };
+
         num_word: num_word {
             compatible = "zmk,behavior-num-word";
             #binding-cells = <0>;

@@ -936,20 +936,20 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &kp F9  &kp F8  &kp F7   &kp F6   &kp F5       &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &trans
-  &kp F4  &kp F3  &kp F2   &kp F1   &kp F10      &kp LEFT              &kp DOWN          &kp UP_ARROW       &kp RIGHT  &trans
-  &trans  &trans  &kp F12  &kp F11  &trans       &trans                &trans            &trans             &trans     &trans
-                  &mo 2    &trans   &trans       &trans                &trans            &trans
+  &kp F9  &kp F8  &kp F7   &kp F6   &kp F5       &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE  &trans
+  &kp F4  &kp F3  &kp F2   &kp F1   &kp F10      &kp LEFT       &kp DOWN          &kp UP_ARROW       &kp RIGHT  &trans
+  &trans  &trans  &kp F12  &kp F11  &trans       &trans         &trans            &trans             &trans     &trans
+                  &mo 2    &trans   &trans       &trans         &trans            &trans
             >;
         };
 
         nav_shift {
             display-name = "NAV";
             bindings = <
-  &kp F9  &kp F8  &kp F7                 &kp F6   &kp F5       &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &trans
-  &kp F4  &kp F3  &kp F2                 &kp F1   &kp F10      &kp LS(LEFT)  &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)  &trans
-  &trans  &trans  &kp F12                &kp F11  &trans       &trans        &trans            &trans             &trans         &trans
-                  &num_layer_from_nav 0  &trans   &trans       &trans        &trans            &trans
+  &kp F9  &kp F8  &kp F7                 &kp F6   &kp F5       &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &trans
+  &kp F4  &kp F3  &kp F2                 &kp F1   &kp F10      &kp LS(LEFT)   &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)  &trans
+  &trans  &trans  &kp F12                &kp F11  &trans       &trans         &trans            &trans             &trans         &trans
+                  &num_layer_from_nav 0  &trans   &trans       &trans         &trans            &trans
             >;
         };
 

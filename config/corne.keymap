@@ -437,6 +437,13 @@
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
             label = "MACRO_GRAVE";
         };
+
+        macro_tap_and_navword: macro_tap_and_navword {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "MACRO_TAP_AND_NAVWORD";
+        };
     };
 
     combos {

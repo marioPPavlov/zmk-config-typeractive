@@ -929,7 +929,7 @@
   &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 6 T         &kp Y               &kp U                      &kp I                        &kp O                      &kp P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &kp G                   &kp H               &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                   &long_mo_tp 5 N     &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &ht_mo_navword 2 0                  &short_mo_tp 8 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword  &short_mo_tp 9 ENTER       &mm_backspace_delete
+                                                                   &ht_mo_navword 2 0                  &short_mo_tp 8 SPACE        &mm_esc_hyperlayer      &mm_shift_capsword  &short_mo_tp 0 ENTER       &mm_backspace_delete
             >;
         };
 
@@ -1014,16 +1014,6 @@
   &macro_hyperkey A                   &macro_hyperkey S                    &macro_hyperkey D                  &macro_hyperkey F               &macro_hyperkey G       &kp LA(LEFT_ARROW)           &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &trans
   &ht_single_tap_weak QUESTION LG(Z)  &ht_single_tap_weak LESS_THAN LG(X)  &ht_single_tap GREATER_THAN LG(C)  &long_th_kp LS(LC(LALT)) LG(V)  &kp LG(B)               &key_repeat                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
                                                                            &ht_mo_navword 1 0                 &trans                          &mm_esc_hyperlayer      &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete
-            >;
-        };
-
-        ctrl_layer {
-            display-name = "BASE";
-            bindings = <
-  &kp F9     &kp F8     &kp F7              &kp F6        &kp F5                  &ht_select_line_mac 0 LG(C)  &kp LC(LEFT_BRACKET)  &kp RIGHT_BRACKET      &kp UNDER      &kp LG(V)
-  &kp F4     &kp F3     &kp LC(U)           &kp LC(D)     &kp F10                 &kp LG(LEFT_ARROW)           &kp LC(D)             &kp LC(U)              &kp LG(RIGHT)  &trans
-  &kp LC(Z)  &kp LC(X)  &kp LC(C)           &kp LC(V)     &kp LC(B)               &key_repeat                  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
-                        &ht_mo_navword 1 0  &kp LC(LGUI)  &mm_esc_hyperlayer      &mm_shift_capsword           &mt LGUI ENTER        &mm_backspace_delete
             >;
         };
     };

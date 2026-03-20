@@ -6,9 +6,11 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
-#define NUM 2
-#define NAV 1
-#define NAVsimple 2
+/* Layer indices for behaviors — must NOT be named NAV/NUM/NAVsimple or they
+ * expand in keymap node names (e.g. NUM { → 2 {) and cause duplicate DTS nodes. */
+#define LAYER_NAV 1
+#define LAYER_NAVSIMPLE 2
+#define LAYER_NUM 4
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -695,7 +697,7 @@
         nav_word: nav_word {
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
-            layers = <NAV>;
+            layers = <LAYER_NAV>;
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
             ignore-numbers;
         };
@@ -703,7 +705,7 @@
         nav_word_simple: nav_word_simple {
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
-            layers = <NAVsimple>;
+            layers = <LAYER_NAVSIMPLE>;
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
             ignore-numbers;
         };
@@ -711,7 +713,7 @@
         num_word: num_word {
             compatible = "zmk,behavior-num-word";
             #binding-cells = <0>;
-            layers = <NUM>;
+            layers = <LAYER_NUM>;
             continue-list = <KP_N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0 LSHIFT LGUI LALT COLON MINUS PLUS KP_EQUAL DOT BACKSPACE LEFT_ARROW UP_ARROW DOWN_ARROW RIGHT_ARROW>;
             ignore-numbers;
         };

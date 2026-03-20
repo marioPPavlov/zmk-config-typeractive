@@ -8,6 +8,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #define NUM 2
 #define NAV 1
+#define NAVsimple 2
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>

@@ -466,18 +466,6 @@
             key-positions = <10 20>;
         };
 
-        combo_paren_left {
-            bindings = <&single_tap LEFT_PARENTHESIS>;
-            key-positions = <13 14>;
-            layers = <0>;
-        };
-
-        combo_parent_right {
-            bindings = <&single_tap RIGHT_PARENTHESIS>;
-            key-positions = <15 16>;
-            layers = <0>;
-        };
-
         combo_tog_mouse {
             bindings = <&mouse_mode_color_on>;
             key-positions = <16 7>;
@@ -494,16 +482,6 @@
             key-positions = <10 21>;
         };
 
-        combo_underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <21 22 11 12 2 1>;
-        };
-
-        combo_plus {
-            bindings = <&kp PLUS>;
-            key-positions = <17 27>;
-        };
-
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <13 23>;
@@ -512,16 +490,6 @@
         combo_tab_shift {
             bindings = <&kp LS(TAB)>;
             key-positions = <16 26>;
-        };
-
-        combo_left_brace {
-            bindings = <&single_tap LEFT_BRACE>;
-            key-positions = <14 24>;
-        };
-
-        combo_right_brace {
-            bindings = <&single_tap RIGHT_BRACE>;
-            key-positions = <15 25>;
         };
 
         combo_zero {

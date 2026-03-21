@@ -993,10 +993,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5          &trans  &msc SCRL_DOWN                             &msc SCRL_UP     &trans  &trans
-  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0          &trans  &kp LC(D)  &kp LC(U)  &trans  &trans
-  &kp COLON                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp UNDERSCORE          &trans  &trans     &trans     &trans  &trans
-                                                       &kp COMMA             &kp LGUI              &mm_shift_capsword      &trans  &trans     &trans
+  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5          &trans  &msc SCRL_DOWN  &msc SCRL_UP  &trans  &trans
+  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0          &trans  &kp LC(D)       &kp LC(U)     &trans  &trans
+  &kp COLON                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp UNDERSCORE          &trans  &trans          &trans        &trans  &trans
+                                                       &kp COMMA             &kp LGUI              &mm_shift_capsword      &trans  &trans          &trans
             >;
         };
 
@@ -1035,7 +1035,7 @@
 
         HYPER {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH                              &msc SCRL_DOWN                             &msc SCRL_UP                                       &macro_hyperkey O                            &macro_hyperkey P
+  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH                              &kp LEFT_PARENTHESIS                       &kp RIGHT_PARENTHESIS                              &macro_hyperkey O                            &macro_hyperkey P
   &kp DOUBLE_QUOTES           &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &ht_single_tap_weak LG(LS(LEFT)) LG(LEFT)  &ht_single_tap_weak LS(LG(DOWN)) LG(DOWN)  &ht_single_tap_weak LS(LG(UP_ARROW)) LG(UP_ARROW)  &ht_single_tap_weak LS(LG(RIGHT)) LG(RIGHT)  &single_tap SINGLE_QUOTE
   &trans                      &kp PLUS   &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR                                   &mkp MB4                                   &mkp MB5                                           &single_tap EQUAL                            &single_tap DOUBLE_QUOTES
                                          &trans                       &flush_stuck           &trans                              &mac_lgui_tab                              &kp LS(ENTER)                              &kp DELETE

@@ -931,10 +931,10 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &kp F9  &kp F8  &kp F7          &kp F6   &kp F5       &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &trans
-  &kp F4  &kp F3  &kp F2          &kp F1   &kp F10      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &trans
-  &trans  &trans  &kp F12         &kp F11  &trans       &trans                       &trans                       &trans                           &trans                        &trans
-                  &kp LEFT_SHIFT  &trans   &trans       &trans                       &trans                       &trans
+  &kp F9  &kp F8  &kp F7          &kp F6                &kp F5       &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &trans
+  &kp F4  &kp F3  &kp F2          &kp F1                &kp F10      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &trans
+  &trans  &trans  &kp F12         &kp F11               &trans       &trans                       &trans                       &trans                           &trans                        &trans
+                  &kp LEFT_SHIFT  &short_mo_tp 9 SPACE  &trans       &trans                       &trans                       &trans
             >;
         };
 

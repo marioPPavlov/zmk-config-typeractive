@@ -996,7 +996,7 @@
   &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5          &trans  &trans     &trans     &trans  &trans
   &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0          &trans  &kp LC(D)  &kp LC(U)  &trans  &trans
   &kp COLON                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp UNDERSCORE          &trans  &trans     &trans     &trans  &trans
-                                                       &kp COMMA             &kp DOT               &mm_shift_capsword      &trans  &trans     &trans
+                                                       &kp COMMA             &kp LGUI              &mm_shift_capsword      &trans  &trans     &trans
             >;
         };
 

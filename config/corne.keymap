@@ -6,8 +6,10 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 /* Layer indices for behaviors — must NOT be named NAV/NUM/NAVsimple or they
  * expand in keymap node names (e.g. NUM { → 2 {) and cause duplicate DTS nodes. */
+
 #define LAYER_NAV 1
 #define LAYER_NAVSIMPLE 2
 #define LAYER_NUM 4
@@ -444,12 +446,13 @@
         macro_tap_and_navword: macro_tap_and_navword {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
+
             /* nav_word_simple has #binding-cells = <0> — no MACRO_PLACEHOLDER on it */
+
             bindings =
                 <&macro_param_1to1>,
                 <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&nav_word_simple>;
+                <&kp MACRO_PLACEHOLDER &nav_word_simple>;
 
             label = "MACRO_TAP_AND_NAVWORD";
         };
@@ -960,20 +963,20 @@
         NAV {
             display-name = "NAV";
             bindings = <
-  &kp F9  &kp F8  &kp F7   &kp F6   &kp F5       &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &trans
-  &kp F4  &kp F3  &kp F2   &kp F1   &kp F10      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &trans
-  &trans  &trans  &kp F12  &kp F11  &trans       &trans                       &trans                       &trans                           &trans                        &trans
-                  &mo 3    &trans   &trans       &trans                       &trans                       &trans
+  &kp F9  &kp F8  &kp F7          &kp F6   &kp F5       &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &trans
+  &kp F4  &kp F3  &kp F2          &kp F1   &kp F10      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &trans
+  &trans  &trans  &kp F12         &kp F11  &trans       &trans                       &trans                       &trans                           &trans                        &trans
+                  &kp LEFT_SHIFT  &trans   &trans       &trans                       &trans                       &trans
             >;
         };
 
         NAVsimple {
             display-name = "NAV";
             bindings = <
-  &kp A  &kp A  &kp A  &kp A   &kp A       &kp A     &kp A     &kp A         &kp A      &kp A
-  &kp A  &kp A  &kp A  &kp A   &kp A       &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp A
-  &kp A  &kp A  &kp A  &kp A   &kp A       &kp A     &kp A     &kp A         &kp A      &kp A
-                &mo 3  &trans  &trans      &trans    &trans    &trans
+  &kp A  &kp A  &kp A           &kp A   &kp A       &kp A     &kp A     &kp A         &kp A      &kp A
+  &kp A  &kp A  &kp A           &kp A   &kp A       &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp A
+  &kp A  &kp A  &kp A           &kp A   &kp A       &kp A     &kp A     &kp A         &kp A      &kp A
+                &kp LEFT_SHIFT  &trans  &trans      &trans    &trans    &trans
             >;
         };
 

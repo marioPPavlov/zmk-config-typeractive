@@ -941,7 +941,7 @@
         NAVsimple {
             display-name = "NAV";
             bindings = <
-  &trans  &trans  &trans          &trans  &trans      &trans    &trans    &trans        &trans     &trans
+  &trans  &trans  &trans          &trans  &trans      &kp Y     &kp U     &kp I         &kp O      &trans
   &trans  &trans  &trans          &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
   &trans  &trans  &trans          &trans  &trans      &trans    &trans    &trans        &trans     &trans
                   &kp LEFT_SHIFT  &trans  &trans      &trans    &trans    &trans

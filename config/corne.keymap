@@ -454,6 +454,7 @@
                 <&macro_tap>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
+                <&macro_tap>,
                 <&nav_word_simple>;
 
             label = "MACRO_TAP_AND_NAVWORD";

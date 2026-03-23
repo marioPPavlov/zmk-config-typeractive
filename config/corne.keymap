@@ -451,11 +451,12 @@
 
             bindings =
                 <&macro_param_1to1>,
-                <&macro_tap>,
+                <&macro_press>,
                 <&kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
                 <&macro_tap>,
-                <&nav_word_simple>;
+                <&nav_word_simple>,
+                <&macro_release>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
 
             label = "MACRO_TAP_AND_NAVWORD";
         };

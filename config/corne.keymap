@@ -451,7 +451,7 @@
 
             bindings =
                 <&macro_param_1to1>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp MACRO_PLACEHOLDER>,
                 <&macro_release>,
                 <&nav_word_simple>;

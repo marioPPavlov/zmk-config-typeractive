@@ -936,7 +936,7 @@
             display-name = "NAV";
             bindings = <
   &kp F9  &kp F8  &kp F7          &kp F6                &kp F5       &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &trans
-  &kp F4  &kp F3  &kp F2          &kp F1                &kp F10      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &trans
+  &kp F4  &kp F3  &kp F2          &kp F1                &kp F10      &ht_single_tap_weak LG(LS(LEFT)) LG(LEFT)  &ht_single_tap_weak LS(LG(DOWN)) LG(DOWN)  &ht_single_tap_weak LS(LG(UP_ARROW)) LG(UP_ARROW)  &ht_single_tap_weak LS(LG(RIGHT)) LG(RIGHT)  &single_tap SINGLE_QUOTE
   &trans  &trans  &kp F12         &kp F11               &trans       &trans                       &trans                       &trans                           &trans                        &trans
                   &kp LEFT_SHIFT  &short_mo_tp 9 SPACE  &trans       &trans                       &trans                       &trans
             >;
@@ -1008,7 +1008,7 @@
         HYPER {
             bindings = <
   &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH                              &kp LEFT_PARENTHESIS                       &kp RIGHT_PARENTHESIS                              &macro_hyperkey O                            &macro_hyperkey P
-  &kp DOUBLE_QUOTES           &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &ht_single_tap_weak LG(LS(LEFT)) LG(LEFT)  &ht_single_tap_weak LS(LG(DOWN)) LG(DOWN)  &ht_single_tap_weak LS(LG(UP_ARROW)) LG(UP_ARROW)  &ht_single_tap_weak LS(LG(RIGHT)) LG(RIGHT)  &single_tap SINGLE_QUOTE
+  &kp DOUBLE_QUOTES           &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &trans
   &trans                      &kp PLUS   &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR                                   &mkp MB4                                   &mkp MB5                                           &single_tap EQUAL                            &single_tap DOUBLE_QUOTES
                                          &trans                       &flush_stuck           &trans                              &mac_lgui_tab                              &kp LS(ENTER)                              &kp DELETE
             >;

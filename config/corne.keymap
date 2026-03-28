@@ -472,7 +472,7 @@
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+                <&macro_param_1to1 &single_tap MACRO_PLACEHOLDER>;
 
             label = "MACRO_TAP_AND_NUMWORD";
         };
@@ -992,10 +992,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5      &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
-  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0      &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
-  &kp COLON                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp UNDERSCORE      &trans         &trans          &trans        &trans      &trans
-                                                       &kp K_COPY            &trans                &trans              &trans         &trans          &trans
+  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6             &single_tap N5      &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
+  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &macro_tap_and_numword NUMBER_1  &single_tap N0      &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
+  &kp COLON                      &kp EQUAL             &kp PLUS              &kp MINUS                        &kp UNDERSCORE      &trans         &trans          &trans        &trans      &trans
+                                                       &kp K_COPY            &trans                           &trans              &trans         &trans          &trans
             >;
         };
 

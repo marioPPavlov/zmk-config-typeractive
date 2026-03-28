@@ -917,6 +917,17 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        mo_sl: mo_sl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_SL";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <125>;
+            hold-while-undecided;
+        };
     };
 
     keymap {

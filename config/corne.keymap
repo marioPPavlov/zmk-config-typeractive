@@ -955,10 +955,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5          &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
-  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0          &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
-  &kp COLON                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp UNDERSCORE          &trans         &trans          &trans        &trans      &trans
-                                                       &kp COMMA             &kp LGUI              &mm_shift_capsword      &trans         &trans          &trans
+  &single_tap N9                 &single_tap N8        &single_tap N7        &single_tap NUMBER_6  &single_tap N5      &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
+  &ht_single_tap COLON NUMBER_4  &single_tap NUMBER_3  &single_tap NUMBER_2  &single_tap NUMBER_1  &single_tap N0      &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
+  &kp COLON                      &kp EQUAL             &kp PLUS              &kp MINUS             &kp UNDERSCORE      &trans         &trans          &trans        &trans      &trans
+                                                       &kp K_COPY            &trans                &trans              &trans         &trans          &trans
             >;
         };
 
@@ -1009,10 +1009,10 @@
         HYPER_TAP {
             label = "HYPER_TAP";
             bindings = <
-  &macro_hyperkey Q                   &macro_hyperkey W                    &macro_hyperkey E                  &macro_hyperkey R               &macro_hyperkey T       &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &macro_hyperkey P
-  &macro_hyperkey A                   &macro_hyperkey S                    &macro_hyperkey D                  &macro_hyperkey F               &macro_hyperkey G       &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &kp SINGLE_QUOTE
-  &trans                      &kp PLUS   &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR                     &mkp MB4                     &mkp MB5                         &single_tap EQUAL             &single_tap DOUBLE_QUOTES
-                                         &trans                       &flush_stuck           &kp LEFT_SHIFT                      &mac_lgui_tab                &kp LS(ENTER)                &kp DELETE
+  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R  &macro_hyperkey T      &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &macro_hyperkey P
+  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F  &macro_hyperkey G      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &kp SINGLE_QUOTE
+  &trans             &kp PLUS           &kp LG(Z)          &kp LS(LG(Z))      &kp BACKSPACE          &kp STAR                     &mkp MB4                     &mkp MB5                         &single_tap EQUAL             &single_tap DOUBLE_QUOTES
+                                        &trans             &flush_stuck       &kp LEFT_SHIFT         &mac_lgui_tab                &kp LS(ENTER)                &kp DELETE
             >;
         };
 
@@ -1029,7 +1029,7 @@
         cmd_layer {
             display-name = "BASE";
             bindings = <
-  &macro_hyperkey Q                   &macro_hyperkey W                    &macro_hyperkey E                  &macro_hyperkey R               &macro_hyperkey T       &kp PIPE            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE      &kp LG(V)
+  &macro_hyperkey Q                   &macro_hyperkey W                    &macro_hyperkey E                  &macro_hyperkey R               &macro_hyperkey T       &kp PIPE            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE      &trans
   &macro_hyperkey A                   &macro_hyperkey S                    &macro_hyperkey D                  &macro_hyperkey F               &macro_hyperkey G       &kp LA(LEFT_ARROW)  &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &trans
   &ht_single_tap_weak QUESTION LG(Z)  &ht_single_tap_weak LESS_THAN LG(X)  &ht_single_tap GREATER_THAN LG(C)  &long_th_kp LS(LC(LALT)) LG(V)  &kp LG(B)               &key_repeat         &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
                                                                            &ht_mo_navword 1 0                 &trans                          &mm_esc_hyperlayer      &mm_shift_capsword  &mt LGUI ENTER        &mm_backspace_delete

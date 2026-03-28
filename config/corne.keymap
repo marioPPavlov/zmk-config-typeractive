@@ -11,6 +11,7 @@
  * expand in keymap node names (e.g. NUM { → 2 {) and cause duplicate DTS nodes. */
 
 #define LAYER_NAV 1
+#define LAYER_HYPER_TAP 8
 #define LAYER_NAVSIMPLE 2
 #define LAYER_NUM 4
 
@@ -672,7 +673,7 @@
         nav_word: nav_word {
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
-            layers = <LAYER_NAV>;
+            layers = <LAYER_HYPER_TAP>;
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
             ignore-numbers;
         };

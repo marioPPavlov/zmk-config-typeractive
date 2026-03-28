@@ -467,7 +467,7 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_tap>,
-                <&nav_word_simple>,
+                <&num_word>,
                 <&macro_press>,
                 <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,

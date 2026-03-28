@@ -1023,7 +1023,7 @@
   &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R  &mac_lgui_tab          &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &macro_hyperkey P
   &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F  &macro_hyperkey G      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &kp SINGLE_QUOTE
   &trans             &trans             &kp LG(Z)          &kp LS(LG(Z))      &kp BACKSPACE          &kp STAR                     &mkp MB4                     &mkp MB5                         &single_tap EQUAL             &single_tap DOUBLE_QUOTES
-                                        &trans             &trans             &kp LEFT_SHIFT         &kp LA(BACKSPACE)            &kp LS(BACKSPACE)            &kp LS(ENTER)
+                                        &trans             &trans             &trans                 &kp LA(BACKSPACE)            &kp LS(BACKSPACE)            &kp LS(ENTER)
             >;
         };
 

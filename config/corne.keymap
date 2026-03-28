@@ -1008,10 +1008,10 @@
 
         HYPER {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &macro_hyperkey O  &macro_hyperkey P
-  &kp DOUBLE_QUOTES           &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &kp LS(LEFT)       &kp LS(DOWN)          &kp LS(UP_ARROW)       &kp LS(RIGHT)      &trans
-  &trans                      &kp PLUS   &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR           &mkp MB4              &mkp MB5               &single_tap EQUAL  &single_tap DOUBLE_QUOTES
-                                         &trans                       &flush_stuck           &trans                              &kp LA(BACKSPACE)  &kp BACKSPACE         &kp LS(ENTER)
+  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &macro_hyperkey O  &macro_hyperkey P
+  &kp DOUBLE_QUOTES           &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)      &trans
+  &trans                      &kp PLUS   &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR           &mkp MB4          &mkp MB5           &single_tap EQUAL  &single_tap DOUBLE_QUOTES
+                                         &trans                       &flush_stuck           &trans                              &kp LA(BACKSPACE)  &kp BACKSPACE     &kp LS(ENTER)
             >;
 
             label = "HYPER";

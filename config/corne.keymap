@@ -14,6 +14,7 @@
 #define LAYER_HYPER_TAP 8
 #define LAYER_NAVSIMPLE 2
 #define LAYER_NUM 4
+#define LAYER_NUM_SIMPLE 5
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>

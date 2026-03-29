@@ -956,7 +956,7 @@
   &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T      &kp Y               &kp U                      &kp I                        &kp O                      &kp P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &kp G                &kp H               &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                &long_mo_tp 7 N     &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &short_mo_tp 1 ESCAPE               &long_mo_tp 11 SPACE        &mo_sl 9 10          &mm_shift_capsword  &mo_sl 4 4                 &kp LS(ENTER)
+                                                                   &short_mo_tp 1 ESCAPE               &long_mo_tp 11 SPACE        &mo_sl 9 10          &mm_shift_capsword  &mo_sl 5 4                 &kp LS(ENTER)
             >;
         };
 

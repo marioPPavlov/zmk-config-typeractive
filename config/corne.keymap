@@ -38,6 +38,8 @@
     time-to-max-speed-ms = <1>;
 };
 
+&sl { release-after-ms = <1500>; };
+
 / {
     chosen { zmk,physical-layout = &foostan_corne_5col_layout; };
 };

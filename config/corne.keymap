@@ -938,7 +938,6 @@
 
         mo_sl: mo_sl {
             compatible = "zmk,behavior-hold-tap";
-            label = "MO_SL";
             bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
@@ -953,7 +952,6 @@
             layers = <LAYER_NUM>;
             continue-list = <KP_N1 N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0 LSHIFT LGUI LALT COLON MINUS PLUS KP_EQUAL DOT BACKSPACE LEFT_ARROW UP_ARROW DOWN_ARROW RIGHT_ARROW>;
             ignore-numbers;
-            label = "NEW_BEHAVIOR";
         };
     };
 

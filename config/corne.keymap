@@ -957,7 +957,7 @@
   &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T      &kp Y               &kp U                      &kp I                        &kp O                      &kp P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &kp G                &kp H               &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                &long_mo_tp 7 N     &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &short_mo_tp 1 ESCAPE               &long_mo_tp 11 SPACE        &mo_sl 9 10          &mm_shift_capsword  &mo_sl 5 4                 &kp LS(ENTER)
+                                                                   &short_mo_tp 1 ESCAPE               &long_mo_tp 11 SPACE        &mo_sl 9 10          &mm_shift_capsword  &mo_sl 5 4                 &kp ENTER
             >;
         };
 
@@ -1049,7 +1049,7 @@
   &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE          &macro_hyperkey P
   &kp LG(A)                   &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)      &kp SINGLE_QUOTE
   &trans                      &trans     &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR           &mkp MB4          &mkp MB5           &single_tap EQUAL  &single_tap DOUBLE_QUOTES
-                                         &trans                       &flush_stuck           &trans                              &kp LA(BACKSPACE)  &kp BACKSPACE     &kp ENTER
+                                         &trans                       &flush_stuck           &trans                              &kp LA(BACKSPACE)  &kp BACKSPACE     &kp LS(ENTER)
             >;
 
             label = "HYPER";
@@ -1061,7 +1061,7 @@
   &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R  &mac_lgui_tab          &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &kp P
   &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F  &macro_hyperkey G      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &kp SINGLE_QUOTE
   &trans             &trans             &kp LG(Z)          &kp LS(LG(Z))      &kp BACKSPACE          &kp STAR                     &mkp MB4                     &kp UNDER                        &single_tap EQUAL             &single_tap DOUBLE_QUOTES
-                                        &trans             &trans             &mo_sl 9 10            &kp LA(BACKSPACE)            &kp BACKSPACE                &kp ENTER
+                                        &trans             &trans             &mo_sl 9 10            &kp LA(BACKSPACE)            &kp BACKSPACE                &kp LS(ENTER)
             >;
         };
 

@@ -943,8 +943,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <125>;
-            hold-while-undecided;
+            tapping-term-ms = <137>;
         };
 
         mo_kp: mo_kp {
@@ -952,7 +951,7 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <125>;
             hold-while-undecided;
             label = "MO_KP";

@@ -972,6 +972,15 @@
             hold-while-undecided;
             label = "MO_KP";
         };
+
+        hyper_ht_tap_mm: hyper_ht_tap_mm {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HYPER_HT_TAP_MM";
+            bindings = <&mo_sl 9 10>, <&kp LG(TAB)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {

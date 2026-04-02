@@ -652,6 +652,21 @@
             bindings = <&kp LS(LCTRL)>;
             key-positions = <26 29>;
         };
+
+        combo_plus_2 {
+            bindings = <&kp PLUS>;
+            key-positions = <24 23>;
+        };
+
+        combo_plus_1 {
+            bindings = <&kp PLUS>;
+            key-positions = <21 22>;
+        };
+
+        combo_underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <17 16>;
+        };
     };
 
     behaviors {

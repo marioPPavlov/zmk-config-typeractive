@@ -1094,9 +1094,9 @@
         HYPER_TAP {
             label = "HYPER_TAP";
             bindings = <
-  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R  &mac_lgui_tab          &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &kp P
-  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F  &macro_hyperkey G      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &kp SINGLE_QUOTE
-  &trans             &trans             &kp LG(Z)          &kp LS(LG(Z))      &kp BACKSPACE          &kp STAR                     &mkp MB4                     &kp UNDER                        &single_tap EQUAL             &single_tap DOUBLE_QUOTES
+  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &kp P
+  &kp LG(A)                   &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &kp SINGLE_QUOTE
+  &trans                      &trans     &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR                     &mkp MB4                     &kp UNDER                        &single_tap EQUAL             &single_tap DOUBLE_QUOTES
                                         &trans             &trans             &mo_sl 9 10            &kp LA(BACKSPACE)            &kp BACKSPACE                &kp LS(ENTER)
             >;
         };

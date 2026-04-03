@@ -706,7 +706,7 @@
         nav_word: nav_word {
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
-            layers = <LAYER_HYPER_TAP>;
+            layers = <LAYER_NAVsimple>;
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP BACKSPACE>;
             ignore-numbers;
         };

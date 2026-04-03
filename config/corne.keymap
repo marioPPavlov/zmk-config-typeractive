@@ -707,7 +707,7 @@
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
             layers = <LAYER_HYPER_TAP>;
-            continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
+            continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP BACKSPACE>;
             ignore-numbers;
         };
 

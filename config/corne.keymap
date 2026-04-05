@@ -951,7 +951,7 @@
             flavor = "tap-preferred";
         };
 
-        mo_sl: mo_sl {
+        mo_sl_trigger: mo_sl_trigger {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&sl>;
 
@@ -960,6 +960,7 @@
             tapping-term-ms = <137>;
             hold-trigger-key-positions = <5 6 7 8>;
             hold-while-undecided;
+            retro-tap;
         };
 
         mo_kp: mo_kp {
@@ -976,7 +977,7 @@
         hyper_ht_tap_mm: hyper_ht_tap_mm {
             compatible = "zmk,behavior-mod-morph";
             label = "HYPER_HT_TAP_MM";
-            bindings = <&mo_sl 9 10>, <&mac_lgui_tab>;
+            bindings = <&mo_sl_trigger 9 10>, <&mac_lgui_tab>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -1096,7 +1097,7 @@
   &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &kp GRAVE
   &kp LG(A)                   &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &kp SINGLE_QUOTE
   &trans                      &trans     &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR                     &mkp MB4                     &mkp MB5                         &single_tap EQUAL             &single_tap DOUBLE_QUOTES
-                                         &trans                       &trans                 &mo_sl 9 10                         &kp LA(BACKSPACE)            &kp BACKSPACE                &kp LS(ENTER)
+                                         &trans                       &trans                 &mo_sl_trigger 9 10                 &kp LA(BACKSPACE)            &kp BACKSPACE                &kp LS(ENTER)
             >;
         };
 

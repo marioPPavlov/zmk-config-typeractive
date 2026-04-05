@@ -982,6 +982,18 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mo_sl: mo_sl {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <137>;
+            hold-trigger-key-positions = <5 6 7 8>;
+            hold-while-undecided;
+            label = "MO_SL";
+        };
     };
 
     keymap {

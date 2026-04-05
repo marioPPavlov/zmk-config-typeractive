@@ -974,10 +974,10 @@
             label = "MO_KP";
         };
 
-        hyper_ht_tap_mm: hyper_ht_tap_mm {
+        num_space_short_mo_tap_mm: num_space_short_mo_tap_mm {
             compatible = "zmk,behavior-mod-morph";
-            label = "HYPER_HT_TAP_MM";
-            bindings = <&mo_sl_trigger 9 10>, <&mac_lgui_tab>;
+            label = "NUM_SPACE_SHORT_MO_TAP_MM";
+            bindings = <&short_mo_tp 11 SPACE>, <&mac_lgui_tab>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;

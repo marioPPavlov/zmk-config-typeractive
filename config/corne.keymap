@@ -16,8 +16,10 @@
 #define LAYER_NUM 4
 #define LAYER_NUM_SIMPLE 5
 
-/* Shared by digit combos (combo_zero … combo_nine). */
-#define COMBO_NUM_PRIOR_IDLE_MS 35
+/* Digit combos + NAV-on-space hold-tap; tune in one place. */
+#define PRIOR_IDLE_MS 35
+#define COMBO_NUM_PRIOR_IDLE_MS PRIOR_IDLE_MS
+#define SHORT_MO_SPACE_PRIOR_IDLE_MS PRIOR_IDLE_MS
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -934,6 +936,18 @@
             hold-trigger-key-positions = <15 16 17 18 26 27>;
         };
 
+        short_mo_tp_space: short_mo_tp_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHORT_MO_TP_SPACE";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <15 16 17 18 26 27>;
+        };
+
         num_layer_from_nav: num_layer_from_nav {
             compatible = "zmk,behavior-hold-tap";
             label = "NUM_LAYER_FROM_NAV";
@@ -990,7 +1004,7 @@
         num_space_short_mo_tap_mm: num_space_short_mo_tap_mm {
             compatible = "zmk,behavior-mod-morph";
             label = "NUM_SPACE_SHORT_MO_TAP_MM";
-            bindings = <&short_mo_tp 11 SPACE>, <&mac_lgui_tab>;
+            bindings = <&short_mo_tp_space 11 SPACE>, <&mac_lgui_tab>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -1028,7 +1042,7 @@
   &kp F9  &kp F8  &kp F7   &kp F6                 &kp F5       &kp PIPE                                   &kp LEFT_PARENTHESIS                       &kp RIGHT_PARENTHESIS                              &kp TILDE                                    &trans
   &kp F4  &kp F3  &kp F2   &kp F1                 &kp F10      &ht_single_tap_weak LG(LS(LEFT)) LG(LEFT)  &ht_single_tap_weak LS(LG(DOWN)) LG(DOWN)  &ht_single_tap_weak LS(LG(UP_ARROW)) LG(UP_ARROW)  &ht_single_tap_weak LS(LG(RIGHT)) LG(RIGHT)  &trans
   &trans  &trans  &kp F12  &kp F11                &trans       &trans                                     &trans                                     &trans                                             &trans                                       &trans
-                  &trans   &short_mo_tp 11 SPACE  &trans       &trans                                     &trans                                     &trans
+                  &trans   &short_mo_tp_space 11 SPACE  &trans       &trans                                     &trans                                     &trans
             >;
         };
 

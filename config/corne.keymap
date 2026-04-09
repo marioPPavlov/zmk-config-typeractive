@@ -21,6 +21,9 @@
 #define COMBO_NUM_PRIOR_IDLE_MS PRIOR_IDLE_MS
 #define SHORT_MO_SPACE_PRIOR_IDLE_MS PRIOR_IDLE_MS
 
+/* Hold duration before NAV layer wins over tap (space). Generic short_mo_tp stays 150. */
+#define SHORT_MO_SPACE_TAPPING_TERM_MS 200
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -943,7 +946,7 @@
 
             #binding-cells = <2>;
             require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <SHORT_MO_SPACE_TAPPING_TERM_MS>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <15 16 17 18 26 27>;
         };
@@ -1001,10 +1004,11 @@
             label = "MO_KP";
         };
 
-        num_space_short_mo_tap_mm: num_space_short_mo_tap_mm {
+        /* Shift + Esc tap: app switcher; else Esc hold-tap (NAV + Esc). Space has no morph. */
+        esc_shift_lgui_tab_mm: esc_shift_lgui_tab_mm {
             compatible = "zmk,behavior-mod-morph";
-            label = "NUM_SPACE_SHORT_MO_TAP_MM";
-            bindings = <&short_mo_tp_space 11 SPACE>, <&mac_lgui_tab>;
+            label = "ESC_SHIFT_LGUI_TAB_MM";
+            bindings = <&short_mo_tp 1 ESCAPE>, <&mac_lgui_tab>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -1032,7 +1036,7 @@
   &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T          &kp Y               &kp U                      &kp I                        &kp O                      &kp P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &kp G                    &kp H               &kp J                      &kp K                        &kp L                      &ht_single_tap COLON SEMI
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                    &long_mo_tp 7 N     &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &short_mo_tp 1 ESCAPE               &num_space_short_mo_tap_mm  &mo_sl_trigger 9 10      &mm_shift_capsword  &short_mo_tp 4 BACKSPACE   &kp ENTER
+                                                                   &esc_shift_lgui_tab_mm             &short_mo_tp_space 11 SPACE  &mo_sl_trigger 9 10      &mm_shift_capsword  &short_mo_tp 4 BACKSPACE   &kp ENTER
             >;
         };
 

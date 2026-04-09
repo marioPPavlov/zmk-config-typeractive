@@ -17,7 +17,7 @@
 #define LAYER_NUM_SIMPLE 5
 
 /* Digit combos + NAV-on-space hold-tap; tune in one place. */
-#define PRIOR_IDLE_MS 35
+#define PRIOR_IDLE_MS 75
 #define COMBO_NUM_PRIOR_IDLE_MS PRIOR_IDLE_MS
 #define SHORT_MO_SPACE_PRIOR_IDLE_MS PRIOR_IDLE_MS
 

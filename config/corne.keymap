@@ -16,6 +16,9 @@
 #define LAYER_NUM 4
 #define LAYER_NUM_SIMPLE 5
 
+/* Shared by digit combos (combo_zero … combo_nine). */
+#define COMBO_NUM_PRIOR_IDLE_MS 35
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -519,60 +522,70 @@
             bindings = <&kp KP_NUMBER_0>;
             key-positions = <14 4>;
             layers = <0 1>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_one {
             bindings = <&long_combo_th EXCL NUMBER_1>;
             key-positions = <13 3>;
             layers = <0 1>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_two {
             bindings = <&long_combo_th AT_SIGN NUMBER_2>;
             key-positions = <12 2>;
             layers = <0 1>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_three {
             bindings = <&long_combo_th HASH NUMBER_3>;
             key-positions = <11 1>;
             layers = <0 1>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_four {
             bindings = <&long_combo_th DOLLAR NUMBER_4>;
             key-positions = <10 0>;
             layers = <0 1>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_five {
             bindings = <&long_combo_th PERCENT KP_NUMBER_5>;
             key-positions = <15 5>;
             layers = <0 4>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_six {
             bindings = <&long_combo_th CARET KP_NUMBER_6>;
             key-positions = <16 6>;
             layers = <0 4>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_seven {
             bindings = <&long_combo_th AMPERSAND KP_N7>;
             key-positions = <17 7>;
             layers = <0 4>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
-        combo_8 {
+        combo_eight {
             bindings = <&kp KP_NUMBER_8>;
             key-positions = <18 8>;
             layers = <0 4>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
             key-positions = <19 9>;
             layers = <0 4>;
+            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
         };
 
         combo_ampersand {

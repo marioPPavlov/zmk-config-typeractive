@@ -1140,10 +1140,10 @@
         HYPER_TAP {
             label = "HYPER_TAP";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                   &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &kp GRAVE
-  &trans  &trans  &trans  &trans  &trans                   &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &ht_single_tap COLON APOS
-  &trans  &trans  &trans  &trans  &trans                   &kp STAR                     &mkp MB4                     &mkp MB5                         &single_tap EQUAL             &single_tap DOUBLE_QUOTES
-                  &trans  &trans  &mo_sl_trigger 9 10      &kp LA(BACKSPACE)            &kp BACKSPACE                &kp LS(ENTER)
+  &trans  &trans  &trans  &trans                               &trans                   &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &kp GRAVE
+  &trans  &trans  &trans  &trans                               &trans                   &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &ht_single_tap COLON APOS
+  &trans  &trans  &trans  &trans                               &trans                   &kp STAR                     &mkp MB4                     &mkp MB5                         &single_tap EQUAL             &single_tap DOUBLE_QUOTES
+                  &trans  &short_mo_tp_space 11 LA(LC(SPACE))  &mo_sl_trigger 9 10      &kp LA(BACKSPACE)            &kp BACKSPACE                &kp LS(ENTER)
             >;
         };
 

@@ -1079,10 +1079,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &trans  &trans     &kp AMPERSAND  &kp PIPE  &trans      &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans
-  &trans  &kp EQUAL  &kp MINUS      &kp PLUS  &trans      &kp BACKSPACE  &kp LC(D)             &kp LC(U)              &kp DELETE  &trans
-  &trans  &trans     &trans         &trans    &trans      &trans         &msc SCRL_DOWN        &msc SCRL_UP           &trans      &trans
-                     &kp K_COPY     &trans    &trans      &trans         &trans                &trans
+  &kp N9  &kp N8  &kp N7      &kp N6  &kp N5      &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS    &trans
+  &kp N4  &kp N3  &kp N2      &kp N1  &kp N0      &kp BACKSPACE  &kp LC(D)             &kp LC(U)              &kp DELETE  &trans
+  &trans  &trans  &trans      &trans  &trans      &trans         &msc SCRL_DOWN        &msc SCRL_UP           &trans      &trans
+                  &kp K_COPY  &trans  &trans      &trans         &trans                &trans
             >;
         };
 

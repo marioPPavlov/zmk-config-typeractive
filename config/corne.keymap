@@ -16,10 +16,9 @@
 #define LAYER_NUM 4
 #define LAYER_NUM_SIMPLE 5
 
-/* Digit combos + NAV-on-space hold-tap; tune in one place. */
-
+/* NAV-on-space hold-tap uses PRIOR_IDLE_MS. Digits 0-9 and =/-/+ use COMBO_TYPING_PRIOR_IDLE_MS. */
 #define PRIOR_IDLE_MS 75
-#define COMBO_NUM_PRIOR_IDLE_MS PRIOR_IDLE_MS
+#define COMBO_TYPING_PRIOR_IDLE_MS 50
 #define SHORT_MO_SPACE_PRIOR_IDLE_MS PRIOR_IDLE_MS
 
 /* Hold duration before NAV layer wins over tap (space). Generic short_mo_tp stays 150. */
@@ -508,6 +507,7 @@
         combo_minus {
             bindings = <&kp MINUS>;
             key-positions = <22 23>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         mac_screenshot_image {
@@ -529,70 +529,70 @@
             bindings = <&kp KP_NUMBER_0>;
             key-positions = <14 4>;
             layers = <0 1>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_one {
             bindings = <&long_combo_th EXCL NUMBER_1>;
             key-positions = <13 3>;
             layers = <0 1>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_two {
             bindings = <&long_combo_th AT_SIGN NUMBER_2>;
             key-positions = <12 2>;
             layers = <0 1>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_three {
             bindings = <&long_combo_th HASH NUMBER_3>;
             key-positions = <11 1>;
             layers = <0 1>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_four {
             bindings = <&long_combo_th DOLLAR NUMBER_4>;
             key-positions = <10 0>;
             layers = <0 1>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_five {
             bindings = <&long_combo_th PERCENT KP_NUMBER_5>;
             key-positions = <15 5>;
             layers = <0 4>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_six {
             bindings = <&long_combo_th CARET KP_NUMBER_6>;
             key-positions = <16 6>;
             layers = <0 4>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_seven {
             bindings = <&long_combo_th AMPERSAND KP_N7>;
             key-positions = <17 7>;
             layers = <0 4>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_eight {
             bindings = <&kp KP_NUMBER_8>;
             key-positions = <18 8>;
             layers = <0 4>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
             key-positions = <19 9>;
             layers = <0 4>;
-            require-prior-idle-ms = <COMBO_NUM_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_ampersand {
@@ -676,11 +676,13 @@
         combo_plus {
             bindings = <&kp PLUS>;
             key-positions = <24 23>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_equals {
             bindings = <&kp EQUAL>;
             key-positions = <21 22>;
+            require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_underscore {

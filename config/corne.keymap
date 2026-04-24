@@ -17,6 +17,7 @@
 #define LAYER_NUM_SIMPLE 5
 
 /* NAV-on-space hold-tap uses PRIOR_IDLE_MS. Digits 0-9 and =/-/+ use COMBO_TYPING_PRIOR_IDLE_MS. */
+
 #define PRIOR_IDLE_MS 75
 #define COMBO_TYPING_PRIOR_IDLE_MS 50
 #define SHORT_MO_SPACE_PRIOR_IDLE_MS PRIOR_IDLE_MS
@@ -1131,7 +1132,7 @@
         HYPER {
             bindings = <
   &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap            &tab_swap                           &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE          &kp GRAVE
-  &kp LG(A)                   &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)      &kp SINGLE_QUOTE
+  &kp LG(A)                   &kp LG(X)  &ht_select_line_mac 0 LG(C)  &ht_clipboard 0 LG(V)  &ht_single_tap LG(ENTER) ENTER      &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)      &ht_single_tap COLON SINGLE_QUOTE
   &trans                      &trans     &kp LG(Z)                    &kp LS(LG(Z))          &kp BACKSPACE                       &kp STAR           &mkp MB4          &mkp MB5           &single_tap EQUAL  &single_tap DOUBLE_QUOTES
                                          &trans                       &flush_stuck           &trans                              &kp LA(BACKSPACE)  &kp BACKSPACE     &kp LS(ENTER)
             >;

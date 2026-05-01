@@ -1061,7 +1061,7 @@
   &trans  &trans  &trans  &trans  &trans      &kp Y     &kp U     &kp I         &kp O      &kp P
   &trans  &trans  &trans  &trans  &trans      &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp SEMI
   &trans  &trans  &trans  &trans  &trans      &kp N     &kp M     &kp COMMA     &kp DOT    &kp FSLH
-                  &trans  &trans  &mo 9       &trans    &trans    &trans
+                  &to 0   &trans  &mo 9       &trans    &trans    &trans
             >;
         };
 

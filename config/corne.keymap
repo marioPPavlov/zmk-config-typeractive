@@ -504,6 +504,21 @@
 
             label = "MACRO_CMD_WITH_DEFAULT_LAYER";
         };
+
+        macro_kp_hayper_layer: macro_kp_hayper_layer {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_tap>,
+                <&to 9>,
+                <&macro_press>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+
+            label = "MACRO_KP_HAYPER_LAYER";
+        };
     };
 
     combos {
@@ -1050,6 +1065,17 @@
             compatible = "zmk,behavior-hold-tap";
             label = "TH_KP_DEFAULT_MOD";
             bindings = <&macro_kp_default_layer>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            hold-while-undecided;
+        };
+
+        th_kp_hyper_layer: th_kp_hyper_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TH_KP_HYPER_LAYER";
+            bindings = <&macro_kp_hayper_layer>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;

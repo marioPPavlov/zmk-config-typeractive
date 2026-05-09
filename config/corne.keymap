@@ -1018,7 +1018,7 @@
 
         mo_sl_trigger: mo_sl_trigger {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&sl>;
+            bindings = <&macro_default_on_release>, <&sl>;
 
             #binding-cells = <2>;
             flavor = "balanced";

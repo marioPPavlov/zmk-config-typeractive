@@ -1094,10 +1094,10 @@
         nav_shift {
             display-name = "NAV";
             bindings = <
-  &kp F9  &kp F8  &kp F7                 &kp F6   &kp F5       &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &trans
-  &kp F4  &kp F3  &kp F2                 &kp F1   &kp F10      &kp LS(LEFT)       &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)  &trans
-  &trans  &trans  &kp F12                &kp F11  &trans       &trans             &trans            &trans             &trans         &trans
-                  &num_layer_from_nav 0  &trans   &trans       &kp LA(BACKSPACE)  &kp LA(DELETE)    &trans
+  &kp F9  &kp F8  &kp F7                 &kp F6   &kp F5       &kp BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE      &trans
+  &kp F4  &kp F3  &kp F2                 &kp F1   &kp F10      &kp LS(LEFT)    &kp LS(DOWN)      &kp LS(UP_ARROW)   &kp LS(RIGHT)  &trans
+  &trans  &trans  &kp F12                &kp F11  &trans       &trans          &trans            &trans             &trans         &trans
+                  &num_layer_from_nav 0  &trans   &trans       &kp LA(DELETE)  &kp LA(DELETE)    &trans
             >;
         };
 
@@ -1181,7 +1181,7 @@
   &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E   &macro_hyperkey R  &tab_swap               &kp PIPE            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE      &trans
   &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D   &macro_hyperkey F  &macro_hyperkey G       &kp LA(LEFT_ARROW)  &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &trans
   &trans             &trans             &trans              &trans             &kp RG(DELETE)          &key_repeat         &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
-                                        &ht_mo_navword 1 0  &trans             &mm_esc_hyperlayer      &kp LA(DELETE)      &kp DELETE            &kp LG(ENTER)
+                                        &ht_mo_navword 1 0  &trans             &mm_esc_hyperlayer      &kp LA(BACKSPACE)   &kp BACKSPACE         &kp LG(ENTER)
             >;
         };
     };

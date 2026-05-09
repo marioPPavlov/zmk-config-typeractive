@@ -490,7 +490,7 @@
             label = "MACRO_TAP_AND_NUMWORD";
         };
 
-        macro_cmd_with_default_layer: macro_cmd_with_default_layer {
+        macro_kp_default_layer: macro_cmd_with_default_layer {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -1049,7 +1049,7 @@
         th_kp_default_mod: th_kp_default_mod {
             compatible = "zmk,behavior-hold-tap";
             label = "TH_KP_DEFAULT_MOD";
-            bindings = <&macro_cmd_with_default_layer>, <&kp>;
+            bindings = <&macro_kp_default_layer>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;

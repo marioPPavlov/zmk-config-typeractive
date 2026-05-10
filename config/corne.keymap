@@ -1106,7 +1106,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-         
+
         mod_navword_up: mod_navword_up {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_NAVWORD_UP";
@@ -1128,7 +1128,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-        
+
         mod_navword_right: mod_navword_right {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_NAVWORD_RIGHT";
@@ -1261,10 +1261,10 @@
         HYPER_TAP {
             label = "HYPER_TAP";
             bindings = <
-  &trans  &trans  &trans  &trans                       &trans                    &kp BACKSLASH                &kp LEFT_BRACKET             &kp RIGHT_BRACKET                &kp GRAVE                     &kp GRAVE
-  &trans  &trans  &trans  &trans                       &trans                    &macro_tap_and_navword LEFT  &macro_tap_and_navword DOWN  &macro_tap_and_navword UP_ARROW  &macro_tap_and_navword RIGHT  &ht_single_tap COLON APOS
-  &trans  &trans  &trans  &trans                       &trans                    &kp STAR                     &mkp MB4                     &mkp MB5                         &single_tap EQUAL             &single_tap DOUBLE_QUOTES
-                  &trans  &short_mo_tp_space 12 SPACE  &mo_sl_trigger 10 11      &kp LEFT_SHIFT               &kp BACKSPACE                &kp LS(ENTER)
+  &trans  &trans  &trans  &trans                       &trans                    &kp BACKSLASH      &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp GRAVE           &kp GRAVE
+  &trans  &trans  &trans  &trans                       &trans                    &mod_navword_left  &mod_navword_down  &mod_navword_up    &mod_navword_right  &ht_single_tap COLON APOS
+  &trans  &trans  &trans  &trans                       &trans                    &kp STAR           &mkp MB4           &mkp MB5           &single_tap EQUAL   &single_tap DOUBLE_QUOTES
+                  &trans  &short_mo_tp_space 12 SPACE  &mo_sl_trigger 10 11      &kp LEFT_SHIFT     &kp BACKSPACE      &kp LS(ENTER)
             >;
         };
 

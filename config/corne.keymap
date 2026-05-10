@@ -1106,6 +1106,39 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+         
+        mod_navword_up: mod_navword_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_NAVWORD_UP";
+            bindings =
+                <&macro_tap_and_shift_navword UP>,
+                <&macro_tap_and_navword UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mod_navword_down: mod_navword_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_NAVWORD_DOWN";
+            bindings =
+                <&macro_tap_and_shift_navword DOWN>,
+                <&macro_tap_and_navword DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+        
+        mod_navword_right: mod_navword_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_NAVWORD_RIGHT";
+            bindings =
+                <&macro_tap_and_shift_navword RIGHT>,
+                <&macro_tap_and_navword RIGHT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     keymap {

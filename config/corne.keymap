@@ -983,7 +983,7 @@
             require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
             tapping-term-ms = <SHORT_MO_SPACE_TAPPING_TERM_MS>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <15 16 17 18 26 27>;
+            hold-trigger-key-positions = <15 16 17 18 26 27 33>;
         };
 
         num_layer_from_nav: num_layer_from_nav {
@@ -1070,6 +1070,18 @@
             tapping-term-ms = <150>;
             flavor = "balanced";
             hold-while-undecided;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
+            tapping-term-ms = <SHORT_MO_SPACE_TAPPING_TERM_MS>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <15 16 17 18 26 27 33 34>;
         };
     };
 

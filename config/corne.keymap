@@ -1096,16 +1096,15 @@
             hold-while-undecided;
         };
 
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&mo>, <&kp>;
+        mod_navword_left: mod_navword_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_NAVWORD_LEFT";
+            bindings =
+                <&macro_tap_and_shift_navword LEFT>,
+                <&macro_tap_and_navword LEFT>;
 
-            #binding-cells = <2>;
-            require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
-            tapping-term-ms = <SHORT_MO_SPACE_TAPPING_TERM_MS>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <15 16 17 18 26 27 33 34>;
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 

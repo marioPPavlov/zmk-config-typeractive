@@ -1100,8 +1100,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_NAVWORD_LEFT";
             bindings =
-                <&macro_tap_and_shift_navword LEFT>,
-                <&macro_tap_and_navword LEFT>;
+                <&macro_tap_and_navword LEFT>,
+                <&macro_tap_and_shift_navword LEFT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -1111,8 +1111,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_NAVWORD_UP";
             bindings =
-                <&macro_tap_and_shift_navword UP>,
-                <&macro_tap_and_navword UP>;
+                <&macro_tap_and_navword UP>,
+                <&macro_tap_and_shift_navword UP>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -1122,8 +1122,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_NAVWORD_DOWN";
             bindings =
-                <&macro_tap_and_shift_navword DOWN>,
-                <&macro_tap_and_navword DOWN>;
+                <&macro_tap_and_navword DOWN>,
+                <&macro_tap_and_shift_navword DOWN>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -1133,8 +1133,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_NAVWORD_RIGHT";
             bindings =
-                <&macro_tap_and_shift_navword RIGHT>,
-                <&macro_tap_and_navword RIGHT>;
+                <&macro_tap_and_navword RIGHT>,
+                <&macro_tap_and_shift_navword RIGHT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;

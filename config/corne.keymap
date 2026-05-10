@@ -476,21 +476,6 @@
             label = "MACRO_TAP_AND_NAVWORD";
         };
 
-        macro_tap_and_numword: macro_tap_and_numword {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&shift_nav_word>,
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "MACRO_TAP_AND_NUMWORD";
-        };
-
         macro_kp_default_layer: macro_cmd_with_default_layer {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;

@@ -1139,6 +1139,17 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        kp_to: kp_to {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KP_TO";
+            bindings = <&kp>, <&to>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {

@@ -13,6 +13,7 @@
 #define LAYER_NAV 1
 #define LAYER_HYPER_TAP 8
 #define LAYER_NAVSIMPLE 2
+#define LAYER_NAVSHIFTWORD 3
 #define LAYER_NUM 4
 #define LAYER_NUM_SIMPLE 5
 
@@ -772,6 +773,14 @@
             ignore-numbers;
         };
 
+        shift_nav_word: shift_nav_word {
+            #binding-cells = <0>;
+            compatible = "zmk,behavior-num-word";
+            layers = <LAYER_NAVSHIFTWORD>;
+            continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER Z HOME END PG_DN PG_UP BACKSPACE>;
+            ignore-numbers;
+        };
+
         num_word: num_word {
             compatible = "zmk,behavior-num-word";
             #binding-cells = <0>;
@@ -1209,6 +1218,16 @@
   &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D   &macro_hyperkey F  &macro_hyperkey G       &kp LA(LEFT_ARROW)  &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &trans
   &trans             &trans             &trans              &trans             &kp RG(DELETE)          &key_repeat         &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
                                         &ht_mo_navword 1 0  &trans             &mm_esc_hyperlayer      &kp LA(BACKSPACE)   &kp BACKSPACE         &kp LG(ENTER)
+            >;
+        };
+
+        NAVSHIFTWORD {
+            display-name = "NAV shift-arrows";
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans      &trans  &trans  &trans
             >;
         };
     };

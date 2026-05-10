@@ -11,11 +11,11 @@
  * expand in keymap node names (e.g. NUM { → 2 {) and cause duplicate DTS nodes. */
 
 #define LAYER_NAV 1
-#define LAYER_HYPER_TAP 8
+#define LAYER_HYPER_TAP 9
 #define LAYER_NAVSIMPLE 2
 #define LAYER_NAVSHIFTWORD 3
-#define LAYER_NUM 4
-#define LAYER_NUM_SIMPLE 5
+#define LAYER_NUM 5
+#define LAYER_NUM_SIMPLE 6
 
 /* NAV-on-space hold-tap uses PRIOR_IDLE_MS. Digits 0-9 and =/-/+ use COMBO_TYPING_PRIOR_IDLE_MS. */
 

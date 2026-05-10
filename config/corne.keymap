@@ -1180,7 +1180,7 @@
   &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans            &trans         &trans
   &trans  &trans  &trans  &trans  &trans      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &trans
   &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans            &trans         &trans
-                  &trans  &trans  &trans      &trans        &trans        &trans
+                  &trans  &trans  &trans      &to 11        &trans        &trans
             >;
         };
 

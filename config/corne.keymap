@@ -505,7 +505,7 @@
             label = "MACRO_CMD_WITH_DEFAULT_LAYER";
         };
 
-        macro_default_on_release: macro_default_on_release {
+        macro_mo_default_on_release: macro_default_on_release {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
@@ -977,7 +977,7 @@
         short_mo_tp_space: short_mo_tp_space {
             compatible = "zmk,behavior-hold-tap";
             label = "SHORT_MO_TP_SPACE";
-            bindings = <&macro_default_on_release>, <&kp>;
+            bindings = <&macro_mo_default_on_release>, <&kp>;
 
             #binding-cells = <2>;
             require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
@@ -1019,7 +1019,7 @@
 
         mo_sl_trigger: mo_sl_trigger {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&macro_default_on_release>, <&sl>;
+            bindings = <&macro_mo_default_on_release>, <&sl>;
 
             #binding-cells = <2>;
             flavor = "balanced";

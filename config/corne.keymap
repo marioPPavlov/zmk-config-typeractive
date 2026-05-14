@@ -1072,18 +1072,6 @@
             flavor = "balanced";
             hold-while-undecided;
         };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
-            tapping-term-ms = <SHORT_MO_SPACE_TAPPING_TERM_MS>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <15 16 17 18 26 27 33 34>;
-        };
     };
 
     keymap {
@@ -1112,10 +1100,10 @@
         NAVsimple {
             display-name = "NAVsimple";
             bindings = <
-  &trans                      &trans                         &trans                     &trans                           &trans                   &kp Y           &kp U          &kp I         &kp O      &kp P
-  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F  &trans                   &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
-  &trans                      &trans                         &trans                     &trans                           &trans                   &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
-                                                             &to 0                      &trans                           &mo_sl_trigger 9 10      &kp LEFT_SHIFT  &kp BACKSPACE  &trans
+  &trans                      &trans                         &trans                     &trans                           &trans      &kp Y           &kp U          &kp I         &kp O      &kp P
+  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F  &trans      &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
+  &trans                      &trans                         &trans                     &trans                           &trans      &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
+                                                             &to 0                      &trans                           &sl 9       &kp LEFT_SHIFT  &kp BACKSPACE  &trans
             >;
         };
 

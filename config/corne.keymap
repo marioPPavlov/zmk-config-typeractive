@@ -528,7 +528,7 @@
 
         mac_screenshot_clipboard {
             bindings = <&kp LS(LC(LG(NUMBER_4)))>;
-            key-positions = <10 20>;
+            key-positions = <1 2 3>;
         };
 
         combo_tog_mouse {
@@ -545,7 +545,7 @@
 
         mac_screenshot_image {
             bindings = <&kp LS(LG(NUMBER_4))>;
-            key-positions = <10 21>;
+            key-positions = <2 3 4>;
         };
 
         tab_combo {

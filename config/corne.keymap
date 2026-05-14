@@ -977,13 +977,14 @@
         short_mo_tp_space: short_mo_tp_space {
             compatible = "zmk,behavior-hold-tap";
             label = "SHORT_MO_TP_SPACE";
-            bindings = <&mo>, <&kp>;
+            bindings = <&macro_default_on_release>, <&kp>;
 
             #binding-cells = <2>;
             require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
-            tapping-term-ms = <SHORT_MO_SPACE_TAPPING_TERM_MS>;
+            tapping-term-ms = <140>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <15 16 17 18 26 27 33>;
+            hold-trigger-key-positions = <33 34 35>;
+            hold-while-undecided;
         };
 
         num_layer_from_nav: num_layer_from_nav {

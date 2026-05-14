@@ -760,7 +760,7 @@
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
             layers = <LAYER_NAVSIMPLE>;
-            continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER Z HOME END PG_DN PG_UP BACKSPACE>;
+            continue-list = <LEFT DOWN UP RIGHT ENTER BACKSPACE>;
             ignore-numbers;
         };
 

@@ -1050,16 +1050,16 @@
             mods = <(MOD_LSFT)>;
         };
 
-        mo_sl: mo_sl {
+        none_mo: none_mo {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&sl>;
+            bindings = <&mo>, <&none>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <137>;
             hold-trigger-key-positions = <5 6 7 8>;
             hold-while-undecided;
-            label = "MO_SL";
+            label = "NONE_MO";
         };
 
         th_kp_default_mod: th_kp_default_mod {
@@ -1100,10 +1100,10 @@
         NAVsimple {
             display-name = "NAVsimple";
             bindings = <
-  &trans                      &trans                         &trans                     &trans                           &trans      &kp Y           &kp U          &kp I         &kp O      &kp P
-  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F  &trans      &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
-  &trans                      &trans                         &trans                     &trans                           &trans      &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
-                                                             &to 0                      &trans                           &sl 9       &kp LEFT_SHIFT  &kp BACKSPACE  &trans
+  &trans                      &trans                         &trans                     &trans                           &trans            &kp Y           &kp U          &kp I         &kp O      &kp P
+  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F  &trans            &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
+  &trans                      &trans                         &trans                     &trans                           &trans            &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
+                                                             &to 0                      &trans                           &none_mo 9 0      &kp LEFT_SHIFT  &kp BACKSPACE  &trans
             >;
         };
 

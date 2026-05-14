@@ -464,7 +464,7 @@
             /* nav_word_simple has #binding-cells = <0> — no MACRO_PLACEHOLDER on it */
 
             bindings =
-                <&macro_tap>,
+                <&macro_release>,
                 <&nav_word_simple>,
                 <&macro_press>,
                 <&nav_word_simple>,

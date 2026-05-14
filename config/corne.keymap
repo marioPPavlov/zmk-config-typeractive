@@ -1052,7 +1052,7 @@
 
         none_mo: none_mo {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&none>;
+            bindings = <&macro_mo_default_on_release>, <&none>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";

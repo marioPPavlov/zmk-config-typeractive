@@ -1044,7 +1044,9 @@
 
         none_mo: none_mo {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&macro_mo_default_on_release>, <&none>;
+            bindings =
+                <&macro_mo_default_on_release>,
+                <&macro_mo_default_on_release>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -1092,10 +1094,10 @@
         NAVsimple {
             display-name = "NAVsimple";
             bindings = <
-  &trans                      &trans                         &trans                     &trans                           &trans            &kp Y           &kp U          &kp I         &kp O      &kp P
-  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F  &trans            &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
-  &trans                      &trans                         &trans                     &trans                           &trans            &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
-                                                             &to 0                      &trans                           &none_mo 9 0      &kp LEFT_SHIFT  &kp BACKSPACE  &trans
+  &trans                      &trans                         &trans                     &trans                           &trans             &kp Y           &kp U          &kp I         &kp O      &kp P
+  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F  &trans             &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
+  &trans                      &trans                         &trans                     &trans                           &trans             &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
+                                                             &to 0                      &trans                           &none_mo 9 10      &kp LEFT_SHIFT  &kp BACKSPACE  &trans
             >;
         };
 

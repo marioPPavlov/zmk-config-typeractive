@@ -584,13 +584,13 @@
 
         combo_four {
             bindings = <&long_combo_th DOLLAR NUMBER_4>;
-            key-positions = <10>;
+            key-positions = <10 0>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_five {
             bindings = <&long_combo_th PERCENT KP_NUMBER_5>;
-            key-positions = <15>;
+            key-positions = <15 5>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
@@ -608,7 +608,7 @@
 
         combo_eight {
             bindings = <&kp KP_NUMBER_8>;
-            key-positions = <18>;
+            key-positions = <18 8>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 

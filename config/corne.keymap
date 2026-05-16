@@ -1066,6 +1066,18 @@
             flavor = "balanced";
             hold-while-undecided;
         };
+
+        short_mo_tp_space_hold_preferred: short_mo_tp_space_hold_preferre {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHORT_MO_TP_SPACE_HOLD_PREFERRED";
+            bindings = <&macro_mo_default_on_release>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            flavor = "hold-preferred";
+            hold-trigger-key-positions = <34 35 15 16 17 18>;
+            hold-while-undecided;
+        };
     };
 
     keymap {
@@ -1094,10 +1106,10 @@
         NAVsimple {
             display-name = "NAVsimple";
             bindings = <
-  &trans                      &trans                         &trans                     &trans                           &trans                             &kp Y           &kp U          &kp I         &kp O      &kp P
-  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F  &th_kp_default_mod LS(LGUI) G      &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
-  &trans                      &trans                         &trans                     &trans                           &trans                             &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
-                                                             &to 0                      &trans                           &mo_sl_trigger 9 10                &kp LEFT_SHIFT  &kp BACKSPACE  &trans
+  &trans                      &trans                         &trans                     &trans                                      &trans                             &kp Y           &kp U          &kp I         &kp O      &kp P
+  &th_kp_default_mod LCTRL A  &th_kp_default_mod LEFT_ALT S  &th_kp_default_mod LGUI D  &th_kp_default_mod LEFT_SHIFT F             &th_kp_default_mod LS(LGUI) G      &kp LEFT        &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp SEMI
+  &trans                      &trans                         &trans                     &trans                                      &trans                             &kp N           &kp M          &kp COMMA     &kp DOT    &kp FSLH
+                                                             &to 0                      &short_mo_tp_space_hold_preferred 11 SPACE  &mo_sl_trigger 9 10                &kp LEFT_SHIFT  &kp BACKSPACE  &trans
             >;
         };
 

@@ -972,10 +972,10 @@
             bindings = <&macro_mo_default_on_release>, <&kp>;
 
             #binding-cells = <2>;
-            require-prior-idle-ms = <SHORT_MO_SPACE_PRIOR_IDLE_MS>;
+            require-prior-idle-ms = <125>;
             tapping-term-ms = <140>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <33 34 35>;
+            hold-trigger-key-positions = <34 35 15 16 17 18>;
             hold-while-undecided;
         };
 

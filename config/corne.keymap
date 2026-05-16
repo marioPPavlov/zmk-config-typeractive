@@ -1036,7 +1036,7 @@
         esc_shift_lgui_tab_mm: esc_shift_lgui_tab_mm {
             compatible = "zmk,behavior-mod-morph";
             label = "ESC_SHIFT_LGUI_TAB_MM";
-            bindings = <&short_mo_tp 1 ESCAPE>, <&mac_lgui_tab>;
+            bindings = <&short_mo_tp_esc 1 ESCAPE>, <&mac_lgui_tab>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;

@@ -963,7 +963,7 @@
             require-prior-idle-ms = <50>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <15 16 17 18 26 27>;
+            hold-trigger-key-positions = <15 16 17 18 26 27 25 34 33 35>;
         };
 
         short_mo_tp_space: short_mo_tp_space {

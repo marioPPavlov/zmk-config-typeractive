@@ -960,10 +960,11 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <0>;
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <15 16 17 18 26 27 25 34 33 35>;
+            hold-trigger-key-positions = <15 16 17 18 26 27 25 34 33 35 14 13 12 10 11 0 1 2 3 4>;
+            hold-while-undecided;
         };
 
         short_mo_tp_space: short_mo_tp_space {

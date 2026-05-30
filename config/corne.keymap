@@ -1076,7 +1076,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <140>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <34 35 15 16 17 18>;
+            hold-trigger-key-positions = <34 35 15 16 17 18 5 6 7 8 9 19 29 28 27 26 25 33 13 12 2 3 11 10>;
             hold-while-undecided;
         };
 

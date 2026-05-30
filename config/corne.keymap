@@ -1148,10 +1148,10 @@
         NUM_SIMPLE {
             display-name = "NUM";
             bindings = <
-  &kp N9     &kp N8          &kp N7      &kp N6     &kp N5              &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
-  &kp N4     &kp N3          &kp N2      &kp N1     &kp N0              &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
-  &kp COLON  &kp UNDERSCORE  &kp PLUS    &kp MINUS  &kp UNDERSCORE      &trans         &trans          &trans        &trans      &trans
-                             &kp K_COPY  &trans     &trans              &trans         &trans          &trans
+  &kp N9  &kp N8  &kp N7      &kp N6  &kp N5      &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
+  &kp N4  &kp N3  &kp N2      &kp N1  &kp N0      &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
+  &trans  &trans  &trans      &trans  &trans      &trans         &trans          &trans        &trans      &trans
+                  &kp K_COPY  &trans  &trans      &trans         &trans          &trans
             >;
         };
 

@@ -712,6 +712,11 @@
             bindings = <&kp UNDER>;
             key-positions = <17 16>;
         };
+
+        combo_enter {
+            bindings = <&kp RETURN>;
+            key-positions = <13 12>;
+        };
     };
 
     behaviors {

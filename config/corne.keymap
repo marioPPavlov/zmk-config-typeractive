@@ -718,13 +718,13 @@
             key-positions = <13 12>;
         };
 
-        combo_bt_select_2 {
-            bindings = <&bt BT_SEL 2>;
+        combo_bt_select_1 {
+            bindings = <&bt BT_SEL 1>;
             key-positions = <6 8 7>;
         };
 
-        combo_bt_select_3 {
-            bindings = <&bt BT_SEL 3>;
+        combo_bt_select_2 {
+            bindings = <&bt BT_SEL 2>;
             key-positions = <16 17 18>;
         };
     };

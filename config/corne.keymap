@@ -668,7 +668,7 @@
 
         lgui_lshift_combo {
             bindings = <&kp LS(LGUI)>;
-            key-positions = <13 12>;
+            key-positions = <>;
         };
 
         lalt_lshift_combo {
@@ -716,6 +716,16 @@
         combo_enter {
             bindings = <&kp RETURN>;
             key-positions = <13 12>;
+        };
+
+        combo_bt_select_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <6 8 7>;
+        };
+
+        combo_bt_select_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <16 17 18>;
         };
     };
 

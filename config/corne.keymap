@@ -988,9 +988,9 @@
             bindings = <&macro_mo_default_on_release>, <&kp>;
 
             #binding-cells = <2>;
-            require-prior-idle-ms = <45>;
+            require-prior-idle-ms = <65>;
             tapping-term-ms = <140>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <34 35 15 16 17 18>;
             hold-while-undecided;
         };

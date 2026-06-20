@@ -1274,10 +1274,10 @@
 
         space_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans         &trans         &trans
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans         &trans         &trans
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &kp GRAVE      &kp BACKSLASH  &kp DOUBLE_QUOTES
-                  &trans  &trans  &trans      &kp LBKT  &kp RBKT  &kp LS(ENTER)
+  &trans  &trans  &trans  &trans  &trans      &trans                        &trans                                  &trans         &trans                       &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                        &trans                                  &trans         &trans                       &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                        &trans                                  &kp GRAVE      &short_th_kp PIPE BACKSLASH  &kp DOUBLE_QUOTES
+                  &trans  &trans  &trans      &short_th_kp LEFT_BRACE LBKT  &short_th_kp RIGHT_BRACE RIGHT_BRACKET  &kp LS(ENTER)
             >;
         };
     };

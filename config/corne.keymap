@@ -1265,10 +1265,10 @@
         cmd_layer {
             display-name = "BASE";
             bindings = <
-  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E   &macro_hyperkey R  &tab_swap               &trans              &trans                &trans                 &trans         &trans
-  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D   &macro_hyperkey F  &macro_hyperkey G       &kp LA(LEFT_ARROW)  &kp LA(LS(LEFT))      &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &kp SEMICOLON
-  &trans             &trans             &trans              &trans             &kp RG(DELETE)          &trans              &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans         &trans
-                                        &ht_mo_navword 1 0  &trans             &mm_esc_hyperlayer      &kp LEFT_SHIFT      &kp LA(BACKSPACE)     &kp LG(ENTER)
+  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E   &macro_hyperkey R  &tab_swap               &trans                &trans                 &trans                 &trans         &trans
+  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D   &macro_hyperkey F  &macro_hyperkey G       &kp LA(LEFT_ARROW)    &kp LA(LS(LEFT))       &kp LS(LA(RIGHT))      &kp LA(RIGHT)  &kp SEMICOLON
+  &trans             &trans             &trans              &trans             &kp RG(DELETE)          &trans                &kp LG(LEFT_BRACKET)   &kp LG(RIGHT_BRACKET)  &trans         &trans
+                                        &ht_mo_navword 1 0  &trans             &mm_esc_hyperlayer      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LG(ENTER)
             >;
         };
 

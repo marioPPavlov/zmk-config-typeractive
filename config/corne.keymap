@@ -1274,9 +1274,9 @@
 
         space_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans                &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans                &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &kp GRAVE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
                   &trans  &trans  &trans      &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
         };

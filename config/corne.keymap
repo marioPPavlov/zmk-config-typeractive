@@ -1131,6 +1131,18 @@
             tapping-term-ms = <250>;
             require-prior-idle-ms = <50>;
         };
+
+        mo_space: mo_space {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_SPACE";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <33 34 35 27 28 29>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            require-prior-idle-ms = <50>;
+        };
     };
 
     keymap {

@@ -1247,6 +1247,15 @@
                                         &ht_mo_navword 1 0  &trans             &mm_esc_hyperlayer      &kp LEFT_SHIFT      &kp LA(BACKSPACE)     &kp LG(ENTER)
             >;
         };
+
+        space_layer {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans                &trans            &trans             &trans  &trans
+                  &trans  &trans  &trans      &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+            >;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };

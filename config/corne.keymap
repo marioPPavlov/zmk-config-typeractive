@@ -1042,8 +1042,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <125>;
-            hold-while-undecided;
+            tapping-term-ms = <250>;
             label = "MO_KP";
         };
 

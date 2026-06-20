@@ -715,7 +715,7 @@
 
         combo_enter {
             bindings = <&kp RETURN>;
-            key-positions = <13 12>;
+            key-positions = <>;
         };
 
         combo_bt_select_1 {

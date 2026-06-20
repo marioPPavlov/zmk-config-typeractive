@@ -1139,7 +1139,7 @@
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <33 34 35 27 28 29 19>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <250>;
             require-prior-idle-ms = <0>;
         };

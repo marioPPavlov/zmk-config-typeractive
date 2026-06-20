@@ -1277,10 +1277,10 @@
         cmd_layer {
             display-name = "BASE";
             bindings = <
-  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E   &macro_hyperkey R  &tab_swap              &trans                                  &trans                                    &trans                             &trans                &trans
-  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D   &macro_hyperkey F  &macro_hyperkey G      &trans                                  &trans                                    &trans                             &trans                &kp SEMICOLON
-  &trans             &trans             &trans              &trans             &trans                 &trans                                  &trans                                    &kp GRAVE                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-                                        &ht_mo_navword 1 0  &trans             &kp BACKSPACE          &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap LG(PIPE) BACKSLASH
+  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R  &tab_swap              &trans                                  &trans                                    &trans                             &trans                &trans
+  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F  &macro_hyperkey G      &trans                                  &trans                                    &trans                             &trans                &kp SEMICOLON
+  &trans             &trans             &trans             &trans             &trans                 &trans                                  &trans                                    &kp GRAVE                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+                                        &trans             &trans             &trans                 &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap LG(PIPE) BACKSLASH
             >;
         };
     };

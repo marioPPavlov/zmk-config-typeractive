@@ -1186,7 +1186,7 @@
             bindings = <
   &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T                  &kp Y                   &kp U                      &kp I                        &kp O                      &long_mo_tp 7 P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                      &kp K                        &kp L                      &short_mo_tp_space_hold_pref 11 COLON
-  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &mo_cmd_tp 11 B                  &long_th_kp LS(LGUI) N  &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
+  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
                                                                    &esc_shift_lgui_tab_mm              &mo_space 11 SPACE          &mo_kp 9 BACKSPACE               &mm_shift_capsword      &mo_sl_trigger_num 4 4     &kp ENTER
             >;
         };
@@ -1224,10 +1224,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &kp N9  &kp N8                         &kp N7                                  &kp N6                                    &kp N5                          &trans     &trans     &trans     &trans    &trans
-  &kp N4  &kp N3                         &kp N2                                  &kp N1                                    &kp N0                          &kp MINUS  &kp LC(D)  &kp LC(U)  &kp PLUS  &trans
-  &trans  &ht_single_tap PIPE BACKSLASH  &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap TILDE GRAVE      &trans     &trans     &trans     &trans    &trans
-                                         &trans                                  &kp LA(BACKSPACE)                         &kp BACKSPACE                   &trans     &trans     &trans
+  &kp N9        &kp N8                         &kp N7                                  &kp N6                                    &kp N5                          &trans     &trans     &trans     &trans    &trans
+  &kp N4        &kp N3                         &kp N2                                  &kp N1                                    &kp N0                          &kp MINUS  &kp LC(D)  &kp LC(U)  &kp PLUS  &trans
+  &kp QUESTION  &ht_single_tap PIPE BACKSLASH  &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap TILDE GRAVE      &trans     &trans     &trans     &trans    &trans
+                                               &trans                                  &kp LA(BACKSPACE)                         &kp BACKSPACE                   &trans     &trans     &trans
             >;
         };
 

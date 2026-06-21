@@ -727,16 +727,6 @@
             bindings = <&bt BT_SEL 2>;
             key-positions = <16 17 18>;
         };
-
-        right_brace_combo {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <31 34>;
-        };
-
-        left_brace_combo {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 33>;
-        };
     };
 
     behaviors {

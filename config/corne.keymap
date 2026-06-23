@@ -1244,10 +1244,10 @@
 
         BLUE {
             bindings = <
-  &bt BT_CLR     &trans         &trans         &bootloader    &sys_reset        &trans  &trans  &trans  &trans  &trans
-  &bt BT_DISC 4  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &out OUT_USB      &trans  &trans  &trans  &trans  &trans
-  &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &out OUT_BLE      &trans  &trans  &trans  &trans  &trans
-                                &trans         &trans         &trans            &trans  &trans  &trans
+  &bt BT_CLR     &bt BT_CLR_ALL  &trans         &bootloader    &sys_reset        &trans  &trans  &trans  &trans  &trans
+  &bt BT_DISC 4  &bt BT_DISC 3   &bt BT_DISC 2  &bt BT_DISC 1  &out OUT_USB      &trans  &trans  &trans  &trans  &trans
+  &bt BT_SEL 4   &bt BT_SEL 3    &bt BT_SEL 2   &bt BT_SEL 1   &out OUT_BLE      &trans  &trans  &trans  &trans  &trans
+                                 &trans         &trans         &trans            &trans  &trans  &trans
             >;
 
             label = "BLUE";

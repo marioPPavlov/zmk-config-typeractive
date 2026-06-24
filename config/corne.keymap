@@ -1036,14 +1036,16 @@
             hold-while-undecided;
         };
 
-        mo_kp: mo_kp {
+        mo_kp_nav: mo_kp_nav {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
-            label = "MO_KP";
+            label = "MO_KP_NAV";
+            hold-trigger-key-positions = <15 17 16 18 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 32>;
+            hold-while-undecided;
         };
 
         /* Shift + Esc tap: app switcher; else Esc hold-tap (NAV + Esc). Space has no morph. */
@@ -1177,7 +1179,7 @@
   &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T                  &kp Y                   &kp U                      &kp I                        &kp O                      &long_mo_tp 7 P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                      &kp K                        &kp L                      &short_mo_tp_space_hold_pref 11 COLON
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &esc_shift_lgui_tab_mm              &mo_space 11 SPACE          &mo_kp 9 BACKSPACE               &mm_shift_capsword      &mo_sl_trigger_num 4 4     &kp ENTER
+                                                                   &esc_shift_lgui_tab_mm              &mo_space 11 SPACE          &mo_kp_nav 9 BACKSPACE           &mm_shift_capsword      &mo_sl_trigger_num 4 4     &kp ENTER
             >;
         };
 

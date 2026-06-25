@@ -1164,14 +1164,15 @@
 
         mo_sl_trigger_num: mo_sl_trigger_num {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&macro_mo_default_on_release>, <&sl>;
+            bindings = <&macro_mo_default_on_release>, <&kp>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <250>;
-            hold-trigger-key-positions = <14 13 4 3 2 12 11 1 0 10 24 21 22 23 20 32 31 30 33 34 35>;
+            hold-trigger-key-positions = <14 13 4 3 2 12 11 1 0 10 24 21 22 23 20 32 31 30 33 34 35 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 34 35>;
             hold-while-undecided;
             label = "MO_SL_TRIGGER_NUM";
+            hold-while-undecided-linger;
         };
     };
 
@@ -1181,10 +1182,10 @@
         BASE {
             display-name = "BASE";
             bindings = <
-  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T                  &kp Y                   &kp U                      &kp I                        &kp O                      &kp P
-  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                      &kp K                        &kp L                      &short_mo_tp_space_hold_pref 11 COLON
-  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp RIGHT_SHIFT M  &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &esc_shift_lgui_tab_mm              &mo_space 11 SPACE          &mo_kp_nav 9 BACKSPACE           &mm_shift_capsword      &mo_sl_trigger_num 4 4     &kp ENTER
+  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T                  &kp Y                   &kp U                           &kp I                        &kp O                      &kp P
+  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LSHFT F    &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                           &kp K                        &kp L                      &short_mo_tp_space_hold_pref 11 COLON
+  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp RIGHT_SHIFT M       &long_th_kp RIGHT_GUI COMMA  &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
+                                                                   &esc_shift_lgui_tab_mm              &mo_space 11 SPACE          &mo_kp_nav 9 BACKSPACE           &mm_shift_capsword      &mo_sl_trigger_num 4 BACKSPACE  &kp ENTER
             >;
         };
 

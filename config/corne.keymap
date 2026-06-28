@@ -1050,7 +1050,6 @@
             tapping-term-ms = <250>;
             label = "MO_KP_NAV";
             hold-trigger-key-positions = <15 17 16 18 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 32>;
-            hold-while-undecided;
         };
 
         /* Shift + Esc tap: app switcher; else Esc hold-tap (NAV + Esc). Space has no morph. */
@@ -1286,10 +1285,10 @@
         HYPER_TAP {
             label = "HYPER_TAP";
             bindings = <
-  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R  &tab_swap                   &macro_tap_and_navword LA(LEFT)  &macro_tap_and_navword LA(LS(LEFT))  &macro_tap_and_navword LS(LA(RIGHT))  &macro_tap_and_navword LA(RIGHT)  &trans
-  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F  &macro_hyperkey G          &macro_tap_and_navword LEFT      &macro_tap_and_navword DOWN          &macro_tap_and_navword UP_ARROW       &macro_tap_and_navword RIGHT      &kp APOSTROPHE
-  &trans  &trans  &trans  &trans                                 &trans                   &kp STAR                         &mkp MB4                             &mkp MB5                              &single_tap EQUAL                 &single_tap DOUBLE_QUOTES
-                  &trans  &short_mo_tp_space_hold_pref 11 SPACE  &mo_sl_trigger 9 10      &trans                           &ht_single_tap TILDE GRAVE           &kp LS(ENTER)
+  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R                      &tab_swap                &macro_tap_and_navword LA(LEFT)  &macro_tap_and_navword LA(LS(LEFT))  &macro_tap_and_navword LS(LA(RIGHT))  &macro_tap_and_navword LA(RIGHT)  &trans
+  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F                      &macro_hyperkey G        &macro_tap_and_navword LEFT      &macro_tap_and_navword DOWN          &macro_tap_and_navword UP_ARROW       &macro_tap_and_navword RIGHT      &kp APOSTROPHE
+  &trans             &trans             &trans             &trans                                 &trans                   &kp STAR                         &mkp MB4                             &mkp MB5                              &single_tap EQUAL                 &single_tap DOUBLE_QUOTES
+                                        &trans             &short_mo_tp_space_hold_pref 11 SPACE  &mo_sl_trigger 9 10      &trans                           &ht_single_tap TILDE GRAVE           &kp LS(ENTER)
             >;
         };
 

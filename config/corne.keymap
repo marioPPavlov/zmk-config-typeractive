@@ -1317,10 +1317,10 @@
 
         F_LAYER {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans         &trans     &trans         &trans      &trans
-  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER  &kp LS(ENTER)  &kp DELETE  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans         &trans     &trans         &trans      &trans
-                  &trans  &trans  &trans      &trans         &trans     &trans
+  &trans  &trans  &trans  &trans  &trans      &trans         &trans       &trans         &trans      &trans
+  &trans  &trans  &trans  &trans  &trans      &kp BACKSPACE  &kp ENTER    &kp LS(ENTER)  &kp DELETE  &trans
+  &trans  &trans  &trans  &trans  &trans      &kp LG(GRAVE)  &kp LG(TAB)  &trans         &trans      &trans
+                  &trans  &trans  &trans      &trans         &trans       &trans
             >;
         };
     };

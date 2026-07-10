@@ -1301,6 +1301,15 @@
                                         &trans             &trans             &trans                 &kp LA(BACKSPACE)  &kp BACKSPACE  &kp DELETE
             >;
         };
+
+        F_LAYER {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans         &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &kp ENTER  &kp LS(ENTER)  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans         &trans  &trans
+                  &trans  &trans  &trans      &trans  &trans     &trans
+            >;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };

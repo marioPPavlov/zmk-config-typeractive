@@ -745,6 +745,16 @@
             bindings = <&mo 7>;
             key-positions = <9 29>;
         };
+
+        combo-left-par {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <25 26>;
+        };
+
+        combo_right_par {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <26 27>;
+        };
     };
 
     behaviors {

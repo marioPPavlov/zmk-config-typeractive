@@ -566,91 +566,91 @@
 
         combo_one {
             bindings = <&long_combo_th EXCL NUMBER_1>;
-            key-positions = <13 3>;
+            key-positions = <13 3 23>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_two {
             bindings = <&long_combo_th AT_SIGN NUMBER_2>;
-            key-positions = <12 2>;
+            key-positions = <12 2 22>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_three {
             bindings = <&long_combo_th HASH NUMBER_3>;
-            key-positions = <11 1>;
+            key-positions = <11 1 21>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_four {
             bindings = <&long_combo_th DOLLAR NUMBER_4>;
-            key-positions = <10 0>;
+            key-positions = <10 0 20>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_five {
             bindings = <&long_combo_th PERCENT KP_NUMBER_5>;
-            key-positions = <15 5>;
+            key-positions = <15 5 25>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_six {
             bindings = <&long_combo_th CARET KP_NUMBER_6>;
-            key-positions = <16 6>;
+            key-positions = <16 6 26>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_seven {
             bindings = <&long_combo_th AMPERSAND KP_N7>;
-            key-positions = <17 7>;
+            key-positions = <17 7 27>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_eight {
             bindings = <&kp KP_NUMBER_8>;
-            key-positions = <18 8>;
+            key-positions = <18 8 28>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_nine {
             bindings = <&kp KP_NUMBER_9>;
-            key-positions = <19 9>;
+            key-positions = <19 9 29>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 
         combo_ampersand {
             bindings = <&kp AMPERSAND>;
-            key-positions = <17 7>;
+            key-positions = <17 7 27>;
             layers = <9>;
         };
 
         combo_caret {
             bindings = <&kp CARET>;
-            key-positions = <16 6>;
+            key-positions = <16 6 26>;
             layers = <9>;
         };
 
         combo_percent {
             bindings = <&kp PERCENT>;
-            key-positions = <15 5>;
+            key-positions = <15 5 25>;
             layers = <9>;
         };
 
         combo_five_hand {
             bindings = <&kp KP_NUMBER_5>;
-            key-positions = <14 4>;
+            key-positions = <14 4 24>;
             layers = <9>;
         };
 
         combo_six_hand {
             bindings = <&kp KP_N6>;
-            key-positions = <13 3>;
+            key-positions = <13 3 23>;
             layers = <9>;
         };
 
         combo_seven_hand {
             bindings = <&kp KP_NUMBER_7>;
-            key-positions = <2 12>;
+            key-positions = <2 12 22>;
             layers = <9>;
         };
 

@@ -1211,7 +1211,7 @@
 
         mo_enter_numshift: mo_enter_numshift {
             compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo_enter_numshift>, <&kp>;
+            bindings = <&macro_mo_and_shift>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";

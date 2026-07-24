@@ -1198,6 +1198,18 @@
             hold-trigger-key-positions = <15 16 17 26 25>;
             require-prior-idle-ms = <75>;
         };
+
+        mo_enter_numshift: mo_enter_numshift {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&macro_mo_default_on_release>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            label = "MO_ENTER_NUMSHIFT";
+            require-prior-idle-ms = <0>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14>;
+        };
     };
 
     keymap {

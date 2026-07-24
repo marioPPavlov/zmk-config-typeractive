@@ -696,7 +696,7 @@
 
         lgui_lcombo_r_combo {
             bindings = <&kp LS(LGUI)>;
-            key-positions = <26 27>;
+            key-positions = <26 27 25 28 29>;
         };
 
         lalt_lshift_r_combo {

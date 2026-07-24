@@ -527,10 +527,10 @@
             #binding-cells = <1>;
             bindings =
                 <&macro_press>,
-                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &kp LEFT_SHIFT>,
+                <&kp LEFT_SHIFT &macro_param_1to1 &mo MACRO_PLACEHOLDER>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &kp LEFT_SHIFT>;
+                <&kp LEFT_SHIFT &macro_param_1to1 &mo MACRO_PLACEHOLDER>;
 
             label = "MACRO_MO_AND_SHIFT";
         };

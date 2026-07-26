@@ -1268,10 +1268,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &kp N9        &kp N8                         &kp N7                                  &kp N6                                    &kp N5                             &trans     &trans     &trans     &trans    &trans
-  &kp N4        &kp N3                         &short_th_kp AT NUMBER_2                &short_th_kp EXCL NUMBER_1                &kp N0                             &kp MINUS  &kp LC(D)  &kp LC(U)  &kp PLUS  &trans
-  &kp QUESTION  &ht_single_tap PIPE BACKSLASH  &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap PIPE BACKSLASH      &trans     &trans     &trans     &trans    &trans
-                                               &trans                                  &trans                                    &kp BACKSPACE                      &trans     &trans     &trans
+  &kp N9                        &kp N8                         &kp N7                                  &kp N6                                    &kp N5                             &trans         &trans     &trans     &trans      &trans
+  &short_th_kp DOLLAR NUMBER_4  &short_th_kp HASH NUMBER_3     &short_th_kp AT NUMBER_2                &short_th_kp EXCL NUMBER_1                &kp N0                             &kp BACKSPACE  &kp LC(D)  &kp LC(U)  &kp DELETE  &trans
+  &kp QUESTION                  &ht_single_tap PIPE BACKSLASH  &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap PIPE BACKSLASH      &trans         &trans     &trans     &trans      &trans
+                                                               &trans                                  &trans                                    &kp BACKSPACE                      &trans         &trans     &trans
             >;
         };
 

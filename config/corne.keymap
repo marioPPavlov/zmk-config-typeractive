@@ -755,6 +755,26 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <26 27>;
         };
+
+        combo_excl_mark {
+            bindings = <&kp EXCL>;
+            key-positions = <3 13>;
+        };
+
+        combo_at {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <12 2>;
+        };
+
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <11 1>;
+        };
+
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 14>;
+        };
     };
 
     behaviors {

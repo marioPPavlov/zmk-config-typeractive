@@ -1288,10 +1288,10 @@
         NUM {
             display-name = "NUM";
             bindings = <
-  &kp N9                                    &kp N8                                  &ht_single_tap_semi_weak AMPS N7        &ht_single_tap_semi_weak CARET NUMBER_6   &ht_single_tap_semi_weak PERCENT N5      &trans         &msc SCRL_UP  &msc SCRL_DOWN  &trans      &trans
-  &ht_single_tap_semi_weak DOLLAR NUMBER_4  &ht_single_tap_semi_weak HASH NUMBER_3  &ht_single_tap_semi_weak AT NUMBER_2    &ht_single_tap_semi_weak EXCL NUMBER_1    &kp N0                                   &kp BACKSPACE  &kp LC(D)     &kp LC(U)       &kp DELETE  &trans
-  &kp QUESTION                              &trans                                  &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap PIPE BACKSLASH            &trans         &trans        &trans          &trans      &trans
-                                                                                    &trans                                  &trans                                    &kp BACKSPACE                            &trans         &trans        &trans
+  &kp N9                                    &kp N8                                  &ht_single_tap_semi_weak AMPS N7        &ht_single_tap_semi_weak CARET NUMBER_6   &ht_single_tap_semi_weak PERCENT N5      &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
+  &ht_single_tap_semi_weak DOLLAR NUMBER_4  &ht_single_tap_semi_weak HASH NUMBER_3  &ht_single_tap_semi_weak AT NUMBER_2    &ht_single_tap_semi_weak EXCL NUMBER_1    &kp N0                                   &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
+  &kp QUESTION                              &trans                                  &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap PIPE BACKSLASH            &trans         &trans          &trans        &trans      &trans
+                                                                                    &trans                                  &trans                                    &kp BACKSPACE                            &trans         &trans          &trans
             >;
         };
 

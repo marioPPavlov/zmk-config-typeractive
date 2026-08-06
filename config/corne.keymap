@@ -1362,9 +1362,9 @@
         cmd_layer {
             display-name = "BASE";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans             &trans         &trans                         &trans                &trans
-  &trans  &trans  &trans  &trans  &trans      &trans             &trans         &trans                         &trans                &trans
-  &trans  &trans  &trans  &trans  &trans      &trans             &trans         &ht_single_tap PIPE BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+  &trans  &trans  &trans  &trans  &trans      &trans             &trans         &trans                      &trans                &trans
+  &trans  &trans  &trans  &trans  &trans      &trans             &trans         &trans                      &trans                &trans
+  &trans  &trans  &trans  &trans  &trans      &trans             &trans         &ht_single_tap TILDE GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
                   &trans  &trans  &trans      &kp LA(BACKSPACE)  &kp BACKSPACE  &kp DELETE
             >;
         };

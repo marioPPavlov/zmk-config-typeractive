@@ -573,7 +573,7 @@
 
         combo_zero {
             bindings = <&kp KP_NUMBER_0>;
-            key-positions = <14 4>;
+            key-positions = <14 4 24>;
             require-prior-idle-ms = <COMBO_TYPING_PRIOR_IDLE_MS>;
         };
 

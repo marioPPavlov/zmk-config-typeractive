@@ -1291,7 +1291,7 @@
   &kp N9                                    &kp N8                                  &ht_single_tap_semi_weak AMPS N7        &ht_single_tap_semi_weak CARET NUMBER_6   &ht_single_tap_semi_weak PERCENT N5      &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
   &ht_single_tap_semi_weak DOLLAR NUMBER_4  &ht_single_tap_semi_weak HASH NUMBER_3  &ht_single_tap_semi_weak AT NUMBER_2    &ht_single_tap_semi_weak EXCL NUMBER_1    &kp N0                                   &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
   &kp QUESTION                              &trans                                  &ht_single_tap LEFT_BRACE LEFT_BRACKET  &ht_single_tap RIGHT_BRACE RIGHT_BRACKET  &ht_single_tap PIPE BACKSLASH            &trans         &trans          &trans        &trans      &trans
-                                                                                    &trans                                  &trans                                    &kp BACKSPACE                            &trans         &trans          &trans
+                                                                                    &trans                                  &trans                                    &trans                                   &trans         &trans          &trans
             >;
         };
 
@@ -1300,8 +1300,8 @@
             bindings = <
   &kp N9                        &short_th_kp ASTERISK N8    &short_th_kp AMPERSAND N7      &short_th_kp CARET NUMBER_6  &short_th_kp PERCENT N5      &trans         &msc SCRL_DOWN  &msc SCRL_UP  &trans      &trans
   &short_th_kp DOLLAR NUMBER_4  &short_th_kp HASH NUMBER_3  &short_th_kp AT_SIGN NUMBER_2  &short_th_kp EXCL N1         &kp N0                       &kp BACKSPACE  &kp LC(D)       &kp LC(U)     &kp DELETE  &trans
-  &trans                        &kp EQUAL                   &kp MINUS                      &kp PLUS                     &kp UNDER                    &trans         &trans          &trans        &trans      &trans
-                                                            &kp K_COPY                     &trans                       &trans                       &trans         &trans          &trans
+  &trans                        &trans                      &trans                         &trans                       &trans                       &trans         &trans          &trans        &trans      &trans
+                                                            &trans                         &trans                       &trans                       &trans         &trans          &trans
             >;
         };
 

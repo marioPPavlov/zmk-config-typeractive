@@ -775,6 +775,11 @@
             bindings = <&kp DOLLAR>;
             key-positions = <4 14>;
         };
+
+        combo_clipbaord {
+            bindings = <&macro_open_clipboard>;
+            key-positions = <21 22>;
+        };
     };
 
     behaviors {

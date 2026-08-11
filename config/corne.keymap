@@ -1334,10 +1334,10 @@
 
         MEDIA {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans           &kp C_PP  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &trans
-  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans           &trans    &trans
-                  &trans  &trans  &trans      &trans  &trans             &trans
+  &trans  &trans  &trans  &trans  &trans      &trans        &trans             &trans           &kp C_PP            &trans
+  &trans  &trans  &trans  &trans  &trans      &kp C_REWIND  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_FAST_FORWARD  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans        &trans             &trans           &trans              &trans
+                  &trans  &trans  &trans      &trans        &trans             &trans
             >;
 
             label = "MEDIA";

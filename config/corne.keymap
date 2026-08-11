@@ -1334,9 +1334,9 @@
 
         MEDIA {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans  &kp C_PP           &trans           &trans  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans           &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans           &kp C_PP  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans             &trans           &trans    &trans
                   &trans  &trans  &trans      &trans  &trans             &trans
             >;
 

@@ -1336,7 +1336,7 @@
             bindings = <
   &trans  &trans  &trans  &trans  &trans      &kp C_PREVIOUS  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_NEXT          &trans
   &trans  &trans  &trans  &trans  &trans      &kp C_REWIND    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_FAST_FORWARD  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans          &kp C_STOP            &trans                &trans              &trans
+  &trans  &trans  &trans  &trans  &trans      &trans          &kp C_PP              &trans                &trans              &trans
                   &trans  &trans  &trans      &trans          &trans                &trans
             >;
 

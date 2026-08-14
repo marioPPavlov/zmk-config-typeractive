@@ -1333,10 +1333,10 @@
 
         HYPER {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &trans     &grave_swap_shift            &grave_swap              &tab_swap                           &kp LA(LEFT)    &kp LA(LS(LEFT))    &kp LS(LA(RIGHT))  &kp LA(RIGHT)  &kp SEMICOLON
-  &kp LG(A)                   &kp LG(X)  &ht_select_line_mac 0 LG(C)  &mo_kp_f_layer 12 LG(V)  &ht_single_tap LG(ENTER) ENTER      &kp LEFT_ARROW  &kp DOWN            &kp UP_ARROW       &kp RIGHT      &kp APOSTROPHE
-  &trans                      &trans     &kp LG(Z)                    &kp LS(LG(Z))            &kp BACKSPACE                       &kp BACKSPACE   &kp LA(BACKSPACE)   &kp LA(DELETE)     &kp DELETE     &single_tap DOUBLE_QUOTES
-                                         &trans                       &trans                   &trans                              &trans          &mo_sl_trigger 4 4  &kp LS(ENTER)
+  &ht_single_tap TILDE GRAVE  &trans    &grave_swap_shift  &grave_swap     &tab_swap                           &kp LA(LEFT)    &kp LA(LS(LEFT))    &kp LS(LA(RIGHT))  &kp LA(RIGHT)  &kp SEMICOLON
+  &kp LG(LCTRL)               &kp LALT  &kp LGUI           &kp LEFT_SHIFT  &ht_single_tap LG(ENTER) ENTER      &kp LEFT_ARROW  &kp DOWN            &kp UP_ARROW       &kp RIGHT      &kp APOSTROPHE
+  &trans                      &trans    &kp LG(Z)          &kp LS(LG(Z))   &kp BACKSPACE                       &kp BACKSPACE   &kp LA(BACKSPACE)   &kp LA(DELETE)     &kp DELETE     &single_tap DOUBLE_QUOTES
+                                        &trans             &trans          &trans                              &trans          &mo_sl_trigger 4 4  &kp LS(ENTER)
             >;
 
             label = "HYPER";

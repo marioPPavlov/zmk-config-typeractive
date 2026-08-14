@@ -1197,18 +1197,6 @@
             require-prior-idle-ms = <0>;
         };
 
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <33 34 35 27 28 29 15 16 17 18 19 5 6 7 8 9 25 26>;
-            flavor = "balanced";
-            tapping-term-ms = <175>;
-            require-prior-idle-ms = <0>;
-        };
-
         mo_sl_trigger_num: mo_sl_trigger_num {
             compatible = "zmk,behavior-hold-tap";
             bindings = <&macro_mo_default_on_release>, <&kp>;
@@ -1376,10 +1364,10 @@
 
         F_LAYER {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
-  &trans  &trans  &trans  &trans  &trans      &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &trans
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
-                  &trans  &trans  &trans      &trans    &trans        &trans
+  &trans  &trans  &trans     &trans     &trans         &trans    &trans        &trans          &trans      &trans
+  &trans  &trans  &trans     &trans     &trans         &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &trans
+  &trans  &trans  &trans     &trans     &trans         &trans    &trans        &trans          &trans      &trans
+                  &kp LG(X)  &kp LG(C)  &kp LG(V)      &trans    &trans        &trans
             >;
         };
     };

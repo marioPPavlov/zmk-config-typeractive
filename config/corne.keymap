@@ -800,6 +800,11 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <16 7>;
         };
+
+        combo_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <7 17>;
+        };
     };
 
     behaviors {

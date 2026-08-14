@@ -763,12 +763,12 @@
 
         combo_at {
             bindings = <&kp AT_SIGN>;
-            key-positions = <12 2>;
+            key-positions = <12 11>;
         };
 
         combo_hash {
             bindings = <&kp HASH>;
-            key-positions = <11 1>;
+            key-positions = <17 18>;
         };
 
         combo_dollar {
@@ -783,12 +783,12 @@
 
         combo_left_bracket {
             bindings = <&single_tap LEFT_BRACKET>;
-            key-positions = <11 12>;
+            key-positions = <12 2>;
         };
 
         combo_right_bracket {
             bindings = <&single_tap RIGHT_BRACKET>;
-            key-positions = <17 18>;
+            key-positions = <17 7>;
         };
 
         combo_left_parenth {

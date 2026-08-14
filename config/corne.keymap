@@ -546,7 +546,7 @@
 
         combo_tog_mouse {
             bindings = <&mouse_mode_color_on>;
-            key-positions = <16 7>;
+            key-positions = <16 7 17 18 19 9 8>;
             layers = <0 4>;
         };
 
@@ -789,6 +789,16 @@
         combo_right_bracket {
             bindings = <&single_tap RIGHT_BRACKET>;
             key-positions = <17 18>;
+        };
+
+        combo_left_parenth {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <13 2>;
+        };
+
+        combo_right_parenth {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 7>;
         };
     };
 

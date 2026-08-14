@@ -748,12 +748,12 @@
 
         combo-left-par {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <25 26>;
+            key-positions = <24 14>;
         };
 
         combo_right_par {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <26 27>;
+            key-positions = <25 15>;
         };
 
         combo_excl_mark {

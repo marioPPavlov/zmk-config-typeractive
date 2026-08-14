@@ -780,6 +780,16 @@
             bindings = <&macro_open_clipboard>;
             key-positions = <21 22>;
         };
+
+        combo_left_bracket {
+            bindings = <&single_tap LEFT_BRACKET>;
+            key-positions = <11 12>;
+        };
+
+        combo_right_bracket {
+            bindings = <&single_tap RIGHT_BRACKET>;
+            key-positions = <17 18>;
+        };
     };
 
     behaviors {

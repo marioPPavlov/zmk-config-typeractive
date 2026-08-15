@@ -793,17 +793,17 @@
 
         combo_left_parenth {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <13 2>;
+            key-positions = <11 1>;
         };
 
         combo_right_parenth {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <16 7>;
+            key-positions = <18 8>;
         };
 
         combo_backslash {
             bindings = <&ht_single_tap PIPE BACKSLASH>;
-            key-positions = <8 18>;
+            key-positions = <16 6>;
         };
     };
 

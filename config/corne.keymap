@@ -1375,10 +1375,10 @@
         HYPER_TAP {
             label = "HYPER_TAP";
             bindings = <
-  &trans  &trans  &trans  &trans                                 &kp LG(TAB)              &macro_tap_and_navword LA(LEFT)  &macro_tap_and_navword LA(LS(LEFT))  &macro_tap_and_navword LS(LA(RIGHT))  &macro_tap_and_navword LA(RIGHT)  &kp SEMICOLON
-  &trans  &trans  &trans  &trans                                 &trans                   &macro_tap_and_navword LEFT      &macro_tap_and_navword DOWN          &macro_tap_and_navword UP_ARROW       &macro_tap_and_navword RIGHT      &kp APOSTROPHE
-  &trans  &trans  &trans  &trans                                 &trans                   &ht_single_tap TILDE GRAVE       &mkp MB4                             &mkp MB5                              &single_tap EQUAL                 &single_tap DOUBLE_QUOTES
-                  &trans  &short_mo_tp_space_hold_pref 11 SPACE  &mo_sl_trigger 9 10      &trans                           &mo_sl_trigger 4 4                   &kp LS(ENTER)
+  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R                      &kp LG(TAB)              &macro_tap_and_navword LA(LEFT)  &macro_tap_and_navword LA(LS(LEFT))  &macro_tap_and_navword LS(LA(RIGHT))  &macro_tap_and_navword LA(RIGHT)  &kp SEMICOLON
+  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F                      &macro_hyperkey G        &macro_tap_and_navword LEFT      &macro_tap_and_navword DOWN          &macro_tap_and_navword UP_ARROW       &macro_tap_and_navword RIGHT      &kp APOSTROPHE
+  &trans             &trans             &trans             &trans                                 &trans                   &ht_single_tap TILDE GRAVE       &mkp MB4                             &mkp MB5                              &single_tap EQUAL                 &single_tap DOUBLE_QUOTES
+                                        &trans             &short_mo_tp_space_hold_pref 11 SPACE  &mo_sl_trigger 9 10      &trans                           &mo_sl_trigger 4 4                   &kp LS(ENTER)
             >;
         };
 

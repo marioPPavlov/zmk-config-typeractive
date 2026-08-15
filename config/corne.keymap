@@ -757,7 +757,7 @@
         };
 
         combo_grave {
-            bindings = <&kp GRAVE>;
+            bindings = <&ht_single_tap TILDE GRAVE>;
             key-positions = <3 13>;
         };
 
@@ -782,12 +782,12 @@
         };
 
         combo_left_bracket {
-            bindings = <&single_tap LEFT_BRACKET>;
+            bindings = <&ht_single_tap LEFT_BRACE LEFT_BRACKET>;
             key-positions = <12 2>;
         };
 
         combo_right_bracket {
-            bindings = <&single_tap RIGHT_BRACKET>;
+            bindings = <&ht_single_tap RIGHT_BRACE RIGHT_BRACKET>;
             key-positions = <17 7>;
         };
 

@@ -1414,10 +1414,10 @@
 
         F_LAYER {
             bindings = <
-  &trans  &trans  &trans     &trans     &trans         &trans    &trans        &trans          &trans      &trans
-  &trans  &trans  &trans     &trans     &trans         &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &trans
-  &trans  &trans  &trans     &trans     &kp ENTER      &trans    &trans        &trans          &trans      &trans
-                  &kp LG(X)  &kp LG(C)  &kp LG(V)      &trans    &trans        &trans
+  &trans  &trans     &trans     &trans  &trans         &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LG(X)  &kp LG(C)  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+  &trans  &trans     &trans     &trans  &kp ENTER      &trans  &trans  &trans  &trans  &trans
+                     &kp LG(X)  &trans  &kp LG(V)      &trans  &trans  &trans
             >;
         };
     };

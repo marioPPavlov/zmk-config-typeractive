@@ -810,6 +810,16 @@
             bindings = <&kp EXCL>;
             key-positions = <17 18>;
         };
+
+        combo_asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <26 27>;
+        };
+
+        combo_amp {
+            bindings = <&kp AMPS>;
+            key-positions = <25 26>;
+        };
     };
 
     behaviors {

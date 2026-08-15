@@ -768,7 +768,7 @@
 
         combo_hash {
             bindings = <&kp HASH>;
-            key-positions = <17 18>;
+            key-positions = <10 0>;
         };
 
         combo_dollar {

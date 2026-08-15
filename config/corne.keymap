@@ -805,6 +805,11 @@
             bindings = <&ht_single_tap PIPE BACKSLASH>;
             key-positions = <16 6>;
         };
+
+        combo_excl_mark {
+            bindings = <&kp EXCL>;
+            key-positions = <17 18>;
+        };
     };
 
     behaviors {

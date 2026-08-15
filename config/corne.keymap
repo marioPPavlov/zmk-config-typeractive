@@ -820,6 +820,16 @@
             bindings = <&kp AMPS>;
             key-positions = <25 26>;
         };
+
+        combo_excl_2 {
+            bindings = <&kp EXCL>;
+            key-positions = <13 2>;
+        };
+
+        combo_question {
+            bindings = <&kp QUESTION>;
+            key-positions = <7 16>;
+        };
     };
 
     behaviors {

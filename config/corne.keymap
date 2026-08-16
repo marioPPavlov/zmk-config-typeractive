@@ -1283,6 +1283,18 @@
             require-prior-idle-ms = <0>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14>;
         };
+
+        mo_sl_hyper: mo_sl_hyper {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&macro_mo_default_on_release>, <&sl>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            hold-while-undecided;
+            label = "MO_SL_HYPER";
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+        };
     };
 
     keymap {
@@ -1294,7 +1306,7 @@
   &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T                  &kp Y                   &kp U                 &kp I                               &kp O                      &kp P
   &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &mo_kp_f_layer 13 F         &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                 &kp K                               &kp L                      &short_mo_tp_space_hold_pref 12 COLON
   &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M  &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &esc_shift_lgui_tab_mm              &mo_space 12 SPACE          &mo_sl_trigger 9 10              &mm_shift_capsword      &mo_sl_trigger 4 4    &long_th_kp LS(LEFT_CONTROL) ENTER
+                                                                   &esc_shift_lgui_tab_mm              &mo_space 12 SPACE          &mo_sl_hyper 9 9                 &mm_shift_capsword      &mo_sl_trigger 4 4    &long_th_kp LS(LEFT_CONTROL) ENTER
             >;
         };
 

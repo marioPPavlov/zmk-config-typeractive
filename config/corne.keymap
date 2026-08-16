@@ -638,19 +638,19 @@
         BASE {
             display-name = "BASE";
             bindings = <
-  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R          &long_mo_tp 6 T                  &kp Y                   &kp U                 &kp I                               &kp O                      &kp P
-  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &mo_kp_f_layer 7 F             &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                 &kp K                               &kp L                      &short_mo_tp_space_hold_pref 2 COLON
-  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V     &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M  &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &esc_shift_lgui_tab_mm              &kp SPACE                      &mo_sl_hyper 1 1                 &mm_shift_capsword      &mo_sl_trigger 3 3    &long_th_kp LS(LEFT_CONTROL) ENTER
+  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 6 T                  &kp Y                   &kp U                 &kp I                               &kp O                      &kp P
+  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &mo_kp_f_layer 7 F          &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                 &kp K                               &kp L                      &short_mo_tp_space_hold_pref 2 COLON
+  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M  &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
+                                                                   &esc_shift_lgui_tab_mm              &kp SPACE                   &mo_sl_hyper 1 1                 &mm_shift_capsword      &mo_sl_trigger 3 3    &long_th_kp LS(LEFT_CONTROL) ENTER
             >;
         };
 
         NAV {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &kp LG(X)      &grave_swap_shift  &grave_swap     &tab_swap                           &kp LA(LEFT)       &kp LA(LS(LEFT))    &kp LS(LA(RIGHT))  &kp LA(RIGHT)   &kp SEMICOLON
-  &kp LCTRL                   &kp LALT       &kp LGUI           &kp LEFT_SHIFT  &ht_single_tap LG(ENTER) ENTER      &kp LEFT_ARROW     &kp DOWN            &kp UP_ARROW       &kp RIGHT       &kp APOSTROPHE
-  &kp LG(Z)                   &kp LG(LS(Z))  &kp LG(C)          &kp LG(V)       &kp BACKSPACE                       &kp LA(BACKSPACE)  &kp BACKSPACE       &kp DELETE         &kp LA(DELETE)  &single_tap DOUBLE_QUOTES
-                                             &trans             &trans          &trans                              &trans             &mo_sl_trigger 3 3  &kp LS(ENTER)
+  &ht_single_tap TILDE GRAVE  &kp LG(X)      &grave_swap_shift  &grave_swap     &tab_swap                           &kp LA(LEFT)    &kp LA(LS(LEFT))    &kp LS(LA(RIGHT))  &kp LA(RIGHT)  &kp SEMICOLON
+  &kp LCTRL                   &kp LALT       &kp LGUI           &kp LEFT_SHIFT  &ht_single_tap LG(ENTER) ENTER      &kp LEFT_ARROW  &kp DOWN            &kp UP_ARROW       &kp RIGHT      &kp APOSTROPHE
+  &kp LG(Z)                   &kp LG(LS(Z))  &kp LG(C)          &kp LG(V)       &kp BACKSPACE                       &kp BACKSPACE   &kp LA(BACKSPACE)   &kp LA(DELETE)     &kp DELETE     &single_tap DOUBLE_QUOTES
+                                             &trans             &trans          &trans                              &trans          &mo_sl_trigger 3 3  &kp LS(ENTER)
             >;
 
             label = "NAV";
@@ -711,10 +711,10 @@
         F_LAYER {
             display-name = "F_LAYER";
             bindings = <
-  &trans  &trans  &trans     &trans     &trans         &trans    &trans        &trans          &trans      &trans
-  &trans  &trans  &trans     &trans     &trans         &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &trans
-  &trans  &trans  &trans     &trans     &trans         &trans    &trans        &trans          &trans      &trans
-                  &kp LG(X)  &kp LG(C)  &kp LG(V)      &trans    &trans        &trans
+  &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
+  &trans  &trans  &trans  &trans  &trans      &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
+                  &trans  &trans  &trans      &trans    &trans        &trans
             >;
         };
     };

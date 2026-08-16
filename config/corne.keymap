@@ -1303,10 +1303,10 @@
         BASE {
             display-name = "BASE";
             bindings = <
-  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 8 T                  &kp Y                   &kp U                 &kp I                               &kp O                      &kp P
-  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &mo_kp_f_layer 13 F         &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                 &kp K                               &kp L                      &short_mo_tp_space_hold_pref 12 COLON
-  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M  &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                                   &esc_shift_lgui_tab_mm              &mo_space 12 SPACE          &mo_sl_hyper 9 9                 &mm_shift_capsword      &mo_sl_trigger 4 4    &long_th_kp LS(LEFT_CONTROL) ENTER
+  &kp Q                           &kp W                            &kp E                               &ht_maclanguage_r 0 R          &long_mo_tp 8 T                  &kp Y                   &kp U                 &kp I                               &kp O                      &kp P
+  &semi_long_th_kp LCTRL A        &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &semi_long_th_kp LEFT_SHIFT F  &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                 &kp K                               &kp L                      &short_mo_tp_space_hold_pref 11 COLON
+  &ht_single_tap_weak QUESTION Z  &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V     &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M  &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
+                                                                   &esc_shift_lgui_tab_mm              &mo_space 11 SPACE             &mo_sl_hyper 9 9                 &mm_shift_capsword      &mo_sl_trigger 4 4    &long_th_kp LS(LEFT_CONTROL) ENTER
             >;
         };
 
@@ -1404,22 +1404,13 @@
             label = "HYPER";
         };
 
-        quick_tap {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp SEMI
-  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp SQT
-  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LS(DQT)
-                  &trans  &trans  &trans      &trans  &trans  &trans
-            >;
-        };
-
         HYPER_TAP {
             label = "HYPER_TAP";
             bindings = <
   &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R                      &kp LG(TAB)              &macro_tap_and_navword LA(LEFT)  &macro_tap_and_navword LA(LS(LEFT))  &macro_tap_and_navword LS(LA(RIGHT))  &macro_tap_and_navword LA(RIGHT)  &kp SEMICOLON
   &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F                      &macro_hyperkey G        &macro_tap_and_navword LEFT      &macro_tap_and_navword DOWN          &macro_tap_and_navword UP_ARROW       &macro_tap_and_navword RIGHT      &kp APOSTROPHE
   &trans             &trans             &trans             &trans                                 &trans                   &ht_single_tap TILDE GRAVE       &mkp MB4                             &mkp MB5                              &single_tap EQUAL                 &single_tap DOUBLE_QUOTES
-                                        &trans             &short_mo_tp_space_hold_pref 12 SPACE  &mo_sl_trigger 9 12      &trans                           &mo_sl_trigger 4 4                   &kp LS(ENTER)
+                                        &trans             &short_mo_tp_space_hold_pref 11 SPACE  &mo_sl_trigger 9 11      &trans                           &mo_sl_trigger 4 4                   &kp LS(ENTER)
             >;
         };
 
@@ -1430,15 +1421,6 @@
   &trans  &trans  &trans  &trans  &trans      &trans             &trans         &trans      &trans  &trans
   &trans  &trans  &trans  &trans  &trans      &trans             &trans         &trans      &trans  &trans
                   &trans  &trans  &trans      &kp LA(BACKSPACE)  &kp BACKSPACE  &kp DELETE
-            >;
-        };
-
-        F_LAYER {
-            bindings = <
-  &trans  &trans     &trans     &trans  &trans         &trans  &trans  &trans  &trans  &trans
-  &trans  &kp LG(X)  &kp LG(C)  &trans  &trans         &trans  &trans  &trans  &trans  &trans
-  &trans  &trans     &trans     &trans  &kp ENTER      &trans  &trans  &trans  &trans  &trans
-                     &kp LG(X)  &trans  &kp LG(V)      &trans  &trans  &trans
             >;
         };
     };

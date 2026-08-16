@@ -635,7 +635,7 @@
 
         NAV {
             bindings = <
-  &ht_single_tap TILDE GRAVE  &trans         &grave_swap_shift  &grave_swap     &tab_swap                           &kp LA(LEFT)       &kp LA(LS(LEFT))    &kp LS(LA(RIGHT))  &kp LA(RIGHT)   &kp SEMICOLON
+  &ht_single_tap TILDE GRAVE  &kp LG(X)      &grave_swap_shift  &grave_swap     &tab_swap                           &kp LA(LEFT)       &kp LA(LS(LEFT))    &kp LS(LA(RIGHT))  &kp LA(RIGHT)   &kp SEMICOLON
   &kp LCTRL                   &kp LALT       &kp LGUI           &kp LEFT_SHIFT  &ht_single_tap LG(ENTER) ENTER      &kp LEFT_ARROW     &kp DOWN            &kp UP_ARROW       &kp RIGHT       &kp APOSTROPHE
   &kp LG(Z)                   &kp LG(LS(Z))  &kp LG(C)          &kp LG(V)       &kp BACKSPACE                       &kp LA(BACKSPACE)  &kp BACKSPACE       &kp DELETE         &kp LA(DELETE)  &single_tap DOUBLE_QUOTES
                                              &trans             &trans          &trans                              &trans             &mo_sl_trigger 3 3  &kp LS(ENTER)

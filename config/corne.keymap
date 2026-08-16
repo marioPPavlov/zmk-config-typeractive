@@ -7,31 +7,15 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
-/* Layer indices for behaviors — must NOT be named NAV/NUM/NAVsimple or they
- * expand in keymap node names (e.g. NUM { → 2 {) and cause duplicate DTS nodes. */
+/* Digits 0-9 and =/-/+ combos use COMBO_TYPING_PRIOR_IDLE_MS. */
 
-#define LAYER_NAV 1
-#define LAYER_HYPER_TAP 8
-#define LAYER_NAVSIMPLE 2
-#define LAYER_NUM 4
-#define LAYER_NUM_SIMPLE 5
-
-/* NAV-on-space hold-tap uses PRIOR_IDLE_MS. Digits 0-9 and =/-/+ use COMBO_TYPING_PRIOR_IDLE_MS. */
-
-#define PRIOR_IDLE_MS 75
 #define COMBO_TYPING_PRIOR_IDLE_MS 50
-#define SHORT_MO_SPACE_PRIOR_IDLE_MS PRIOR_IDLE_MS
-
-/* Hold duration before NAV layer wins over tap (space). Generic short_mo_tp stays 150. */
-
-#define SHORT_MO_SPACE_TAPPING_TERM_MS 200
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 &sk {
     release-after-ms = <1500>;
@@ -57,35 +41,6 @@
 
 / {
     macros {
-        mouse_mode_color_on: mouse_mode_color {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 0>;
-
-            label = "MOUSE_MODE_COLOR";
-        };
-
-        macro_mo2AndLshft: smart_tab_shift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 3 &kp LSHIFT>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 3 &kp LEFT_SHIFT>;
-
-            label = "SMART_TAB_SHIFT";
-        };
-
-        mouse_mode_off: mouse_mode_color_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 0>;
-
-            label = "MOUSE_MODE_COLOR";
-        };
-
         mac_lgui_tab: mac_lgui_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -98,88 +53,6 @@
                 <&kp LEFT_GUI>;
 
             label = "MAC_LGUI_TAB";
-        };
-
-        mac_lgui_tab_double: mac_lgui_tab_double {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LEFT_GUI>;
-
-            label = "MAC_LGUI_TAB_DOUBLE";
-        };
-
-        mac_lgui_tab_tripple: mac_lgui_tab_tripple {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LEFT_GUI>;
-
-            label = "MAC_LGUI_TAB_TRIPPLE";
-        };
-
-        linux_lgui_tab: linux_lgui_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "LINUX_LGUI_TAB";
-        };
-
-        linux_lgui_tab_double: linux_lgui_tab_double {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "LINUX_LGUI_TAB_DOUBLE";
-        };
-
-        linux_lgui_tab_tripple: linux_lgui_tab_tripple {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "LINUX_LGUI_TAB_TRIPPLE";
         };
 
         mac_change_language: mac_change_language {
@@ -203,86 +76,6 @@
             label = "MACRO_OPEN_CLIPBOARD";
         };
 
-        mouse_click_and_off: mouse_click_and_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&macro_color_off>,
-                <&macro_tap>,
-                <&mkp MB1 &tog 0>;
-
-            label = "MOUSE_CLICK_AND_OFF";
-        };
-
-        macro_color_off: macro_color_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>;
-            label = "MACRO_COLOR_OFF";
-        };
-
-        macro_mouse_up: macro_mouse_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mmv MOVE_Y(-300) &sl 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mmv MOVE_Y(-300) &sl 0>;
-
-            label = "MACRO_MOUSE_UP";
-        };
-
-        macro_color_on: macro_color_on {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&rgb_ug RGB_ON>;
-
-            label = "MACRO_COLOR_ON";
-        };
-
-        flush_stuck: flush_stuck {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LCTRL>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_release>,
-                <&kp LEFT_GUI>,
-                <&macro_release>,
-                <&kp RCTRL>,
-                <&macro_release>,
-                <&kp RIGHT_SHIFT>,
-                <&macro_release>,
-                <&kp RIGHT_ALT>,
-                <&macro_release>,
-                <&kp RIGHT_GUI>;
-
-            label = "FLUSH_STUCK";
-        };
-
-        navword_mouse_off: navword_mouse_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 0>, <&macro_tap>, <&nav_word>;
-
-            label = "NAVWORD_MOUSE_OFF";
-        };
-
-        delete_mouse_off: delete_mouse_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&tog 0>, <&macro_tap>, <&kp BACKSPACE>;
-
-            label = "DELETE_MOUSE_OFF";
-        };
-
         single_tap: single_tap {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -295,37 +88,6 @@
             label = "SINGLE_TAP";
         };
 
-        hyper_and_mouse_off: hyper_and_mouse_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&tog 0>,
-                <&macro_press>,
-                <&kp LS(LA(LC(LG(LGUI))))>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LS(LA(LC(LG(LEFT_GUI))))>,
-                <&macro_tap>,
-                <&tog 0>;
-
-            label = "HYPER_AND_MOUSE_OFF";
-        };
-
-        macro_hold_and_mouse_off: ht_mouse_off {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&tog 0>,
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "HT_MOUSE_OFF";
-        };
-
         mm_shift_capsword: mm_shift_capsword {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_SHIFT_CAPSWORD";
@@ -336,33 +98,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
-
-        macro_shift_mouse_off: macro_sticky_and_mouse_off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&tog 0>,
-                <&macro_tap>,
-                <&mm_shift_capsword>;
-
-            label = "MACRO_STICKY_AND_MOUSE_OFF";
-        };
-
-        /*
-        num_single_tap: num_single_tap {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&num_word &macro_param_1to1>,
-                <&macro_tap>,
-                <&kp MACRO_PLACEHOLDER>,
-                <&macro_wait_time 200>;
-
-            label = "NUM_SINGLE_TAP";
-        };
-*/
 
         macro_hyperkey: macro_hyperkey {
             compatible = "zmk,behavior-macro-one-param";
@@ -377,84 +112,6 @@
                 <&kp LS(LA(LC(LG(LGUI))))>;
 
             label = "MACRO_HYPERKEY";
-        };
-
-        macro_tap_on_release: macro_tap_release {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_tap>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "MACRO_TAP_RELEASE";
-        };
-
-        macro_select_line: macro_select_line {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp LEFT>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp RIGHT>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LEFT_GUI &kp LSHIFT>,
-                <&macro_tap>,
-                <&kp LG(C)>;
-
-            label = "MACRO_SELECT_LINE";
-        };
-
-        macro_mo_nav_heavy_and_tap: macro_mt_and_tap_on_release {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&mo 0>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 0>,
-                <&macro_tap>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "MACRO_MT_AND_TAP_ON_RELEASE";
-        };
-
-        macro_f20_layer2: macro_f20_layer2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp K_COPY>,
-                <&macro_press>,
-                <&mo 3>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 3>;
-
-            label = "MACRO_F20_LAYER2";
-        };
-
-        macro_123456: macro_123456 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6>;
-            label = "MACRO_123456";
-        };
-
-        macro_grave: macro_grave {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
-            label = "MACRO_GRAVE";
         };
 
         macro_tap_and_navword: macro_tap_and_navword {
@@ -477,36 +134,6 @@
             label = "MACRO_TAP_AND_NAVWORD";
         };
 
-        macro_tap_and_numword: macro_tap_and_numword {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&num_word>,
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "MACRO_TAP_AND_NUMWORD";
-        };
-
-        macro_kp_default_layer: macro_cmd_with_default_layer {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_tap>,
-                <&to 0>,
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "MACRO_CMD_WITH_DEFAULT_LAYER";
-        };
-
         macro_mo_default_on_release: macro_default_on_release {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -521,19 +148,6 @@
 
             label = "MACRO_DEFAULT_ON_RELEASE";
         };
-
-        macro_mo_and_shift: macro_mo_and_shift {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp LEFT_SHIFT>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &mo MACRO_PLACEHOLDER &kp LEFT_SHIFT>;
-
-            label = "MACRO_MO_AND_SHIFT";
-        };
     };
 
     combos {
@@ -542,12 +156,6 @@
         mac_screenshot_clipboard {
             bindings = <&kp LS(LC(LG(NUMBER_4)))>;
             key-positions = <1 2 3>;
-        };
-
-        combo_tog_mouse {
-            bindings = <&mouse_mode_color_on>;
-            key-positions = <16 7 17 18 19 9 8>;
-            layers = <0 3>;
         };
 
         combo_minus {
@@ -679,11 +287,6 @@
             layers = <1>;
         };
 
-        lgui_lshift_combo {
-            bindings = <&kp LS(LGUI)>;
-            key-positions = <>;
-        };
-
         lalt_lshift_combo {
             bindings = <&kp LS(LALT)>;
             key-positions = <13 11>;
@@ -724,11 +327,6 @@
         combo_underscore {
             bindings = <&kp UNDER>;
             key-positions = <17 16>;
-        };
-
-        combo_enter {
-            bindings = <&kp RETURN>;
-            key-positions = <>;
         };
 
         combo_bt_select_1 {
@@ -844,17 +442,6 @@
             flavor = "tap-preferred";
         };
 
-        ht_mo_navword: ht_mo_navword {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO_NAVWORD";
-            bindings = <&mo>, <&nav_word>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 31 32 33 7 8 9 10 11 12 13>;
-        };
-
         long_th_kp: long_th_kp {
             compatible = "zmk,behavior-hold-tap";
             label = "LONG_TH_KP";
@@ -866,27 +453,11 @@
             flavor = "tap-preferred";
         };
 
-        nav_word: nav_word {
-            #binding-cells = <0>;
-            compatible = "zmk,behavior-num-word";
-            layers = <LAYER_NAVSIMPLE>;
-            continue-list = <LEFT DOWN UP RIGHT ENTER BACKSPACE>;
-            ignore-numbers;
-        };
-
         nav_word_simple: nav_word_simple {
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
-            layers = <LAYER_NAVSIMPLE>;
+            layers = <2>;   /* HYPER_TAP */
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
-            ignore-numbers;
-        };
-
-        num_word: num_word {
-            compatible = "zmk,behavior-num-word";
-            #binding-cells = <0>;
-            layers = <LAYER_NUM_SIMPLE>;
-            continue-list = <KP_N1 N1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0 LSHIFT LGUI LALT COLON MINUS PLUS KP_EQUAL DOT BACKSPACE LEFT_ARROW UP_ARROW DOWN_ARROW RIGHT_ARROW>;
             ignore-numbers;
         };
 
@@ -917,35 +488,6 @@
             ignored-key-positions = <43>;
         };
 
-        ht_kp_mb1_and_off: ht_kp_mb1_and_off {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_KP_MB1_AND_OFF";
-            bindings = <&macro_hold_and_mouse_off>, <&mouse_click_and_off>;
-
-            #binding-cells = <2>;
-            quick-tap-ms = <0>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        mm_mouse_click: mm_mouse_click {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_MOUSE_CLICK";
-            bindings = <&mkp MB1>, <&kp LG(ENTER)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
-        };
-
-        mm_backspace_delete: mm_backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_BACKSPACE_DELETE";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         ht_single_tap: ht_single_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_SINGLE_TAP";
@@ -956,18 +498,6 @@
             flavor = "tap-preferred";
         };
 
-        ht_hyper_and_mouse: ht_hyper_and_mouse {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_HYPER_AND_MOUSE";
-            bindings = <&mo>, <&tog>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 34 35 36 37 38 39>;
-            flavor = "balanced";
-            hold-while-undecided;
-            tapping-term-ms = <175>;
-        };
-
         ht_maclanguage_r: ht_maclanguage_r {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_MACLANGUAGE_R";
@@ -976,15 +506,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <175>;
             flavor = "tap-preferred";
-        };
-
-        mm_esc_hyperlayer: mm_esc_hyperlayer {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MM_ESC_HYPERLAYER";
-            bindings = <&ht_mo_eagor_trigger 4 ESCAPE>, <&kp F20>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
         };
 
         ht_sk_shift_capsword: ht_sk_shift_capsword {
@@ -1008,48 +529,6 @@
             flavor = "tap-preferred";
         };
 
-        ht_mo_eagor_trigger: ht_mo_eagor_trigger {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MO_EAGOR_TRIGGER";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 34 35 36 37 38 39 43 44 45 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 41 40>;
-            hold-while-undecided;
-            flavor = "hold-preferred";
-            tapping-term-ms = <170>;
-        };
-
-        ht_clipboard: ht_clipboard {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_CLIPBOARD";
-            bindings = <&macro_open_clipboard>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "balanced";
-        };
-
-        ht_macro_hyperkey: ht_macro_hyperkey {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_MACRO_HYPERKEY";
-            bindings = <&single_tap>, <&macro_hyperkey>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        ht_select_line_mac: ht_select_line_mac {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_SELECT_LINE_MAC";
-            bindings = <&macro_select_line>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
         long_combo_th: long_combo_th {
             compatible = "zmk,behavior-hold-tap";
             label = "LONG_COMBO_TH";
@@ -1059,52 +538,6 @@
             require-prior-idle-ms = <0>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
-        };
-
-        short_th_kp: short_th_kp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHORT_TH_KP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            require-prior-idle-ms = <0>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
-
-        short_mo_tp: short_mo_tp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHORT_MO_TP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            require-prior-idle-ms = <0>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <15 16 17 18 26 27 25 34 33 35 14 13 12 10 11 0 1 2 3 4>;
-            hold-while-undecided;
-        };
-
-        short_mo_tp_space: short_mo_tp_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHORT_MO_TP_SPACE";
-            bindings = <&macro_mo_default_on_release>, <&kp>;
-
-            #binding-cells = <2>;
-            require-prior-idle-ms = <65>;
-            tapping-term-ms = <140>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <34 35 15 16 17 18>;
-            hold-while-undecided;
-        };
-
-        num_layer_from_nav: num_layer_from_nav {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NUM_LAYER_FROM_NAV";
-            bindings = <&macro_f20_layer2>, <&none>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
         };
 
         semi_long_th_kp: semi_long_th_kp {
@@ -1139,17 +572,6 @@
             hold-while-undecided;
         };
 
-        mo_kp_nav: mo_kp_nav {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&mo>, <&sl>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-            label = "MO_KP_NAV";
-            hold-trigger-key-positions = <15 17 16 18 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 32>;
-        };
-
         /* Shift + Esc tap: app switcher; else Esc hold-tap (NAV + Esc). Space has no morph. */
 
         esc_shift_lgui_tab_mm: esc_shift_lgui_tab_mm {
@@ -1159,31 +581,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
-        };
-
-        none_mo: none_mo {
-            compatible = "zmk,behavior-hold-tap";
-            bindings =
-                <&macro_mo_default_on_release>,
-                <&macro_mo_default_on_release>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <137>;
-            hold-trigger-key-positions = <5 6 7 8>;
-            hold-while-undecided;
-            label = "NONE_MO";
-        };
-
-        th_kp_default_mod: th_kp_default_mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TH_KP_DEFAULT_MOD";
-            bindings = <&macro_kp_default_layer>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
-            hold-while-undecided;
         };
 
         short_mo_tp_space_hold_pref: short_mo_tp_space_hold_pref {
@@ -1208,80 +605,6 @@
             flavor = "balanced";
             hold-trigger-key-positions = <15 16 17 18 26 27 5 6 9 8 7 19 29 28 25 34 35 33>;
             hold-while-undecided;
-        };
-
-        mo_kp_trigger: mo_kp_trigger {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&macro_mo_default_on_release>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-            hold-trigger-key-positions = <15 16 17 18>;
-            hold-while-undecided;
-            label = "MO_KP_TRIGGER";
-            require-prior-idle-ms = <50>;
-        };
-
-        mo_cmd_tp: mo_cmd_tp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_CMD_TP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <15 16 17 18 33 34 35>;
-            flavor = "balanced";
-            tapping-term-ms = <250>;
-            require-prior-idle-ms = <50>;
-        };
-
-        mo_space: mo_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MO_SPACE";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <33 34 35 27 28 29 19>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-            require-prior-idle-ms = <0>;
-        };
-
-        mo_sl_trigger_num: mo_sl_trigger_num {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&macro_mo_default_on_release>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <250>;
-            hold-trigger-key-positions = <14 13 4 3 2 12 11 1 0 10 24 21 22 23 20 32 31 30 33 34 35 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 34 35>;
-            hold-while-undecided;
-            label = "MO_SL_TRIGGER_NUM";
-            hold-while-undecided-linger;
-        };
-
-        mo_kp_f_layer: mo_kp_f_layer {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&macro_mo_default_on_release>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <275>;
-            label = "MO_KP_F_LAYER";
-            hold-trigger-key-positions = <15 16 17 26 25 31 32 30>;
-            require-prior-idle-ms = <75>;
-        };
-
-        mo_enter_numshift: mo_enter_numshift {
-            compatible = "zmk,behavior-hold-tap";
-            bindings = <&macro_mo_and_shift>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <400>;
-            label = "MO_ENTER_NUMSHIFT";
-            require-prior-idle-ms = <0>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14>;
         };
 
         mo_sl_hyper: mo_sl_hyper {

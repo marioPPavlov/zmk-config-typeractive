@@ -671,7 +671,7 @@
             bindings = <
   &kp N9                                    &ht_single_tap ASTERISK N8              &ht_single_tap_semi_weak AMPS N7      &ht_single_tap_semi_weak CARET NUMBER_6  &ht_single_tap_semi_weak PERCENT N5      &trans    &msc SCRL_DOWN  &msc SCRL_UP  &trans    &trans
   &ht_single_tap_semi_weak DOLLAR NUMBER_4  &ht_single_tap_semi_weak HASH NUMBER_3  &ht_single_tap_semi_weak AT NUMBER_2  &ht_single_tap_semi_weak EXCL NUMBER_1   &kp N0                                   &mkp MB4  &kp LC(D)       &kp LC(U)     &mkp MB5  &trans
-  &kp QUESTION                              &trans                                  &trans                                &trans                                   &trans                                   &trans    &trans          &trans        &trans    &trans
+  &kp QUESTION                              &kp LG(X)                               &kp LG(C)                             &kp LG(V)                                &trans                                   &trans    &trans          &trans        &trans    &trans
                                                                                     &trans                                &trans                                   &trans                                   &trans    &trans          &trans
             >;
         };

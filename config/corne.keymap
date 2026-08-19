@@ -659,10 +659,10 @@
         HYPER {
             label = "HYPER";
             bindings = <
-  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E  &macro_hyperkey R  &kp LG(TAB)            &trans  &trans  &trans  &trans  &trans
-  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D  &macro_hyperkey F  &macro_hyperkey G      &trans  &trans  &trans  &trans  &trans
-  &trans             &trans             &trans             &trans             &trans                 &trans  &trans  &trans  &trans  &trans
-                                        &trans             &trans             &trans                 &trans  &trans  &trans
+  &macro_hyperkey Q  &macro_hyperkey W  &macro_hyperkey E     &macro_hyperkey R      &kp LG(TAB)            &trans  &trans  &trans  &trans  &trans
+  &macro_hyperkey A  &macro_hyperkey S  &macro_hyperkey D     &macro_hyperkey F      &macro_hyperkey G      &trans  &trans  &trans  &trans  &trans
+  &trans             &trans             &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans                 &trans  &trans  &trans  &trans  &trans
+                                        &trans                &trans                 &trans                 &trans  &trans  &trans
             >;
         };
 

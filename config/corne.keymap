@@ -345,7 +345,7 @@
         };
 
         combo-left-par {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&semi_long_th_kp PERCENT LEFT_BRACE>;
             key-positions = <14 4>;
         };
 

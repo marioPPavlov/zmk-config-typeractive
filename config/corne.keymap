@@ -406,7 +406,7 @@
 
         combo_excl_mark {
             bindings = <&kp EXCL>;
-            key-positions = <17 18>;
+            key-positions = <17 18 19 16 15>;
         };
 
         combo_asterisk {
@@ -416,7 +416,7 @@
 
         combo_amp {
             bindings = <&kp AMPS>;
-            key-positions = <25 26>;
+            key-positions = <17 18>;
         };
 
         combo_excl_2 {

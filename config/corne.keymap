@@ -428,6 +428,11 @@
             bindings = <&kp QUESTION>;
             key-positions = <7 16>;
         };
+
+        combo_semi_colon {
+            bindings = <&kp SEMI>;
+            key-positions = <19 29>;
+        };
     };
 
     behaviors {

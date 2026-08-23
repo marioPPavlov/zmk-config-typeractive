@@ -712,7 +712,7 @@
             display-name = "F_LAYER";
             bindings = <
   &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
-  &trans  &trans  &trans  &trans  &trans      &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &trans
+  &trans  &trans  &trans  &trans  &trans      &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &kp ENTER
   &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
                   &trans  &trans  &trans      &trans    &trans        &trans
             >;

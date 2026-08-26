@@ -431,7 +431,7 @@
 
         combo_semi_colon {
             bindings = <&kp SEMI>;
-            key-positions = <19 29>;
+            key-positions = <25 15>;
         };
     };
 

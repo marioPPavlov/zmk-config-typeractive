@@ -366,7 +366,7 @@
 
         combo_hash {
             bindings = <&kp HASH>;
-            key-positions = <10 0>;
+            key-positions = <27 17>;
         };
 
         combo_dollar {
@@ -376,7 +376,7 @@
 
         combo_clipbaord {
             bindings = <&macro_open_clipboard>;
-            key-positions = <1 3>;
+            key-positions = <12 22>;
         };
 
         combo_left_bracket {

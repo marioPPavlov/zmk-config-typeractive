@@ -716,10 +716,10 @@
         F_LAYER {
             display-name = "F_LAYER";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
-  &trans  &trans  &trans  &trans  &trans      &kp BSPC  &kp LA(BSPC)  &kp LA(DELETE)  &kp DELETE  &kp ENTER
-  &trans  &trans  &trans  &trans  &trans      &trans    &trans        &trans          &trans      &trans
-                  &trans  &trans  &trans      &trans    &trans        &trans
+  &trans  &trans  &trans  &trans  &trans      &kp LA(LEFT)  &kp LA(LS(LEFT_ARROW))  &kp LA(LS(RIGHT))  &kp LA(RIGHT)  &trans
+  &trans  &trans  &trans  &trans  &trans      &kp BSPC      &kp LA(BSPC)            &kp LA(DELETE)     &kp DELETE     &kp ENTER
+  &trans  &trans  &trans  &trans  &trans      &trans        &trans                  &trans             &trans         &trans
+                  &trans  &trans  &trans      &trans        &trans                  &trans
             >;
         };
     };

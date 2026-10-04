@@ -148,6 +148,23 @@
 
             label = "MACRO_DEFAULT_ON_RELEASE";
         };
+
+        /* Same as above, but returns to PLAIN (layer 1) instead of BASE. */
+
+        macro_mo_plain_on_release: macro_plain_on_release {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&macro_param_1to1 &mo MACRO_PLACEHOLDER>,
+                <&macro_tap>,
+                <&to 1>;
+
+            label = "MACRO_PLAIN_ON_RELEASE";
+        };
     };
 
     combos {
@@ -242,49 +259,49 @@
         combo_ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <17 7 27>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_caret {
             bindings = <&kp CARET>;
             key-positions = <16 6 26>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_percent {
             bindings = <&kp PERCENT>;
             key-positions = <15 5 25>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_five_hand {
             bindings = <&kp KP_NUMBER_5>;
             key-positions = <14 4 24>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_six_hand {
             bindings = <&kp KP_N6>;
             key-positions = <13 3 23>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_seven_hand {
             bindings = <&kp KP_NUMBER_7>;
             key-positions = <2 12 22>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_eight_hand {
             bindings = <&kp KP_N8>;
             key-positions = <11 1>;
-            layers = <1>;
+            layers = <2>;
         };
 
         combo_nine_hand {
             bindings = <&kp N9>;
             key-positions = <10 0>;
-            layers = <1>;
+            layers = <2>;
         };
 
         lalt_lshift_combo {
@@ -340,7 +357,7 @@
         };
 
         combo_blue_layer {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <9 29>;
         };
 
@@ -429,6 +446,11 @@
             key-positions = <7 16>;
         };
 
+        combo_plain_layer {
+            bindings = <&tog 1>;
+            key-positions = <0 9>;
+        };
+
         combo_semi_colon {
             bindings = <&kp SEMI>;
             key-positions = <25 15>;
@@ -461,7 +483,7 @@
         nav_word_simple: nav_word_simple {
             #binding-cells = <0>;
             compatible = "zmk,behavior-num-word";
-            layers = <2>;   /* HYPER_TAP */
+            layers = <3>;   /* HYPER_TAP */
             continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
             ignore-numbers;
         };
@@ -582,7 +604,7 @@
         esc_shift_lgui_tab_mm: esc_shift_lgui_tab_mm {
             compatible = "zmk,behavior-mod-morph";
             label = "ESC_SHIFT_LGUI_TAB_MM";
-            bindings = <&short_mo_tp_esc 4 ESCAPE>, <&mac_lgui_tab>;
+            bindings = <&short_mo_tp_esc 5 ESCAPE>, <&mac_lgui_tab>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -635,6 +657,43 @@
             label = "MO_SL_HYPER";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
         };
+
+        /* PLAIN-layer copies: identical, but release returns to layer 1. */
+
+        mo_sl_hyper_plain: mo_sl_hyper_plain {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&macro_mo_plain_on_release>, <&sl>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            hold-while-undecided;
+            label = "MO_SL_HYPER_PLAIN";
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+        };
+
+        mo_sl_trigger_plain: mo_sl_trigger_plain {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&macro_mo_plain_on_release>, <&sl>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            hold-trigger-key-positions = <6 7 8 5 14 13 4 3 2 12 11 1 0 10 24 21 22 23 20>;
+            hold-while-undecided;
+        };
+
+        short_mo_tp_space_hold_pref_plain: short_mo_tp_space_hold_pref_plain {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHORT_MO_TP_SPACE_HOLD_PREF_PLAIN";
+            bindings = <&macro_mo_plain_on_release>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            flavor = "hold-preferred";
+            hold-trigger-key-positions = <13 12 2 3 11 10 1 0 4 14>;
+            hold-while-undecided;
+        };
     };
 
     keymap {
@@ -643,10 +702,20 @@
         BASE {
             display-name = "BASE";
             bindings = <
-  &kp Q                     &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 6 T                  &kp Y                   &kp U                 &kp I                               &kp O                      &kp P
-  &semi_long_th_kp LCTRL A  &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &mo_kp_f_layer 7 F          &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                 &kp K                               &kp L                      &short_mo_tp_space_hold_pref 2 COLON
-  &long_mo_tp 3 Z           &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M  &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
-                                                             &esc_shift_lgui_tab_mm              &kp SPACE                   &mo_sl_hyper 1 1                 &mm_shift_capsword      &mo_sl_trigger 3 3    &long_th_kp LS(LEFT_CONTROL) ENTER
+  &kp Q                     &kp W                            &kp E                               &ht_maclanguage_r 0 R       &long_mo_tp 7 T                  &kp Y                   &kp U                 &kp I                               &kp O                      &kp P
+  &semi_long_th_kp LCTRL A  &semi_long_th_kp LALT S          &semi_long_th_kp LGUI D             &mo_kp_f_layer 8 F          &semi_long_th_kp LS(LGUI) G      &kp H                   &kp J                 &kp K                               &kp L                      &short_mo_tp_space_hold_pref 3 COLON
+  &long_mo_tp 4 Z           &ht_single_tap_weak LESS_THAN X  &ht_single_tap_weak GREATER_THAN C  &long_th_kp LS(LC(LALT)) V  &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M  &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
+                                                             &esc_shift_lgui_tab_mm              &kp SPACE                   &mo_sl_hyper 2 2                 &mm_shift_capsword      &mo_sl_trigger 4 4    &long_th_kp LS(LEFT_CONTROL) ENTER
+            >;
+        };
+
+        PLAIN {
+            display-name = "PLAIN";
+            bindings = <
+  &kp Q                     &kp W                            &kp E                               &kp R                       &kp T                            &kp Y                   &kp U                      &kp I                               &kp O                      &kp P
+  &kp A                     &kp S                            &kp D                               &kp F                       &kp G                            &kp H                   &kp J                      &kp K                               &kp L                      &short_mo_tp_space_hold_pref_plain 3 COLON
+  &kp Z                     &kp X                            &kp C                               &kp V                       &kp B                            &long_th_kp LS(LGUI) N  &long_th_kp LSHIFT M       &long_th_kp RIGHT_GUI COMMA         &long_th_kp RIGHT_ALT DOT  &long_th_kp RIGHT_CONTROL FSLH
+                                                             &esc_shift_lgui_tab_mm              &kp SPACE                   &mo_sl_hyper_plain 2 2           &mm_shift_capsword      &mo_sl_trigger_plain 4 4   &long_th_kp LS(LEFT_CONTROL) ENTER
             >;
         };
 
@@ -655,7 +724,7 @@
   &ht_single_tap TILDE GRAVE  &kp LG(X)      &grave_swap_shift        &grave_swap     &tab_swap                           &kp LA(LEFT)    &kp LA(LS(LEFT))    &kp LS(LA(RIGHT))  &kp LA(RIGHT)  &kp SEMICOLON
   &kp LCTRL                   &kp LALT       &kp LGUI                 &kp LEFT_SHIFT  &ht_single_tap LG(ENTER) ENTER      &kp LEFT_ARROW  &kp DOWN            &kp UP_ARROW       &kp RIGHT      &kp APOSTROPHE
   &kp LG(Z)                   &kp LG(LS(Z))  &long_th_kp LG(X) LG(C)  &kp LG(V)       &kp BACKSPACE                       &kp BACKSPACE   &kp LA(BACKSPACE)   &kp LA(DELETE)     &kp DELETE     &single_tap DOUBLE_QUOTES
-                                             &trans                   &trans          &trans                              &trans          &mo_sl_trigger 3 3  &kp LS(ENTER)
+                                             &trans                   &trans          &trans                              &trans          &mo_sl_trigger 4 4  &kp LS(ENTER)
             >;
 
             label = "NAV";

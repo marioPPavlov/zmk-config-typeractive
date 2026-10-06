@@ -765,5 +765,14 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        /* NAV + NUM held together -> MEDIA */
+
+        tri_layer_media {
+            if-layers = <2 4>;
+            then-layer = <7>;
+        };
+    };
 };

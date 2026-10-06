@@ -114,26 +114,6 @@
             label = "MACRO_HYPERKEY";
         };
 
-        macro_tap_and_navword: macro_tap_and_navword {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-
-            /* nav_word_simple has #binding-cells = <0> — no MACRO_PLACEHOLDER on it */
-
-            bindings =
-                <&macro_release>,
-                <&nav_word_simple>,
-                <&macro_press>,
-                <&nav_word_simple>,
-                <&macro_press>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-
-            label = "MACRO_TAP_AND_NAVWORD";
-        };
-
         macro_mo_default_on_release: macro_default_on_release {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -478,14 +458,6 @@
             require-prior-idle-ms = <300>;
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
-        };
-
-        nav_word_simple: nav_word_simple {
-            #binding-cells = <0>;
-            compatible = "zmk,behavior-num-word";
-            layers = <3>;   /* HYPER_TAP */
-            continue-list = <LEFT DOWN UP RIGHT LSHIFT LGUI LALT LCTRL ENTER J K Z HOME END PG_DN PG_UP>;
-            ignore-numbers;
         };
 
         tab_swap: tab_swap {

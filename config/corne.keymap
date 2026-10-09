@@ -568,7 +568,6 @@
             flavor = "balanced";
             tapping-term-ms = <150>;
             hold-trigger-key-positions = <6 7 8 5 14 13 4 3 2 12 11 1 0 10 24 21 22 23 20>;
-            hold-while-undecided;
         };
 
         /* Shift + Esc tap: app switcher; else Esc hold-tap (NAV + Esc). Space has no morph. */
@@ -625,7 +624,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <150>;
-            hold-while-undecided;
             label = "MO_SL_HYPER";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
         };
@@ -639,7 +637,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <150>;
-            hold-while-undecided;
             label = "MO_SL_HYPER_PLAIN";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
         };
@@ -652,7 +649,6 @@
             flavor = "balanced";
             tapping-term-ms = <150>;
             hold-trigger-key-positions = <6 7 8 5 14 13 4 3 2 12 11 1 0 10 24 21 22 23 20>;
-            hold-while-undecided;
         };
 
         short_mo_tp_space_hold_pref_plain: short_mo_tp_space_hold_pref_plain {

@@ -759,16 +759,30 @@
                   &trans  &trans  &trans      &trans        &trans                  &trans
             >;
         };
+
+        /* Copy of MEDIA for the NAV + NUM tri-layer. A conditional then-layer is
+           force-deactivated whenever its if-layers aren't all held, so it can't
+           also be the target of &long_mo_tp 7 T. Keep in sync with MEDIA. */
+
+        MEDIA_TRI {
+            display-name = "MEDIA_TRI";
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans      &kp C_PREVIOUS  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_NEXT          &trans
+  &trans  &trans  &trans  &trans  &trans      &kp C_REWIND    &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_FAST_FORWARD  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans          &kp C_PP              &trans                &trans              &trans
+                  &trans  &trans  &trans      &trans          &trans                &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        /* NAV + NUM held together -> MEDIA */
+        /* NAV + NUM held together -> MEDIA_TRI */
 
         tri_layer_media {
             if-layers = <2 4>;
-            then-layer = <7>;
+            then-layer = <9>;
         };
     };
 };
